@@ -15,7 +15,7 @@
   "author": "Dima Meleshchenko <newdima25.7@gmail.com>",
   "license": "ISC",
   "dependencies": {
-    "accordion": "^3.0.2",
+    "accordion-js": "^3.3.4",
     "izitoast": "^1.4.0",
     "modern-normalize": "^3.0.0",
     "swiper": "^11.1.9",
