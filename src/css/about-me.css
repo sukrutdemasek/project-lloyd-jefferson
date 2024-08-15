@@ -1,0 +1,143 @@
+
+/* ================About-me MOBILE============= */
+
+
+
+
+
+
+.container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.visually-hidden {
+    display: none;
+}
+.about-me-header{
+    background-color: #242527;
+    padding: 32px 32px 272px 32px;
+    border-radius: 24px;
+    margin-bottom: 16px;
+
+}
+.about-me-header-prh{
+    font-family: inherit;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 117%;
+    letter-spacing: -0.03em;
+
+}
+.span-func {
+    color: #ED3B44;
+}
+.span-web {
+    color: #3B3B3B;
+}
+.image {
+    margin-bottom: 32px;
+}
+.description {
+    margin-bottom: 64px;
+}
+.description-list {
+    list-style: none;
+    padding-left: 0; /*вылазит падинг 40рх слева */
+
+}
+
+.description-title{
+    border-bottom: 1px solid #3B3B3B;
+}
+
+.descrip-cont{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+margin-bottom: 8px;
+}
+
+.title-desctption {
+display: inline;
+align-items: flex-end;
+font-weight: 600;
+font-size: 16px;
+line-height: 150%;
+letter-spacing: -0.02em;
+text-transform: uppercase;
+color: #3B3B3B;
+
+}
+.descrip-text-list {
+    list-style: none;
+    padding-left: 0;
+    padding-bottom: 20px;
+}
+.descrip-about-title {
+    margin-bottom: 16px ;
+
+}
+.descrip-about-prh {
+font-weight: 500;
+font-size: 16px;
+line-height: 150%;
+letter-spacing: -0.02em;
+color: #FAFAFA;
+}
+
+.descrip-role-title {
+    margin-bottom: 10px;
+    
+}
+.descrip-role-prh {
+    
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: -0.02em;
+    color: #FAFAFA;
+}
+
+.descrip-educ-title {
+    
+}
+.descrip-educ-prh {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: -0.02em;
+    color: #FAFAFA;
+}
+
+.tech-skills {
+    display: flex;
+    flex-direction: row;
+    
+}
+.btn-skills {
+    
+    background-color: transparent;
+    min-width: 200px;
+    min-height: 200px;
+    border-radius: 100%;
+    border: 1px solid #3B3B3B;
+    color: #FAFAFA;
+    font-weight: 500;
+font-size: 20px;
+letter-spacing: -0.02em;
+}
+
+.btn-skills:hover{
+    border: none;
+    background-color: #ED3B44;
+}
+
+.btn-arrow-right {
+
+}
+
