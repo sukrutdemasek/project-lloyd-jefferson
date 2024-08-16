@@ -1,50 +1,135 @@
 <!-- Section Projects -->
 
-<section class="projects-section">
-  <h2 class="section-headline">Projects</h2>
-  <ul class="projects-list">
-    <li class="projects-item">
-      <div class="projects-technologies">
-        <ul class="technologies-list">
-          <li class="technologies-item">
-            <a class="item-content">
-              #react
-            </a>
-          </li>
-          <li class="technologies-item">
-            <a class="item-content">
-              #js
-            </a>
-          </li>
-          <li class="technologies-item">
-            <a class="item-content">
-              #node js
-            </a>
-          </li>
-          <li class="technologies-item">
-            <a class="item-content">
-              #git
-            </a>
-          </li>
-        </ul>
-        <h3 class="projects-title">Programming Across 
-          Borders: Ideas, 
-          Technologies, Innovations
-        </h3>
-        <button class="projects-button">See project</button>
+  <section class="projects-section" id="projects">
+    <div class="container">
+      <h2 class="section-headline">Projects</h2>
+      <div class="swiper-projects-container">
+        <div class="swiper-wrapper">
+          <ul class="swiper-slide-projects swiper-wrapper">
+            <li class="projects-technologies">
+              <ul class="technologies-list">
+                <li class="technologies-item">
+                  <a class="item-content">#react</a>
+                </li>
+                <li class="technologies-item">
+                  <a class="item-content">#js</a>
+                </li>
+                <li class="technologies-item">
+                  <a class="item-content">#node js</a>
+                </li>
+                <li class="technologies-item">
+                  <a class="item-content">#git</a>
+                </li>
+              </ul>
+              <h3 class="projects-title">
+                Programming Across<br>
+                Borders: Ideas,<br>
+                Technologies, Innovations
+              </h3>
+              <button class="projects-button">See project</button>
+            </li>
+            <li class="projects-demo">
+              <picture>
+                <!-- desktop screen -->
+                <source media="(min-width: 1440px)" srcset="">
+                <!-- tablet screen -->
+                <source media="(min-width: 768px)" srcset="">
+                <!-- phone screen -->
+                <source media="(max-width: 767px)" srcset="">
+                <img src="" alt="Project Image" width="100%" height="auto" loading="lazy">
+              </picture>
+            </li>
+          </ul>
+          <ul class="swiper-slide-projects swiper-wrapper">
+            <li class="projects-technologies">
+              <ul class="technologies-list">
+                <li class="technologies-item">
+                  <a class="item-content">#react</a>
+                </li>
+                <li class="technologies-item">
+                  <a class="item-content">#js</a>
+                </li>
+                <li class="technologies-item">
+                  <a class="item-content">#node js</a>
+                </li>
+                <li class="technologies-item">
+                  <a class="item-content">#git</a>
+                </li>
+              </ul>
+              <h3 class="projects-title">
+                Programming Across<br>
+                Borders: Ideas,<br>
+                Technologies, Innovations
+              </h3>
+              <button class="projects-button">See project</button>
+            </li>
+            <li class="projects-demo">
+              <picture>
+                <!-- desktop screen -->
+                <source media="(min-width: 1440px)" srcset="">
+                <!-- tablet screen -->
+                <source media="(min-width: 768px)" srcset="">
+                <!-- phone screen -->
+                <source media="(max-width: 767px)" srcset="">
+                <img src="" alt="Project Image" width="100%" height="auto" loading="lazy">
+              </picture>
+            </li>
+          </ul>
+          <ul class="swiper-slide-projects swiper-wrapper">
+            <li class="projects-technologies">
+              <ul class="technologies-list">
+                <li class="technologies-item">
+                  <a class="item-content">#react</a>
+                </li>
+                <li class="technologies-item">
+                  <a class="item-content">#js</a>
+                </li>
+                <li class="technologies-item">
+                  <a class="item-content">#node js</a>
+                </li>
+                <li class="technologies-item">
+                  <a class="item-content">#git</a>
+                </li>
+              </ul>
+              <h3 class="projects-title">
+                Programming Across<br>
+                Borders: Ideas,<br>
+                Technologies, Innovations
+              </h3>
+              <button class="projects-button">See project</button>
+            </li> 
+            <li class="projects-demo">
+              <picture>
+                <!-- desktop screen 
+                  Наразі оптимізація картинок є складним питанням. Я не пам'ятаю який формат качати з фігми, 
+                  якими інструментами його оптимізувати і налаштовувати під ретіну, це є проблема.-->
+                <source media="(min-width: 1440px)" srcset="">
+                <!-- tablet screen -->
+                <source media="(min-width: 768px)" srcset="">
+                <!-- phone screen -->
+                <source media="(max-width: 767px)" srcset="">
+                <img src="" alt="Project Image" width="100%" height="auto" loading="lazy">
+              </picture>
+            </li>
+          </ul>
+          <!-- Add more swiper-slide elements for additional projects -->
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+        <!-- Add Navigation -->
+         <!---Не розібрався як коректно підключти свг зі спрайту
+              Саме позиціонування кнопок поки -->
+        <div class="swiper-button-next">
+          <svg width="54" height="54">
+            <use xlink:href="/src/img/sprite.svg#arrow-right"></use>
+          </svg>
+        </div>
+        <div class="swiper-button-prev">
+          <svg width="54" height="54">
+            <use xlink:href="/src/img/sprite.svg#arrow-left"></use>
+          </svg>
+        </div>
       </div>
-      <div class="projects-demo-container" >
-          <picture>
-            <!-- desktop screen -->
-            <source media="" srcset="">
-            <!-- tablet screen -->
-            <source media="" srcset="">
-            <!-- phone screen -->
-            <source media="" srcset="">
-        
-            <img src="" alt="" width="" height="" loading="" />
-          </picture>
-      </div>
-    </li>
-  </ul>
-</section>
+    </div>
+  </section>
+  <script src="/src/js/projects.js"></script>
