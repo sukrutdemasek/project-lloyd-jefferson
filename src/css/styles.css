@@ -32,6 +32,7 @@ Import of all the partials
 body {
   background-color: #1c1d20;
   color: #fff;
+  margin: 0;
 }
 
 .container {
@@ -51,14 +52,8 @@ body {
   }
 }
 
-@media only screen and (min-width: 1280px) {
+@media only screen and (min-width: 1440px) {
   .container {
-    max-width: 1280px;
+    max-width: 1400px;
   }
-}
-
-@media only screen and (min-width: 768px) {
-}
-
-@media screen and (min-width: 1280px) {
 }
