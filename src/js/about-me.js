@@ -1,26 +1,28 @@
-document.addEventListener('DOMContentLoaded', function() {
-  // Находим все кнопки аккордеона
-  const accButtons = document.querySelectorAll('.accordion-btn');
+document.addEventListener('DOMContentLoaded', () => {
+    const buttons = document.querySelectorAll('.accordion-btn');
+    
+    buttons.forEach((button, index) => {
+        const content = button.nextElementSibling;
+        
+        // Устанавливаем первую секцию как открытую по умолчанию
+        if (index === 0) {
+            content.style.display = 'block';
+        } else {
+            content.style.display = 'none';
+        }
 
-  accButtons.forEach(button => {
-    button.addEventListener('click', () => {
-      // Находим следующий элемент списка
-      const content = button.nextElementSibling;
-
-      // Переключаем класс для показа или скрытия контента
-      if (content.classList.contains('show')) {
-        content.classList.remove('show');
-        button.classList.remove('active');
-      } else {
-        // Закрываем все открытые секции
-        document.querySelectorAll('.descrip-text-list.show').forEach(item => {
-          item.classList.remove('show');
-          item.previousElementSibling.classList.remove('active');
+        button.addEventListener('click', () => {
+            // Проверяем, если текущая секция уже открыта
+            if (content.style.display === 'block') {
+                content.style.display = 'none';
+            } else {
+                // Закрываем все другие секции
+                document.querySelectorAll('.ac-content').forEach(item => {
+                    item.style.display = 'none';
+                });
+                // Открываем текущую секцию
+                content.style.display = 'block';
+            }
         });
-        // Открываем текущую секцию
-        content.classList.add('show');
-        button.classList.add('active');
-      }
     });
-  });
 });

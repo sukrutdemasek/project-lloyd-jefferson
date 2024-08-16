@@ -1,11 +1,6 @@
 
 /* ================About-me MOBILE============= */
 
-
-
-
-
-
 .container {
     width: 100%;
     margin-left: auto;
@@ -43,23 +38,12 @@
 .description {
     margin-bottom: 64px;
 }
-.description-list {
-    list-style: none;
-    padding-left: 0; /*вылазит падинг 40рх слева */
-   
-
-}
-
-.description-title{
+.accordion-container {
     border-bottom: 1px solid #3B3B3B;
+    margin-bottom: 20px;
+
 }
 
-.descrip-cont{
-display: flex;
-flex-direction: row;
-justify-content: space-between;
-margin-bottom: 8px;
-}
 
 .title-desctption {
 display: inline;
@@ -72,28 +56,21 @@ text-transform: uppercase;
 color: #3B3B3B;
 
 }
-.descrip-text-list {
-    list-style: none;
-    padding-left: 0;
-    padding-bottom: 20px;
-}
-.descrip-about-title {
-    margin-bottom: 16px ;
 
-}
 .descrip-about-prh {
 font-weight: 500;
 font-size: 16px;
 line-height: 150%;
 letter-spacing: -0.02em;
 color: #FAFAFA;
+margin-bottom: 20px;
 }
 
 .descrip-role-title {
     margin-bottom: 10px;
     
 }
-.descrip-role-prh {
+.descrip-prh {
     
     font-weight: 500;
     font-size: 16px;
@@ -105,13 +82,7 @@ color: #FAFAFA;
 .descrip-educ-title {
     
 }
-.descrip-educ-prh {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 150%;
-    letter-spacing: -0.02em;
-    color: #FAFAFA;
-}
+
 
 .tech-skills {
 
