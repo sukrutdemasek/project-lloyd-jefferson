@@ -57,7 +57,8 @@ div.ac button.ac-trigger.faq-button:focus {
 
 /* Pseudo-element ::after for the FAQ button */
 div.ac .ac-trigger.faq-button::after {
-  content: '+';
+  content: '';
+  background-image: url('../img/sprite.svg#arrow-down');
   position: absolute;
   top: 20px;
   right: 16px;
@@ -67,12 +68,20 @@ div.ac .ac-trigger.faq-button::after {
   border-radius: 100px;
   transform: translate(50%, -50%);
 }
+.faq-arrow-icon{
+    position: absolute;
+    top: 10px;
+    right: 6px;
+ transition: transform 0.3s ease-in-out;
+}
 
 /* Active state for FAQ button pseudo-element */
 div.ac.is-active > .ac-header .ac-trigger.faq-button::after {
-  content: '-';
+  content: '';
+} 
+div.ac.is-active .faq-arrow-icon {
+    transform: rotate(-180deg);
 }
-
 /* FAQ text inside the accordion panel */
 .ac .ac-panel p.ac-text.faq-text {
   margin-top: 16px;
@@ -112,9 +121,12 @@ div.ac.is-active > .ac-header .ac-trigger.faq-button::after {
   div.ac .ac-trigger.faq-button::after {
     width: 40px;
     height: 40px;
-    right: 20px;
-    top: 50%;
+   
   }
+  .faq-arrow-icon {
+   top: 12px;
+   right: 6px;
+}
 }
 
 /* Large screen adjustments */
@@ -157,5 +169,8 @@ div.ac.is-active > .ac-header .ac-trigger.faq-button::after {
   /* Position adjustment for pseudo-element on odd items */
   div.ac.faq-item-container:nth-child(odd) .ac-trigger.faq-button::after {
     right: 52px;
+  }
+  div.ac.faq-item-container:nth-child(odd) .faq-arrow-icon {
+    right: 42px;
   }
 }
