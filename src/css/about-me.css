@@ -46,6 +46,7 @@
 .description-list {
     list-style: none;
     padding-left: 0; /*вылазит падинг 40рх слева */
+   
 
 }
 
@@ -113,9 +114,11 @@ color: #FAFAFA;
 }
 
 .tech-skills {
+
     display: flex;
     flex-direction: row;
-    
+     list-style: none;
+    padding-left: 0; /*вылазит падинг 40рх слева */
 }
 .btn-skills {
     
