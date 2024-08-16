@@ -1,7 +1,57 @@
-<!-- Section Work Together -->
-
-<section class="work-together-section">
-  <h2 class="section-headline">
-    Let's <span class="work-span">work </span>together
-  </h2>
-</section>
+<footer id="WorkTogether" class="workTogetherSection">
+  <div class="container">
+    <picture class="workTogetherPhoto">
+      <source
+        srcset="
+          ./img/work-together/photo.png    1x,
+          ./img/work-together/photo@2x.png 2x
+        "
+      />
+      <img src="./img/work-together/photo.png" alt="photo of the person" />
+    </picture>
+    <h2 class="workTogetherTitle">
+      Let’s <span class="workWord">work </span
+      ><span class="newLine">together</span>
+    </h2>
+    <form id="WtForm" class="coopForm" autocomplete="off">
+      <ul class="coopInputGroup">
+        <li class="coopInputItem">
+          <input
+            class="coopInput"
+            type="email"
+            name="email"
+            pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
+            placeholder="clients@gmail.com"
+            required
+          />
+          <p class="coopResultMsg"></p>
+        </li>
+        <li class="coopInputItem">
+          <input
+            class="coopInput"
+            type="text"
+            name="comment"
+            pattern="[\S\s]+[\S]+"
+            placeholder="comments"
+            data-value
+            required
+          />
+        </li>
+      </ul>
+      <button class="coopSubmitBtn" type="submit">Send</button>
+    </form>
+    <ul class="contactsList">
+      <li class="contactItem">
+        <a class="contactLink" href="mailto:lloydjefferson@gmail.com">
+          lloydjefferson@gmail.com
+        </a>
+      </li>
+      <li class="contactItem">
+        <a class="contactLink" href="tel:+3801111111111">+380 11 1111 11 11</a>
+      </li>
+    </ul>
+  </div>
+  <div class="backToHome">
+    <a href="/" class="backToHomeButton">Back to Home</a>
+  </div>
+</footer>
