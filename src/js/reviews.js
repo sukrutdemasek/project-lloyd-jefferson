@@ -20,9 +20,11 @@ const fetchReviews = async () => {
 function createLiItem({ author, avatar_url, review }) {
     return `<li class="swiper-slide">
     <div class="reviews-item">
+    <div class="element">
         <img class="review-section-img" src="${avatar_url}" alt="${author}"  />
         <h3 class="reviews-title">${author}</h3>
         <p class="reviews-text">${review}</p>
+        </div>
     </div>
   </li>`;
 }
@@ -52,8 +54,7 @@ export const reviewsSwiper = Swiper => {
                 keyboard: {
                     enabled: true,
                     onlyInViewport: false,
-                },
-                
+                },                
                 breakpoints: {
                     768: {
                         speed: 600,
@@ -68,18 +69,17 @@ export const reviewsSwiper = Swiper => {
                         spaceBetween: 16,
                     },
                 },
-
+                navigation: {
+                    nextEl: section.querySelector('.swiper-button-next'),
+                    prevEl: section.querySelector('.swiper-button-prev'),
+                },
     
-            });
-
-        
+            });       
 
 
         }).catch(err => {
             reviewsBox.innerHTML = '<p class="reviews-notfound">Not found</p>';
       });
-
-
 }
 
 
