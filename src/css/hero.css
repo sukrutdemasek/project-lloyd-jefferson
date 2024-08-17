@@ -10,7 +10,7 @@ body, html {
     background-position: left;
     background-size: contain;
     margin-bottom: 64px;
-    text-align: center;
+    /* text-align: center; */
 }
 
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
@@ -20,8 +20,7 @@ body, html {
 }
 
 #hero .hero-box {
-    padding-top: 281px;
-    padding-bottom: 24px;
+    padding: 281px 16px 32px 16px;
     display: flex;
     flex-direction: column;
     gap: 212px;
@@ -36,8 +35,6 @@ body, html {
     text-transform: uppercase;
     color: #fafafa;
     text-align: left;
-    margin-left: 16px;
-    margin-right: 16px;
 }
 
 .hero-contact-info {
@@ -105,6 +102,18 @@ body, html {
     }
 }
 
+@media screen and (min-width: 375px) and (max-width: 415px) {
+    .hero-email {
+        font-size: 13px;
+    }
+}
+
+@media screen and (min-width: 415) and (max-width: 767px) {
+    .hero-email {
+        font-size: 14px;
+    }
+}
+
 @media screen and (min-width: 375px) and (max-width: 767px) {
     .hero-contact-info {
         flex-direction: row;
@@ -119,6 +128,7 @@ body, html {
 @media screen and (min-width: 768px) and (max-width: 1439px) {
     .hero-section {
         background-image: url('../img/hero/png tablet-mobile/hero_red_tablet_1x.png');
+        background-size: cover;
     }
 
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
@@ -135,12 +145,14 @@ body, html {
     .main-headline {
         width: 632px;
         height: 450px;
+        text-align: left;
+        margin: 0;
     }
 }
 
 @media screen and (min-width: 768px) {
     #hero .hero-box {
-        padding-top: 300px;
+        padding: 300px 32px 32px 32px;
     }
 
     .main-headline {
@@ -155,6 +167,7 @@ body, html {
         flex-direction: row;
         justify-content: flex-end;
         gap: 8px;
+        margin: 0;
     }
 
     .hero-social-link {
@@ -175,6 +188,7 @@ body, html {
 @media screen and (min-width: 1440px) {
     .hero-section {
         background-image: url('../img/hero/desktop/png/hero_red_desktop_1x.png');
+        background-size: cover;
         margin-bottom: 96px;
     }
 
@@ -186,5 +200,6 @@ body, html {
 
     #hero .hero-box {
         width: 1230px;
+        margin-right: 0;
     }
 }
