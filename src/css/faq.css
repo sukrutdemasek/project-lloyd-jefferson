@@ -27,7 +27,7 @@
 }
 
 /* FAQ item container styles */
-div.ac.faq-item-container {
+ul.accordion-container li.ac.faq-item-container {
   margin: 0;
   padding: 20px 0;
   background-color: transparent;
@@ -38,7 +38,7 @@ div.ac.faq-item-container {
 }
 
 /* FAQ button styles */
-div.ac button.ac-trigger.faq-button {
+ul.accordion-container li.ac button.ac-trigger.faq-button {
   margin: 0;
   padding: 0;
   padding-right: 78px;
@@ -51,12 +51,12 @@ div.ac button.ac-trigger.faq-button {
 }
 
 /* Focus state for FAQ button */
-div.ac button.ac-trigger.faq-button:focus {
+ul.accordion-container li.ac button.ac-trigger.faq-button:focus {
   color: #fafafa;
 }
 
 /* Pseudo-element ::after for the FAQ button */
-div.ac .ac-trigger.faq-button::after {
+ul.accordion-container li.ac .ac-trigger.faq-button::after {
   content: '';
   background-image: url('../img/sprite.svg#arrow-down');
   position: absolute;
@@ -68,22 +68,25 @@ div.ac .ac-trigger.faq-button::after {
   border-radius: 100px;
   transform: translate(50%, -50%);
 }
-.faq-arrow-icon{
-    position: absolute;
-    top: 10px;
-    right: 6px;
- transition: transform 0.3s ease-in-out;
+
+.faq-arrow-icon {
+  position: absolute;
+  top: 10px;
+  right: 6px;
+  transition: transform 0.3s ease-in-out;
 }
 
 /* Active state for FAQ button pseudo-element */
-div.ac.is-active > .ac-header .ac-trigger.faq-button::after {
+ul.accordion-container li.ac.is-active > .ac-header .ac-trigger.faq-button::after {
   content: '';
-} 
-div.ac.is-active .faq-arrow-icon {
-    transform: rotate(-180deg);
 }
+
+ul.accordion-container li.ac.is-active .faq-arrow-icon {
+  transform: rotate(-180deg);
+}
+
 /* FAQ text inside the accordion panel */
-.ac .ac-panel p.ac-text.faq-text {
+ul.accordion-container li.ac .ac-panel p.ac-text.faq-text {
   margin-top: 16px;
   padding: 0;
   color: rgba(250, 250, 250, 0.6);
@@ -101,32 +104,32 @@ div.ac.is-active .faq-arrow-icon {
     padding: 0 32px;
   }
 
-  div.ac.faq-item-container {
+  ul.accordion-container li.ac.faq-item-container {
     padding: 32px 0 42px 0;
   }
 
-  div.ac.faq-item-container.is-active {
+  ul.accordion-container li.ac.faq-item-container.is-active {
     padding: 32px 0 26px 0;
   }
 
-  div.ac button.ac-trigger.faq-button {
+  ul.accordion-container li.ac button.ac-trigger.faq-button {
     padding-right: 130px;
   }
 
-  .ac .ac-panel p.ac-text.faq-text {
+  ul.accordion-container li.ac .ac-panel p.ac-text.faq-text {
     max-width: 656px;
     margin-top: 26px;
   }
 
-  div.ac .ac-trigger.faq-button::after {
+  ul.accordion-container li.ac .ac-trigger.faq-button::after {
     width: 40px;
     height: 40px;
-   
   }
+
   .faq-arrow-icon {
-   top: 12px;
-   right: 6px;
-}
+    top: 12px;
+    right: 6px;
+  }
 }
 
 /* Large screen adjustments */
@@ -135,42 +138,43 @@ div.ac.is-active .faq-arrow-icon {
     max-width: 1376px;
   }
 
-  div.faq-accordion-container {
+  ul.accordion-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
   }
 
-  div.ac.faq-item-container {
+  ul.accordion-container li.ac.faq-item-container {
     max-width: calc(50%);
     flex: 1 1 calc(50%);
   }
 
   /* Right border for odd FAQ items */
-  div.ac.faq-item-container:nth-child(odd) {
+  ul.accordion-container li.ac.faq-item-container:nth-child(odd) {
     border-right: 1px solid rgba(250, 250, 250, 0.2);
   }
 
   /* Padding adjustment for even FAQ items */
-  div.ac.faq-item-container:nth-child(even) {
+  ul.accordion-container li.ac.faq-item-container:nth-child(even) {
     padding-left: 32px;
   }
 
   /* FAQ button padding adjustment */
-  div.ac button.ac-trigger.faq-button {
+  ul.accordion-container li.ac button.ac-trigger.faq-button {
     padding-right: 82px;
   }
 
   /* Position adjustment for pseudo-element ::after */
-  div.ac .ac-trigger.faq-button::after {
+  ul.accordion-container li.ac .ac-trigger.faq-button::after {
     top: 20px;
   }
 
   /* Position adjustment for pseudo-element on odd items */
-  div.ac.faq-item-container:nth-child(odd) .ac-trigger.faq-button::after {
+  ul.accordion-container li.ac.faq-item-container:nth-child(odd) .ac-trigger.faq-button::after {
     right: 52px;
   }
-  div.ac.faq-item-container:nth-child(odd) .faq-arrow-icon {
+
+  ul.accordion-container li.ac.faq-item-container:nth-child(odd) .faq-arrow-icon {
     right: 42px;
   }
 }
