@@ -3,9 +3,29 @@
 *::after {
   box-sizing: border-box;
 }
-.content {
-  position: relative;
+.covers-section {
+  padding-bottom: 64px;
 }
+
+.content {
+  width: 375px;
+  height: 508px;
+  position: relative;
+  background: url(../img/covers/bgc-min.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+@media screen and (min-resolution: 2dppx), (min-resolution: 192dpi) {
+  .content {
+    background: url(../img/covers/bgc-2x-min.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+}
+
 .marquee {
   position: absolute;
   right: -800px;
@@ -45,5 +65,24 @@
 
   to {
     transform: translateX(-180%);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .covers-section {
+    padding-bottom: 96px;
+  }
+  .content {
+    width: 768px;
+    height: 960px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .covers-section {
+    padding-bottom: 164px;
+  }
+  .content {
+    width: 1440px;
   }
 }
