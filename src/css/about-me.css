@@ -1,0 +1,203 @@
+/* ================About-me MOBILE============= */
+
+.accordion-container.aboutme-accordion-container {
+}
+
+.ac.aboutme-item-container {
+  background-color: inherit;
+  border: none;
+  border-bottom: 1px solid #3b3b3b;
+}
+
+.ac-trigger.aboutme-button {
+}
+.ac-header {
+}
+.ac-trigger.aboutme-button {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: #3b3b3b;
+  margin-bottom: 24px;
+}
+
+.aboutme-arrow-icon {
+}
+.ac-panel {
+}
+.ac-text.aboutme-text p {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: -0.02em;
+  color: #fafafa;
+  margin-bottom: 20px;
+}
+
+.description {
+}
+.about-me-accordion-container {
+}
+.title-desctption {
+}
+.accordion-btn-about-me {
+}
+.acc-icon-svg {
+}
+.ac-content {
+}
+.ac-pth {
+}
+.about-me-text {
+}
+.swiper {
+}
+.swp-cont-about-me {
+}
+.swiper-wrapper {
+}
+.swp-wrp-about-me {
+}
+.swiper-slide {
+}
+.btn-skills-switcher {
+}
+.btn-skills-switcher-svg {
+}
+.container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.about-me-header {
+  background-color: #242527;
+  padding: 32px 32px 272px 32px;
+  border-radius: 24px;
+  margin-bottom: 16px;
+}
+
+.about-me-header-prh {
+  font-family: inherit;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 117%;
+  letter-spacing: -0.03em;
+}
+.span-func {
+  color: #ed3b44;
+}
+.span-web {
+  color: #3b3b3b;
+}
+.image {
+  margin-bottom: 32px;
+}
+.description {
+  margin-bottom: 64px;
+}
+
+.accordion-btn-about-me {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  background: none;
+  border: 1px solid #3b3b3b;
+  border-radius: 100%;
+  padding: 0;
+  margin: 0;
+  font: inherit;
+  cursor: pointer;
+}
+
+.acc-icon-svg {
+  margin: auto;
+}
+
+.title-desctption {
+  display: inline;
+  align-items: flex-end;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: #3b3b3b;
+  margin-bottom: 24px;
+}
+
+.ac-pth.about-me-text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: -0.02em;
+  color: #fafafa;
+  margin-bottom: 20px;
+}
+
+.swiper.swp-cont-about-me {
+  display: flex;
+  flex-direction: row;
+  /* overflow: hidden; */
+
+  height: auto;
+}
+
+.swiper-wrapper.swp-wrp-about-me {
+  width: 100%;
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+}
+
+.swiper-slide {
+  display: flex;
+  background-color: transparent;
+  min-width: 200px;
+  min-height: 200px;
+  border-radius: 100%;
+  border: 1px solid #3b3b3b;
+  color: #fafafa;
+  font-weight: 500;
+  font-size: 20px;
+  letter-spacing: -0.02em;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-skills-switcher {
+  border: none;
+  background: none;
+  margin-left: 55px;
+}
+.acc-icon-svg.btn-skills-switcher-svg {
+  fill: red;
+}
+
+@media only screen and (min-width: 768px) {
+  .container.about-me-container {
+    max-width: 704px;
+    padding: 0 32px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .about-me-header-container {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+  }
+
+  .image {
+    margin-bottom: 32px;
+  }
+}
