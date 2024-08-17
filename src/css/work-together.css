@@ -61,7 +61,7 @@ screen and (min-device-pixel-ratio: 2) {
   border-bottom: 1px solid rgba(250, 250, 250, 20%);
   background-color: transparent;
   height: 44px;
-  padding-bottom: 20px;
+  padding-bottom: 5px;
   color: #fafafa;
 }
 
@@ -217,49 +217,3 @@ screen and (min-device-pixel-ratio: 2) {
   }
 }
 
-.backToHome {
-
-
-  margin-top: 32px;
-  text-align: right;
-}
-
-.backToHomeLink {
-
-
-  color: #fafafa;
-
-
-  font-size: 16px;
-
-  text-decoration: none;
-  transition: color 250ms ease;
-}
-
-.backToHomeLink:hover,
-.backToHomeLink:focus {
-  color: #ed3b44;
-}
-
-
-
-.backToHomeButton {
-
-  display: inline-block;
-  padding: 10px 20px;
-  font-size: 16px;
-
-
-  color: #fafafa;
-  background-color: #ed3b44;
-  border-radius: 5px;
-
-  text-decoration: none;
-
-  transition: background-color 250ms ease;
-}
-
-.backToHomeButton:hover,
-.backToHomeButton:focus {
-  background-color: #e0373f;
-}
