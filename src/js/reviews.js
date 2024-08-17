@@ -1,3 +1,4 @@
+import iziToast from 'izitoast';
 import Swiper from 'swiper';
 import {
   Autoplay,
@@ -75,6 +76,21 @@ export const reviewsSwiper = Swiper => {
             });
             
         }).catch(err => {
+
+            iziToast.error({
+                    title: 'Error!',
+                    titleSize: '16',
+                    titleColor: '#fafafa',
+                    message: `Reviews not found`,
+                    messageSize: '16',
+                    messageColor: '#fafafa',
+                    backgroundColor: '#1C1D20',
+                    theme: 'dark',
+                    position: 'bottomCenter',
+                    closeOnEscape: true,
+                    closeOnClick: true,
+                    });
+
             reviewsBox.innerHTML = '<p class="reviews-notfound">Not found</p>';
       });
 }
