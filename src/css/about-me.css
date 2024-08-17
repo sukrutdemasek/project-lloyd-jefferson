@@ -50,9 +50,6 @@
 }
 
 
-
-
-
 .accordion-btn-about-me{
     position: absolute;
     top: 0px;
@@ -101,7 +98,7 @@ margin-bottom: 20px;
     
     display: flex;
     flex-direction: row;
-    overflow: hidden;
+    /* overflow: hidden; */
    
     height: auto;
     
@@ -133,17 +130,32 @@ margin-bottom: 20px;
 
 
 .btn-skills-switcher{
-    /* position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    right: 0px;
-
-    z-index: 10;
-     */
      border: none;
      background: none;
     margin-left: 55px;
 }
 .acc-icon-svg.btn-skills-switcher-svg{
     fill: red;
+}
+
+@media only screen and (min-width: 768px){
+    .container.about-me-container{
+        max-width: 704px;
+        padding: 0 32px;
+    }
+
+
+}
+
+@media screen and (min-width: 1440px) {
+
+    .about-me-header-container{
+        display: flex;
+        flex-direction: row;
+       gap:16px;
+    }
+
+    .image {
+        margin-bottom: 32px;
+    }
 }
