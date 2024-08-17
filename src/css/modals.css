@@ -1,0 +1,133 @@
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1000;
+  overflow: hidden;
+}
+
+.modal-content {
+  position: relative;
+  top: -100%;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: top 0.5s ease;
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  width: 90%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+/* Для Header модального окна */
+.headerModal .modal-content {
+  width: 90%;
+  max-width: 343px;
+  height: auto;
+}
+
+.headerModal.show .headerContent {
+  top: 50px;
+}
+
+.headerNavList a {
+  font-family: 'Inter Tight', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: -0.02em;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  color: #fafafa;
+  transition: color 0.3s ease;
+}
+
+.headerNavList a:hover,
+.headerNavList a:focus {
+  color: #ed3b44;
+}
+
+/* Для Work Together модального окна */
+.workTogetherModal .modal-content {
+  width: 90%;
+  max-width: 343px;
+  height: 276px;
+  padding: 64px 32px;
+}
+
+.workTogetherTitleModal {
+  font-family: 'Inter Tight', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: #fafafa;
+}
+
+.workTogetherText {
+  font-family: 'Inter Tight', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: rgba(250, 250, 250, 0.6);
+}
+
+.close {
+  color: #aaa;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+}
+
+@media (max-width: 768px) {
+  .modal-content {
+    width: 90%;
+    max-width: 343px;
+  }
+}
+
+@media (max-width: 320px) {
+  .modal-content {
+    width: 90%;
+    max-width: 300px;
+  }
+}
+
+/* Стили для кнопки Menu */
+.menuButton {
+  font-family: 'Inter Tight', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: -0.02em;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  color: #fafafa;
+  background: none;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.menuButton:hover,
+.menuButton:focus {
+  color: #ed3b44;
+}
