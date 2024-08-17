@@ -1,0 +1,112 @@
+/*MOBILE VERSION*/
+.benefits-title {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: rgba(250, 250, 250, 0.4);
+}
+
+.benefits-container.container {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  padding: 0 16px;
+}
+.benefits-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 32px;
+}
+.benefits-list-element {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 64px;
+  border-radius: 20px;
+  padding: 24px;
+
+  background: #242527;
+}
+.benefits-svg {
+  width: 48px;
+  height: 48px;
+  background: #ed3b44;
+  border-radius: 10px;
+}
+.benefits-span {
+}
+.benefits-element-text {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 20px;
+}
+.benefits-element-headline {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  color: #fafafa;
+}
+.benefits-element-paragraph {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  color: rgba(250, 250, 250, 0.6);
+}
+.benefits-order-button {
+  display: inline-block;
+  border: 1px solid rgba(250, 250, 250, 0.2);
+  border-radius: 60px;
+  padding: 18px 36px;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: -0.02em;
+  color: #fafafa;
+}
+/*TABLET VERSION*/
+@media screen and (min-width: 768px) {
+  .benefits-container.container {
+    max-width: 704px;
+    margin: 0 auto;
+  }
+
+  .benefits-list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 16px;
+    margin-bottom: 64px;
+  }
+
+  .benefits-list-element {
+    flex: 1 1 calc(50% - 16px);
+    max-width: calc(50%);
+    box-sizing: border-box;
+  }
+}
+/*DESKTOP VERSION*/
+@media screen and (min-width: 1440px) {
+  .benefits-title {
+    padding-right: 412px;
+  }
+  .benefits-container.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    max-width: 1376px;
+  }
+  .benefits-div {
+    max-width: 50%;
+  }
+  .benefits-list {
+    display: flex;
+  }
+}
