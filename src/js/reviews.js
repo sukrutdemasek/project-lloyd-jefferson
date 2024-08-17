@@ -8,7 +8,7 @@ import {
   Controller,
 } from 'swiper/modules';
 
-
+// отримання з API відгуків // 
 const fetchReviews = async () => {
   const res = await fetch('https://portfolio-js.b.goit.study/api/reviews');
   if (!res.ok) {
@@ -17,6 +17,7 @@ const fetchReviews = async () => {
   return await res.json();
 };
 
+// створюємо один елемент відгуку //
 function createLiItem({ author, avatar_url, review }) {
     return `<li class="swiper-slide">
     <div class="reviews-item">
@@ -29,23 +30,20 @@ function createLiItem({ author, avatar_url, review }) {
   </li>`;
 }
 
+// створення списку відгуків //
 function createUlList(arrReviews) {
     return arrReviews.map(createLiItem).join('');
 }
 
-
+// основний скрипт по відгукам //
 export const reviewsSwiper = Swiper => { 
     const section = document.querySelector('.reviews-section');
-
-        const reviewsBox = section.querySelector('.swiper-wrapper');
-       
+    const reviewsBox = section.querySelector('.swiper-wrapper');
+    const reviewsSlider = section.querySelector('.swiper-reviews'); 
+    
         fetchReviews().then(data => { 
-
             const ulList = createUlList(data);
-            reviewsBox.insertAdjacentHTML('beforeend', ulList);
-
-            const reviewsSlider = section.querySelector('.swiper-reviews');
-  
+            reviewsBox.insertAdjacentHTML('beforeend', ulList);              
 
             const swiper = new Swiper(reviewsSlider, {
                 slidesPerView: 1,
@@ -74,9 +72,8 @@ export const reviewsSwiper = Swiper => {
                     prevEl: section.querySelector('.swiper-button-prev'),
                 },
     
-            });       
-
-
+            });
+            
         }).catch(err => {
             reviewsBox.innerHTML = '<p class="reviews-notfound">Not found</p>';
       });
