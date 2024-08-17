@@ -1,10 +1,6 @@
 @import url('swiper/css');
 @import url('../../node_modules/izitoast/dist/css/iziToast.min.css');
 
-.reviews-section {
-  padding-top: 64px;
-}
-
 .reviews-container {
   padding: 0 16px;
 }
@@ -20,6 +16,9 @@
 @media (min-width: 1440px) {
   .reviews-section {
     padding-top: 164px;
+  }
+  .reviews-container.container {
+    max-width: 1376px;
   }
 }
 
