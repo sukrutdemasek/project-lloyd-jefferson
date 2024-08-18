@@ -50,7 +50,8 @@ export const reviewsSwiper = Swiper => {
       const swiper = new Swiper(reviewsSlider, {
         slidesPerView: 1,
         autoHeight: true,
-        speed: 0,
+          speed: 600,
+         spaceBetween: 16,
         keyboard: {
           enabled: true,
           onlyInViewport: false,
@@ -90,7 +91,7 @@ export const reviewsSwiper = Swiper => {
         closeOnClick: true,
       });
 
-      reviewsBox.innerHTML = '<p class="reviews-notfound">Not found</p>';
+      reviewsSlider.innerHTML = '<p class="reviews-notfound">Not found</p>';
     });
 };
 
