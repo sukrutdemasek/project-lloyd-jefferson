@@ -92,5 +92,31 @@ document.addEventListener('keydown', (event) => {
   }
 });
 
+// Додаткове налаштування для клавіатурної навігації
+document.addEventListener('keydown', function(event) {
+  if (event.code === 'ArrowRight') {
+    swiper.slideNext();
+  } else if (event.code === 'ArrowLeft') {
+    swiper.slidePrev();
+  }
+});
+
 // Оновлення кнопок при зміні слайдів
 swiperInstance.on('slideChange', updateNavigationButtons);
+
+// Обробник подій для кнопок
+document.addEventListener('DOMContentLoaded', () => {
+  //всі кнопок з класом 'projects-button'
+  const buttons = document.querySelectorAll('.projects-button');
+
+  // обробник події кліку на кожну кнопку
+  buttons.forEach(button => {
+    button.addEventListener('click', () => {
+      // URL з атрибута data-url
+      const url = button.getAttribute('data-url');
+      if (url) {
+        window.location.href = url;
+      }
+    });
+  });
+});
