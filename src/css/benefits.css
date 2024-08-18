@@ -32,10 +32,10 @@
   background: #242527;
 }
 .benefits-svg {
-    margin: 12px;
+  margin: 12px;
 }
 .benefits-span {
-    width: 48px;
+  width: 48px;
   height: 48px;
   background: #ed3b44;
   border-radius: 10px;
@@ -94,12 +94,9 @@
 }
 /*DESKTOP VERSION*/
 @media screen and (min-width: 1440px) {
-  .benefits-title {
-    padding-right: 412px;
-  }
   .benefits-container.container {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     flex-direction: row;
     flex-wrap: nowrap;
     max-width: 1376px;
