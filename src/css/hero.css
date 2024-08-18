@@ -199,7 +199,12 @@ body, html {
     }
 
     #hero .hero-box {
-        width: 1230px;
-        margin-right: 0;
+        width: 1376px;
+        gap: 243px;
+    }
+    .main-headline{
+        padding: 0 146px;
+        max-width: 1084px;
+
     }
 }
