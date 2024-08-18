@@ -1,0 +1,131 @@
+/* Общие стили для модальных окон */
+.modal {
+  display: flex; /* Сделать модальное окно видимым */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Полупрозрачный фон */
+  justify-content: center;
+  align-items: center;
+  opacity: 1; /* Сделать непрозрачным */
+}
+.modal-content {
+  background-color: #333;
+  padding: 20px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 500px;
+  text-align: center;
+}
+
+/* Для Header модального окна */
+.headerModal .modal-content {
+  width: 90%;
+  max-width: 343px;
+  height: auto;
+}
+
+.headerModal.show .headerContent {
+  top: 50px;
+}
+
+.headerNavList a {
+  font-family: 'Inter Tight', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: -0.02em;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  color: #fafafa;
+  transition: color 0.3s ease;
+}
+
+.headerNavList a:hover,
+.headerNavList a:focus {
+  color: #ed3b44;
+}
+
+/* Для Work Together модального окна */
+.workTogetherModal .modal-content {
+  width: 90%;
+  max-width: 343px;
+  height: 276px;
+  padding: 64px 32px;
+}
+
+.workTogetherTitleModal {
+  font-family: 'Inter Tight', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: #fafafa;
+}
+
+.workTogetherText {
+  font-family: 'Inter Tight', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: rgba(250, 250, 250, 0.6);
+}
+
+/* Стили для крестика (закрытия модального окна) */
+.close {
+  color: #aaa;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+}
+
+/* Адаптивность для модальных окон */
+@media (max-width: 768px) {
+  .modal-content {
+    width: 90%;
+    max-width: 343px;
+  }
+}
+
+@media (max-width: 320px) {
+  .modal-content {
+    width: 90%;
+    max-width: 300px;
+  }
+}
+
+/* Стили для кнопки Menu */
+.menuButton {
+  font-family: 'Inter Tight', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: -0.02em;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  color: #fafafa;
+  background: none;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* .menuButton:hover,
+.menuButton:focus {
+  color: #ed3b44;
+} */
