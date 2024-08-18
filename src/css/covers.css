@@ -5,17 +5,19 @@
 }
 
 .covers-section {
-  padding-bottom: 64px;
+  margin-bottom: 64px;
+  max-width: 100%;
+  overflow: hidden;
 }
 
 .content {
-  width: 375px;
   height: 508px;
   position: relative;
   background: url(../img/covers/bgc-min.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  overflow: hidden;
 }
 
 @media screen and (min-resolution: 2dppx), (min-resolution: 192dpi) {
@@ -29,7 +31,7 @@
 
 .marquee {
   position: absolute;
-  right: -400px;
+  right: -1800px;
   left: 0;
   overflow: hidden;
   font-family: 'Pridi', sans-serif;
@@ -39,18 +41,23 @@
 }
 
 .marquee-inner {
-  height: 320px;
   display: flex;
+  overflow: hidden;
   transform: rotate(16deg);
+  height: 100%;
+  width: 100%;
 }
 
 .marquee-line {
   flex-shrink: 0;
   margin-right: 10px;
+  margin-bottom: 10px;
+  margin-top: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: calc(100% / 10);
+  width: 282.29px;
+  height: 162.94px;
   white-space: nowrap;
   animation-name: marqueeLine;
   animation-duration: 5s;
@@ -58,24 +65,11 @@
   animation-iteration-count: infinite;
 }
 
-.marquee-line img {
-  display: inline-block;
-  height: 160px;
-}
-
-.marquee-inner,
-.marquee-line {
-  padding: 0;
-  border: none;
-}
-
-.marquee-inner {
-  margin: 0;
-  padding: 0;
-}
-
-.marquee-line {
-  margin: 0;
+.project-img img {
+  height: 162.94px;
+  width: 282.29px;
+  object-fit: cover;
+  object-position: center;
 }
 
 @keyframes marqueeLine {
@@ -90,19 +84,22 @@
 
 @media screen and (min-width: 768px) {
   .covers-section {
-    padding-bottom: 96px;
+    margin-bottom: 96px;
   }
   .content {
-    width: 768px;
     height: 960px;
   }
+  .marquee-line {
+    width: 544px;
+    height: 314px;
+  }
+  .project-img img {
+    height: 314px;
+    width: 544px;
+  }
 }
-
 @media screen and (min-width: 1440px) {
   .covers-section {
-    padding-bottom: 164px;
-  }
-  .content {
-    width: 1440px;
+    margin-bottom: 225px;
   }
 }
