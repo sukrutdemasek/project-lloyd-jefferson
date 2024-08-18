@@ -1,4 +1,3 @@
-/* Общие стили для модальных окон */
 .modal {
   display: flex;
   position: fixed;
@@ -10,6 +9,7 @@
   justify-content: center;
   align-items: center;
   opacity: 1;
+  z-index: 1000;
 }
 
 .modal-content {
@@ -18,6 +18,7 @@
   text-align: center;
   position: relative;
   box-sizing: border-box;
+  z-index: 1001;
 }
 
 .close {
@@ -27,14 +28,145 @@
   font-size: 20px;
   cursor: pointer;
   color: #fafafa;
+  z-index: 1002;
 }
 
-.close:hover {
-  color: #ff0000;
+.headerModal {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s ease-in-out;
+  z-index: 1000;
 }
 
-.close:active {
-  color: #cc0000;
+.headerModal.show {
+  visibility: visible;
+  opacity: 1;
+}
+
+.headerModal .modal-content {
+  width: 375px;
+  height: 812px;
+  padding: 20px;
+  background-image: url('../img/modal-img/modal-x1.jpg');
+  background-size: cover;
+  background-position: center;
+  border-radius: 0;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease-in-out;
+  z-index: 1001;
+}
+
+@media (min-resolution: 2dppx) {
+  .headerModal .modal-content {
+    background-image: url('../img/modal-img/modal-x2.jpg');
+  }
+}
+
+.headerModal.show .modal-content {
+  transform: translateX(0);
+}
+
+.headerNav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.headerNavList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 66px;
+  height: 112px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.headerNavList li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.headerNavList li a {
+  font-family: 'Inter Tight', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: -0.04em;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  color: #fafafa;
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+.headerNavList li a:hover {
+  color: #ed3b44;
+}
+
+.headerNavList li a:active {
+  color: #ed3b44;
+}
+
+@media (max-width: 320px) {
+  .headerModal {
+    display: flex;
+  }
+}
+
+@media (min-width: 768px) {
+  .headerModal {
+    display: none;
+  }
+}
+
+/* Стили для кнопки */
+.button-container {
+  position: absolute;
+  bottom: 64px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  z-index: 1001;
+}
+
+.order-button {
+  border-radius: 60px;
+  padding: 14px 31px;
+  width: 164px;
+  height: 45px;
+  background: #ed3b44;
+  border: none;
+  cursor: pointer;
+  font-family: 'Inter Tight', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: -0.02em;
+  color: #fafafa;
+  transition: background 0.3s ease;
+}
+
+.order-button:hover {
+  background: #e0373f;
+}
+
+.order-button:active {
+  background: #e0373f;
+}
+
+/* Модальное окно Work Together - скрыто по умолчанию */
+.workTogetherModal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
 }
 
 .workTogetherModal .modal-content {
@@ -45,6 +177,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 1001;
 }
 
 .workTogetherContainer {
@@ -57,6 +190,7 @@
   align-items: center;
   background-color: #1c1d20;
   box-sizing: border-box;
+  z-index: 1002;
 }
 
 .workTogetherModal h2 {
@@ -81,7 +215,7 @@
   margin: 0;
 }
 
-@media (min-width: 320px) {
+@media (max-width: 320px) {
   .workTogetherModal .modal-content {
     border: 1px solid rgba(250, 250, 250, 0.1);
     border-radius: 20px;
@@ -102,7 +236,6 @@
   }
 }
 
-/* Адаптация для планшетов (768px и выше) */
 @media (min-width: 768px) {
   .workTogetherModal .modal-content {
     border: 1px solid rgba(250, 250, 250, 0.1);

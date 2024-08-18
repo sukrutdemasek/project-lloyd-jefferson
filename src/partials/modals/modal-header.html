@@ -9,5 +9,36 @@
         <li><a href="#faq">FAQ</a></li>
       </ul>
     </nav>
+    <div class="button-container">
+      <button type="button" id="orderButton" class="order-button">
+        Order the project
+      </button>
+    </div>
   </div>
 </div>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    // Функция для показа модального окна
+    function showModal() {
+      const modal = document.querySelector('.headerModal');
+      if (modal) {
+        modal.classList.add('show');
+      }
+    }
+
+    // Функция для скрытия модального окна
+    function hideModal() {
+      const modal = document.querySelector('.headerModal');
+      if (modal) {
+        modal.classList.remove('show');
+      }
+    }
+
+    // Показ модального окна через 3 секунду после загрузки страницы
+    setTimeout(showModal, 3000);
+
+    document
+      .querySelector('.headerModal .close')
+      .addEventListener('click', hideModal);
+  });
+</script>
