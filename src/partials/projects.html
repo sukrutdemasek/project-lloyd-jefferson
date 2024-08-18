@@ -1,5 +1,148 @@
 <!-- Section Projects -->
-
 <section class="projects-section">
-  <h2 class="section-headline">Projects</h2>
+  <div class="container projects-container">
+    <h2 class="section-headline">Projects</h2>
+    <!-- Slider main container -->
+    <div class="swiper swiper-projects-container">
+      <!-- Additional required wrapper -->
+      <ul class="swiper-wrapper">
+        <!-- Slides -->
+        <li class="swiper-slide swiper-slide-projects">
+          <div class="projects-technologies">
+            <ul class="technologies-list">
+              <li class="technologies-item">
+                <a class="item-content">#react</a>
+              </li>
+              <li class="technologies-item">
+                <a class="item-content">#js</a>
+              </li>
+              <li class="technologies-item">
+                <a class="item-content">#node js</a>
+              </li>
+              <li class="technologies-item">
+                <a class="item-content">#git</a>
+              </li>
+            </ul>
+            <h3 class="projects-title">
+              Programming Across<br>
+              Borders: Ideas,<br>
+              Technologies, Innovations
+            </h3>
+            <button class="projects-button">See project</button>
+          </div>
+          <div class="projects-demo">
+            <picture>
+              <!-- desktop screen -->
+              <source media="(min-width: 1440px)" srcset="../img/projects-img/bookstore_desktop@1x-min.jpg 1x,
+                      ../img/projects-img/bookstore_desktop@2x-min.jpg 2x">
+              <!-- tablet screen -->
+              <source media="(min-width: 768px)" srcset="../img/projects-img/bookstore_tablet@1x-min.jpg 1x,
+                      ../img/projects-img/bookstore_tablet@2x-min.jpg 2x">
+              <!-- phone screen -->
+              <source media="(max-width: 767px)" srcset="../img/projects-img/bookstore_mobile@1x-min.jpg 1x,
+                      ../img/projects-img/bookstore_mobile@2x-min.jpg 2x">
+              <img src="../img/projects-img/bookstore_mobile@1x-min.jpg"
+                alt="Mobile with a mobile version of the bookstore project" width="614" height="385" loading="lazy">
+            </picture>
+          </div>
+        </li>
+        <li class="swiper-slide swiper-slide-projects">
+          <div class="projects-technologies">
+            <ul class="technologies-list">
+              <li class="technologies-item">
+                <a class="item-content">#react</a>
+              </li>
+              <li class="technologies-item">
+                <a class="item-content">#js</a>
+              </li>
+              <li class="technologies-item">
+                <a class="item-content">#node js</a>
+              </li>
+              <li class="technologies-item">
+                <a class="item-content">#git</a>
+              </li>
+            </ul>
+            <h3 class="projects-title">
+              Programming Across<br>
+              Borders: Ideas,<br>
+              Technologies, Innovations
+            </h3>
+            <button class="projects-button">See project</button>
+          </div>
+          <div class="projects-demo">
+            <picture>
+              <!-- desktop screen -->
+              <source media="(min-width: 1440px)" srcset="../img/projects-img/petlove_desktop@1x-min.jpg 1x,
+                                  ../img/projects-img/petlove_desktop@2x-min.jpg 2x">
+              <!-- tablet screen -->
+              <source media="(min-width: 768px)" srcset="../img/projects-img/petlove_tablet@1x-min.jpg 1x,
+                                  ../img/projects-img/petlove_tablet@2x-min.jpg 2x">
+              <!-- phone screen -->
+              <source media="(max-width: 767px)" srcset="../img/projects-img/petlove_mobile@1x-min.jpg 1x,
+                                  ../img/projects-img/petlove_mobile@2x-min.jpg 2x">
+              <img src="../img/projects-img/petlove_mobile@1x-min.jpg" alt="People play with a dog" width="614"
+                height="385" loading="lazy">
+            </picture>
+          </div>
+        </li
+        >
+        <li class="swiper-slide swiper-slide-projects">
+          <div class="projects-technologies">
+            <ul class="technologies-list">
+              <li class="technologies-item">
+                <a class="item-content">#react</a>
+              </li>
+              <li class="technologies-item">
+                <a class="item-content">#js</a>
+              </li>
+              <li class="technologies-item">
+                <a class="item-content">#node js</a>
+              </li>
+              <li class="technologies-item">
+                <a class="item-content">#git</a>
+              </li>
+            </ul>
+            <h3 class="projects-title">
+              Programming Across<br>
+              Borders: Ideas,<br>
+              Technologies, Innovations
+            </h3>
+            <button class="projects-button">See project</button>
+          </div>
+          <div class="projects-demo">
+            <picture>
+              <!-- desktop screen -->
+              <source media="(min-width: 1440px)" srcset="../img/projects-img/project_students_desktop@1x-min.jpg 1x,
+                                              ../img/projects-img/project_students_desktop@2x-min.jpg 2x">
+              <!-- tablet screen -->
+              <source media="(min-width: 768px)" srcset="../img/projects-img/project_students_tablet@1x-min.jpg 1x,
+                                              ../img/projects-img/project_students_tablet@2x-min.jpg 2x">
+              <!-- phone screen -->
+              <source media="(max-width: 767px)" srcset="../img/projects-img/project_students_mobile@1x-min.jpg 1x,
+                                              ../img/projects-img/project_students_mobile@2x-min.jpg 2x">
+              <img src="../img/projects-img/project_students_mobile@1x-min.jpg" alt="Students sit and chat" width="614"
+                height="385" loading="lazy">
+            </picture>
+          </div>
+        </li
+        >
+        <!-- Add more swiper-slide elements for additional projects -->
+      </ul>
+      <!-- Add Navigation -->
+      <!-- позиціонування кнопок поки -->
+      <div class="swiper-btn-container">
+        <div class="swiper-button-prev">
+          <svg class="projects-arrow-icon" width="32" height="32">
+            <use href="./img/sprite.svg#arrow-right"></use>
+          </svg>
+        </div>
+        <div class="swiper-button-next">
+          <svg class="projects-arrow-icon" width="32" height="32">
+            <use href="./img/sprite.svg#arrow-right"></use>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
+<script type="module" src="../js/projects.js"></script>
