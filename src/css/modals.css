@@ -1,71 +1,76 @@
 /* Общие стили для модальных окон */
 .modal {
-  display: flex; /* Сделать модальное окно видимым */
+  display: flex;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* Полупрозрачный фон */
+  background-color: rgba(0, 0, 0, 0.5);
   justify-content: center;
   align-items: center;
-  opacity: 1; /* Сделать непрозрачным */
+  opacity: 1;
 }
+
 .modal-content {
-  background-color: #333;
-  padding: 20px;
-  border-radius: 10px;
-  width: 90%;
-  max-width: 500px;
+  background-color: #1c1d20;
+  border-radius: 20px;
   text-align: center;
+  position: relative;
+  box-sizing: border-box;
 }
 
-/* Для Header модального окна */
-.headerModal .modal-content {
-  width: 90%;
-  max-width: 343px;
-  height: auto;
-}
-
-.headerModal.show .headerContent {
-  top: 50px;
-}
-
-.headerNavList a {
-  font-family: 'Inter Tight', sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  letter-spacing: -0.02em;
-  text-decoration: underline;
-  text-decoration-skip-ink: none;
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  cursor: pointer;
   color: #fafafa;
-  transition: color 0.3s ease;
 }
 
-.headerNavList a:hover,
-.headerNavList a:focus {
-  color: #ed3b44;
+.close:hover {
+  color: #ff0000;
 }
 
-/* Для Work Together модального окна */
+.close:active {
+  color: #cc0000;
+}
+
 .workTogetherModal .modal-content {
-  width: 90%;
-  max-width: 343px;
-  height: 276px;
-  padding: 64px 32px;
+  border: 1px solid rgba(250, 250, 250, 0.1);
+  padding: 64px;
+  width: 492px;
+  height: 246px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.workTogetherTitleModal {
+.workTogetherContainer {
+  width: 100%;
+  max-width: 368px;
+  height: 118px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1c1d20;
+  box-sizing: border-box;
+}
+
+.workTogetherModal h2 {
   font-family: 'Inter Tight', sans-serif;
   font-weight: 600;
   font-size: 20px;
   line-height: 1.5;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.04em;
   text-align: center;
   color: #fafafa;
+  margin: 0 0 16px 0;
 }
 
-.workTogetherText {
+.workTogetherModal p {
   font-family: 'Inter Tight', sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -73,59 +78,61 @@
   letter-spacing: -0.02em;
   text-align: center;
   color: rgba(250, 250, 250, 0.6);
+  margin: 0;
 }
 
-/* Стили для крестика (закрытия модального окна) */
-.close {
-  color: #aaa;
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  font-size: 28px;
-  font-weight: bold;
-  cursor: pointer;
-  z-index: 1001;
-}
+@media (min-width: 320px) {
+  .workTogetherModal .modal-content {
+    border: 1px solid rgba(250, 250, 250, 0.1);
+    border-radius: 20px;
+    padding: 64px 32px;
+    width: 343px;
+    height: 276px;
+  }
 
-.close:hover,
-.close:focus {
-  color: black;
-}
+  .workTogetherContainer {
+    width: 279px;
+    height: 148px;
+    border: none;
+    padding: 0;
+  }
 
-/* Адаптивность для модальных окон */
-@media (max-width: 768px) {
-  .modal-content {
-    width: 90%;
-    max-width: 343px;
+  .close {
+    font-size: 24px;
   }
 }
 
-@media (max-width: 320px) {
-  .modal-content {
-    width: 90%;
-    max-width: 300px;
+/* Адаптация для планшетов (768px и выше) */
+@media (min-width: 768px) {
+  .workTogetherModal .modal-content {
+    border: 1px solid rgba(250, 250, 250, 0.1);
+    border-radius: 20px;
+    padding: 64px;
+    width: 492px;
+    height: 246px;
+  }
+
+  .workTogetherContainer {
+    width: 364px;
+    height: 118px;
+    border: none;
+    padding: 0;
   }
 }
 
-/* Стили для кнопки Menu */
-.menuButton {
-  font-family: 'Inter Tight', sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  letter-spacing: -0.02em;
-  text-decoration: underline;
-  text-decoration-skip-ink: none;
-  color: #fafafa;
-  background: none;
-  border: none;
-  cursor: pointer;
-  position: absolute;
-  top: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-}
+@media (min-width: 1440px) {
+  .workTogetherModal .modal-content {
+    border: 1px solid rgba(250, 250, 250, 0.1);
+    border-radius: 20px;
+    padding: 64px;
+    width: 492px;
+    height: 246px;
+  }
 
-/* .menuButton:hover,
-.menuButton:focus {
-  color: #ed3b44;
-} */
+  .workTogetherContainer {
+    width: 364px;
+    height: 118px;
+    border: none;
+    padding: 0;
+  }
+}
