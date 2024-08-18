@@ -44,10 +44,6 @@
   width: 282px;
   height: 162.94px;
   white-space: nowrap;
-  animation-name: marqueeLine;
-  animation-duration: 5s;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
 }
 .project-img img {
   height: 162.94px;
@@ -88,4 +84,10 @@
   .covers-section {
     margin-bottom: 225px;
   }
+}
+.animate {
+  animation-name: marqueeLine;
+  animation-duration: 5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
 }
