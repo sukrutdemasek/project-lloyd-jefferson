@@ -2,7 +2,7 @@ import Swiper from 'swiper';
 import 'swiper/css';
 
 // Ініціалізація Swiper 
-const swiperContainer = document.querySelector('.swiper');
+const swiperContainer = document.querySelector('.swiper-projects-container');
 const swiper = new Swiper(swiperContainer, {
   direction: 'horizontal',
   loop: false,
@@ -10,12 +10,12 @@ const swiper = new Swiper(swiperContainer, {
   spaceBetween: 50,
 
   pagination: {
-    el: '.swiper-pagination',
+    el: '.swiper-projects-container .swiper-pagination',
     clickable: true,
   },
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: '.swiper-projects-container .swiper-button-next',
+    prevEl: '.swiper-projects-container .swiper-button-prev',
   },
   keyboard: {
     enabled: true,
@@ -42,8 +42,8 @@ const swiper = new Swiper(swiperContainer, {
 const swiperInstance = swiperContainer.swiper;
 
 // Додавання обробників подій до кнопок навігації
-const nextButton = document.querySelector('.swiper-button-next');
-const prevButton = document.querySelector('.swiper-button-prev');
+const nextButton = document.querySelector('.swiper-projects-container .swiper-button-next');
+const prevButton = document.querySelector('.swiper-projects-container .swiper-button-prev');
 
 function updateNavigationButtons() {
   if (swiperInstance.isEnd) {
