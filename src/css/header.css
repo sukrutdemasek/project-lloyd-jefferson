@@ -75,6 +75,7 @@ align-items: center;
 .container.header-container {
   gap: 151px;
   padding: 32px;
+ 
 }
 .navigation{
   max-width: 384px;

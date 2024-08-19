@@ -6,7 +6,7 @@
 
 /* FAQ container for small screens */
 .container.faq-container {
-  max-width: 343px;
+  
   margin: 0 auto;
   padding: 0 16px;
   display: flex;
@@ -100,7 +100,7 @@ ul.accordion-container li.ac .ac-panel p.ac-text.faq-text {
 /* Medium screen adjustments */
 @media only screen and (min-width: 768px) {
   .container.faq-container {
-    max-width: 704px;
+  
     padding: 0 32px;
   }
 
@@ -134,10 +134,7 @@ ul.accordion-container li.ac .ac-panel p.ac-text.faq-text {
 
 /* Large screen adjustments */
 @media screen and (min-width: 1440px) {
-  .container.faq-container {
-    max-width: 1376px;
-  }
-
+ 
   ul.accordion-container {
     display: flex;
     flex-wrap: wrap;
