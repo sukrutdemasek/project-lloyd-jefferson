@@ -15,14 +15,76 @@
     <script type="module" crossorigin src="/project-lloyd-jefferson/commonHelpers.js"></script>
     <link rel="modulepreload" crossorigin href="/project-lloyd-jefferson/assets/vendor-Cg3xXCPt.js">
     <link rel="stylesheet" crossorigin href="/project-lloyd-jefferson/assets/vendor-CazzcV1y.css">
-    <link rel="stylesheet" crossorigin href="/project-lloyd-jefferson/assets/index-C5SNkN4A.css">
+    <link rel="stylesheet" crossorigin href="/project-lloyd-jefferson/assets/index-EhrVOi5n.css">
   </head>
   <body>
     <!--Adding partials-->
 
     <!-- Header -->
 
-<header class="header"></header>
+<header class="header">
+  <div class="container header-container">
+    <nav class="navigation">
+      <div class="logo-header">
+        <a id="home" href="#" class="logo-link">
+          <picture class="image">
+            <source
+              srcset="/project-lloyd-jefferson/assets/logo-LHpVb0yN.png 1x, /project-lloyd-jefferson/assets/logo-mob-2x-BneEGmLp.png 2x"
+              media="(max-width: 767px)"
+            />
+            <source
+              srcset="/project-lloyd-jefferson/assets/logo-LHpVb0yN.png 1x, /project-lloyd-jefferson/assets/logo-mob-2x-BneEGmLp.png 2x"
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="/project-lloyd-jefferson/assets/logo-LHpVb0yN.png 1x, /project-lloyd-jefferson/assets/logo-mob-2x-BneEGmLp.png 2x"
+              media="(min-width: 1440px)"
+            />
+            <img
+              src="/project-lloyd-jefferson/assets/logo-LHpVb0yN.png"
+              alt="Logo"
+              width="80"
+              height="80"
+              loading="lazy"
+            />
+          </picture>
+          <span class="logo-text">jefferson*</span>
+        </a>
+      </div>
+
+      <button class="burger" type="button" aria-label="Open menu" data-menu-open>
+        <svg class="burger-icon" width="28" height="28">
+          <use href="/project-lloyd-jefferson/assets/sprite-Tb_kIbtp.svg#burger"></use>
+        </svg>
+      </button>
+
+      <div class="menu-header">
+        <a href="#" class="header-nav-link menu-link">Menu</a>
+        <ul class="dropdown-menu">
+          <li class="nav-link-item">
+            <a href="#about-me" class="header-nav-link">About me</a>
+          </li>
+          <li class="nav-link-item">
+            <a href="#benefits" class="header-nav-link">Benefits</a>
+          </li>
+          <li class="nav-link-item">
+            <a href="#projects" class="header-nav-link">Projects</a>
+          </li>
+          <li class="nav-link-item">
+            <a href="#faq" class="header-nav-link">FAQ</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <button class="header-button">
+      <a href="#work-together" class="header-button-link">Order the project</a>
+    </button>
+  </div>
+</header>
+
+<!-- JavaScript to handle menu interactions -->
+
 
     <main>
       <!-- Section Hero -->
@@ -99,7 +161,7 @@
         <li class="benefits-list-element">
           <span class="benefits-span">
             <svg class="benefits-svg" width="20" height="20">
-              <use class="benefits-svg-use" href="/project-lloyd-jefferson/assets/sprite-CAQYjYmm.svg#user"></use>
+              <use class="benefits-svg-use" href="/project-lloyd-jefferson/assets/sprite-Tb_kIbtp.svg#user"></use>
             </svg>
           </span>
           <div class="benefits-element-text">
@@ -114,7 +176,7 @@
         <li class="benefits-list-element">
           <span class="benefits-span">
             <svg class="benefits-svg" width="24" height="24">
-              <use href="/project-lloyd-jefferson/assets/sprite-CAQYjYmm.svg#message"></use>
+              <use href="/project-lloyd-jefferson/assets/sprite-Tb_kIbtp.svg#message"></use>
             </svg>
           </span>
           <div class="benefits-element-text">
@@ -129,7 +191,7 @@
         <li class="benefits-list-element">
           <span class="benefits-span">
             <svg class="benefits-svg" width="24" height="24">
-              <use href="/project-lloyd-jefferson/assets/sprite-CAQYjYmm.svg#brush"></use>
+              <use href="/project-lloyd-jefferson/assets/sprite-Tb_kIbtp.svg#brush"></use>
             </svg>
           </span>
           <div class="benefits-element-text">
@@ -144,7 +206,7 @@
         <li class="benefits-list-element">
           <span class="benefits-span">
             <svg class="benefits-svg" width="24" height="24">
-              <use href="/project-lloyd-jefferson/assets/sprite-CAQYjYmm.svg#hourglass"></use>
+              <use href="/project-lloyd-jefferson/assets/sprite-Tb_kIbtp.svg#hourglass"></use>
             </svg>
           </span>
           <div class="benefits-element-text">
@@ -345,12 +407,12 @@
       <div class="swiper-btn-container">
         <div class="swiper-button-prev">
           <svg class="projects-arrow-icon" width="32" height="32">
-            <use href="/project-lloyd-jefferson/assets/sprite-CAQYjYmm.svg#arrow-right"></use>
+            <use href="/project-lloyd-jefferson/assets/sprite-Tb_kIbtp.svg#arrow-right"></use>
           </svg>
         </div>
         <div class="swiper-button-next">
           <svg class="projects-arrow-icon" width="32" height="32">
-            <use href="/project-lloyd-jefferson/assets/sprite-CAQYjYmm.svg#arrow-right"></use>
+            <use href="/project-lloyd-jefferson/assets/sprite-Tb_kIbtp.svg#arrow-right"></use>
           </svg>
         </div>
       </div>
@@ -368,7 +430,7 @@
           <button type="button" id="faq-question" class="ac-trigger faq-button">
             What programming languages are most often used in your project? 
             <svg class="faq-arrow-icon" width="20" height="20">
-              <use href="/project-lloyd-jefferson/assets/sprite-CAQYjYmm.svg#arrow-down"></use>
+              <use href="/project-lloyd-jefferson/assets/sprite-Tb_kIbtp.svg#arrow-down"></use>
             </svg>
           </button>
         </h3>
@@ -384,7 +446,7 @@
           <button type="button" class="ac-trigger faq-button">
             What are the deadlines for the project?
             <svg class="faq-arrow-icon" width="20" height="20">
-              <use href="/project-lloyd-jefferson/assets/sprite-CAQYjYmm.svg#arrow-down"></use>
+              <use href="/project-lloyd-jefferson/assets/sprite-Tb_kIbtp.svg#arrow-down"></use>
             </svg>
           </button>
         </h3>
@@ -400,7 +462,7 @@
           <button type="button" class="ac-trigger faq-button">
             What payment methods do you accept?
             <svg class="faq-arrow-icon" width="20" height="20">
-              <use href="/project-lloyd-jefferson/assets/sprite-CAQYjYmm.svg#arrow-down"></use>
+              <use href="/project-lloyd-jefferson/assets/sprite-Tb_kIbtp.svg#arrow-down"></use>
             </svg>
           </button>
         </h3>
@@ -416,7 +478,7 @@
           <button type="button" class="ac-trigger faq-button">
             How can I contact you?
             <svg class="faq-arrow-icon" width="20" height="20">
-              <use href="/project-lloyd-jefferson/assets/sprite-CAQYjYmm.svg#arrow-down"></use>
+              <use href="/project-lloyd-jefferson/assets/sprite-Tb_kIbtp.svg#arrow-down"></use>
             </svg>
           </button>
         </h3>
@@ -432,7 +494,7 @@
           <button type="button" class="ac-trigger faq-button">
             Do you provide advice or support?
             <svg class="faq-arrow-icon" width="20" height="20">
-              <use href="/project-lloyd-jefferson/assets/sprite-CAQYjYmm.svg#arrow-down"></use>
+              <use href="/project-lloyd-jefferson/assets/sprite-Tb_kIbtp.svg#arrow-down"></use>
             </svg>
           </button>
         </h3>
@@ -448,7 +510,7 @@
           <button type="button" class="ac-trigger faq-button">
             What does the process of developing a software product look like from idea to implementation?
             <svg class="faq-arrow-icon" width="20" height="20">
-              <use href="/project-lloyd-jefferson/assets/sprite-CAQYjYmm.svg#arrow-down"></use>
+              <use href="/project-lloyd-jefferson/assets/sprite-Tb_kIbtp.svg#arrow-down"></use>
             </svg>
           </button>
         </h3>
@@ -480,12 +542,12 @@
       <div class="reviews__nav">
         <div class="swiper-button-prev">
           <svg width="32" height="32">
-            <use href="/project-lloyd-jefferson/assets/sprite-CAQYjYmm.svg#arrow-right"></use>
+            <use href="/project-lloyd-jefferson/assets/sprite-Tb_kIbtp.svg#arrow-right"></use>
           </svg>
         </div>
         <div class="swiper-button-next">
           <svg width="32" height="32">
-            <use href="/project-lloyd-jefferson/assets/sprite-CAQYjYmm.svg#arrow-right"></use>
+            <use href="/project-lloyd-jefferson/assets/sprite-Tb_kIbtp.svg#arrow-right"></use>
           </svg>
         </div>
       </div>
