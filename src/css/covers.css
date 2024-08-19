@@ -3,6 +3,9 @@
 *::after {
   box-sizing: border-box;
 }
+.container.covers-container {
+  max-width: 375px;
+}
 .covers-section {
   margin-bottom: 64px;
   max-width: 100%;
@@ -57,6 +60,9 @@
   }
 }
 @media screen and (min-width: 768px) {
+  .container.covers-container {
+    max-width: 768px;
+  }
   .covers-section {
     margin-bottom: 96px;
   }
@@ -81,6 +87,9 @@
   }
 }
 @media screen and (min-width: 1440px) {
+  .container.covers-container {
+    max-width: 1440px;
+  }
   .covers-section {
     margin-bottom: 225px;
   }
