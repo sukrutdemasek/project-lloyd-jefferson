@@ -35,6 +35,7 @@ body, html {
     text-transform: uppercase;
     color: #fafafa;
     text-align: left;
+    
 }
 
 .hero-contact-info {
@@ -139,7 +140,7 @@ body, html {
 
     #hero .hero-box {
         gap: 187px;
-        width: 704px;
+       
     }
 
     .main-headline {
@@ -199,12 +200,12 @@ body, html {
     }
 
     #hero .hero-box {
-        width: 1376px;
+        
         gap: 243px;
     }
     .main-headline{
-        padding: 0 146px;
-        max-width: 1084px;
+        padding-left: 146px;
+        
 
     }
 }

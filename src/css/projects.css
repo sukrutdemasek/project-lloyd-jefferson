@@ -6,7 +6,7 @@
 /*------tools FOR Mobile-----*/
 
 .container.projects-container {
-    max-width: 343px;
+    
     padding-left: 16px;
     padding-right: 16px;
 }
@@ -144,7 +144,7 @@
 @media only screen and (min-width: 768px) {
 
     .container.projects-container {
-            max-width: 704px;
+           
             padding: 0 32px;
         }
     .projects-technologies {
@@ -187,9 +187,7 @@
 
 /*------tools FOR Desktop-----*/
 @media screen and (min-width: 1440px) {
-    .container.projects-container {
-            max-width: 1376px;
-        }
+   
 
     li.swiper-slide-projects {
         display: inline-flex;

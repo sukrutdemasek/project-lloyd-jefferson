@@ -42,18 +42,18 @@ body {
 @media only screen and (min-width: 375px) {
   .container {
     min-width: 320px;
-    max-width: 343px;
+    max-width: 375px;
   }
 }
 
 @media only screen and (min-width: 768px) {
   .container {
-    max-width: 704px;
+    max-width: 768px;
   }
 }
 
 @media only screen and (min-width: 1440px) {
   .container {
-    max-width: 1348px;
+    max-width: 1440px;
   }
 }
