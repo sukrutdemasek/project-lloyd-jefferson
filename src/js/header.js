@@ -1,7 +1,5 @@
-/Для відображення випадаючого меню dropdown-menu /;
-
-document.querySelector('.menu-link').addEventListener('click', function (e) {
-  e.preventDefault();
-  const dropdown = document.querySelector('.dropdown-menu');
-  dropdown.classList.toggle('show');
+document.querySelector('.menu-link').addEventListener('click', function (event) {
+  event.preventDefault();
+  const dropdownMenu = document.querySelector('.dropdown-menu');
+  dropdownMenu.classList.toggle('show');
 });

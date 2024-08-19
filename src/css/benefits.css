@@ -74,7 +74,7 @@
 /*TABLET VERSION*/
 @media screen and (min-width: 768px) {
   .benefits-container.container {
-    max-width: 704px;
+    padding: 0 32px;
     margin: 0 auto;
   }
 
@@ -99,7 +99,7 @@
     justify-content: space-between;
     flex-direction: row;
     flex-wrap: nowrap;
-    max-width: 1376px;
+    
   }
   .benefits-div {
     max-width: 50%;
