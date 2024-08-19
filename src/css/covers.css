@@ -1,0 +1,103 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+.container.covers-container {
+  max-width: 375px;
+}
+.covers-section {
+  margin-bottom: 64px;
+  max-width: 100%;
+}
+.content {
+  height: 508px;
+  position: relative;
+  background: url(../img/covers/bgc-min.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+@media screen and (min-resolution: 2dppx), (min-resolution: 192dpi) {
+  .content {
+    background: url(../img/covers/bgc-2x-min.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+}
+.marquee {
+  position: absolute;
+  bottom: -80px;
+  right: 1900px;
+  left: 0;
+}
+.marquee-inner {
+  display: flex;
+  transform: rotate(16deg);
+  height: 100%;
+  width: 100%;
+}
+.marquee-line {
+  flex-shrink: 0;
+  margin-left: -10px;
+  margin-right: 40px;
+  margin-top: 40px;
+  width: 282px;
+  height: 162.94px;
+  white-space: nowrap;
+}
+.project-img img {
+  height: 162.94px;
+  object-fit: cover;
+}
+@keyframes marqueeLine {
+  from {
+    transform: translateX(-20%);
+  }
+  to {
+    transform: translateX(-180%);
+  }
+}
+@media screen and (min-width: 768px) {
+  .container.covers-container {
+    max-width: 768px;
+  }
+  .covers-section {
+    margin-bottom: 96px;
+  }
+  .content {
+    height: 960px;
+  }
+  .marquee {
+    bottom: -120px;
+    right: 1800px;
+    left: 0;
+  }
+  .marquee-line {
+    width: 544px;
+    height: 314px;
+    margin-left: -50px;
+    margin-right: 90px;
+    margin-top: 50px;
+  }
+  .project-img img {
+    height: 314px;
+    width: 544px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .container.covers-container {
+    max-width: 1440px;
+  }
+  .covers-section {
+    margin-bottom: 225px;
+  }
+}
+.animate {
+  animation-name: marqueeLine;
+  animation-duration: 5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}

@@ -5,8 +5,8 @@
 
 /*------tools FOR Mobile-----*/
 
-.projects-container {
-    max-width: 343px;
+.container.projects-container {
+    
     padding-left: 16px;
     padding-right: 16px;
 }
@@ -24,9 +24,12 @@
 }
 
 .projects-technologies {
+    display: flex;
+    flex-direction: column;
     background-color: rgba(250, 250, 250, 1);
     height: 50%;
     border-radius: 24px 24px 0px 0px;
+    padding: 32px;
 }
 
 .technologies-list {
@@ -34,9 +37,6 @@
     flex-direction: row;
     flex-wrap: wrap;
     gap: 6px;
-    padding-top: 32px;
-    padding-left: 32px;
-    padding-right: 32px;
     margin-bottom: 96px;
     align-items: center;
 }
@@ -63,8 +63,6 @@
     line-height: 28px;
     letter-spacing: -0.03em;
     text-align: left;
-    padding-left: 32px;
-    padding-right: 32px;
     margin-bottom: 32px;
 }
 
@@ -74,8 +72,6 @@
     width: 141px;
     height: 45px;
     border-radius: 60px;
-    margin-left: 32px;
-    margin-bottom: 32px;
     border: none;
     text-align: center;
     display: inline-block;
@@ -119,7 +115,9 @@
     color: white;
     cursor: pointer;
     z-index: 10;
-    transition: background-color 0.3s ease;
+    /*transition: background-color 0.3s ease;*/
+    transition: opacity 0.25s ease-in-out, background-color 0.25s ease-in-out,
+    border-color 0.25s ease-in-out;
 }
 
 /* Стилі для дизейблених кнопок */
@@ -146,21 +144,20 @@
 @media only screen and (min-width: 768px) {
 
     .container.projects-container {
-            max-width: 704px;
+           
             padding: 0 32px;
         }
-
+    .projects-technologies {
+            padding: 64px;
+}
     .technologies-list {
-        padding-top: 64px;
-        padding-left: 64px;
         margin-bottom: 164px;
     }
 
     .projects-title {
         font-size: 44px;
         line-height: 44px;
-        padding-left: 64px;
-        margin-bottom: 32px;
+        margin-bottom: 37px;
     }
 
     .projects-button {
@@ -169,8 +166,6 @@
         width: 177px;
         height: 55px;
         border-radius: 60px;
-        margin-left: 64px;
-        margin-bottom: 71px;
     }
 
     .projects-demo {
@@ -190,21 +185,9 @@
         }
 }
 
-/*.swiper-btn-container {
-    gap: 20px;
-}
-
-.swiper-button-next,
-.swiper-button-prev {
-    width: 68px;
-    height: 68px;
-}*/
-
 /*------tools FOR Desktop-----*/
 @media screen and (min-width: 1440px) {
-    .container.projects-container {
-            max-width: 1376px;
-        }
+   
 
     li.swiper-slide-projects {
         display: inline-flex;
