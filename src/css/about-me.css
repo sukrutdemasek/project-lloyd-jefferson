@@ -1,7 +1,21 @@
 /* @media screen and (max-width: 320px) */
 
 #about-me .about-box {
-    padding: 0 16px; 
+    padding: 0 16px;
+    margin-bottom: 64px;
+}
+
+.about-box .ac {
+    margin-top: 0px;
+}
+
+.about-box .acor-txt {
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.02em;
+    text-align: left;
 }
 
 .about-subtitle {
@@ -51,7 +65,7 @@
 .about-me-avatar {
     max-width: 100%;
     height: auto;
-    border-radius: 24px; 
+    border-radius: 24px;
 }
 
 /* -------------ACCORDION-------------  */
@@ -62,9 +76,9 @@
 } */
 
 .accordion-info-about-me-list {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 32px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 32px;
 }
 
 ul.accordion-info-about-me-list .about-me-item-container.ac {
@@ -73,11 +87,11 @@ ul.accordion-info-about-me-list .about-me-item-container.ac {
     padding-bottom: 20px;
     position: relative;
     background-color: transparent;
-    margin-top: 32px;
+    padding-top: 32px;
 }
 
 .ac-header.acc-caption .ac-trigger {
-    color: #fafafa66; 
+    color: #fafafa66;
     font-weight: 600;
     text-align: left;
     text-transform: uppercase;
@@ -99,7 +113,7 @@ ul.accordion-info-about-me-list .about-me-item-container.ac {
 li.about-me-item-container.ac .ac-panel {
     display: flex;
     flex-direction: column;
-    gap: 10px; 
+    gap: 10px;
 }
 
 .about-me-item-container:first-child div.about-me-text.ac-panel {
@@ -118,29 +132,57 @@ ul.accordion-info-about-me-list li.ac .ac-trigger.accordion-button-up-down::afte
     border-radius: 100px;
     transform: translate(50%, -50%);
     transition: box-shadow 300ms ease;
-  }
+}
 
-  ul.accordion-info-about-me-list li.ac .ac-trigger.accordion-button-up-down:hover::after,
-  ul.accordion-info-about-me-list li.ac .ac-trigger.accordion-button-up-down:focus::after {
+ul.accordion-info-about-me-list li.ac .ac-trigger.accordion-button-up-down:hover::after,
+ul.accordion-info-about-me-list li.ac .ac-trigger.accordion-button-up-down:focus::after {
     border-color: #fafafa;
     box-shadow: 0 0 15px #ed3b44;
-  }
+}
 
-  .about-me-arrow-icon {
+.about-me-arrow-icon {
     position: absolute;
     top: 7px;
     right: 8px;
     transition: transform 0.3s ease-in-out;
-  }
+}
 
-  /* ul.accordion-info-about-me-list li.ac.is-active > .ac-header .ac-trigger.accordion-button-up-down.btn-roll::after {
+/* ul.accordion-info-about-me-list li.ac.is-active > .ac-header .ac-trigger.accordion-button-up-down.btn-roll::after {
     content: '';
   } */
-  
-  ul.accordion-info-about-me-list li.ac.is-active .about-me-arrow-icon {
+
+ul.accordion-info-about-me-list li.ac.is-active .about-me-arrow-icon {
     transform: rotate(-180deg);
-  }
-  
+}
+
+/*-----------------------Swiper-------------------------*/
+
+.item-about-me {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FAFAFA;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.02em;
+    text-align: left;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    border: 1px solid #FAFAFA33
+}
+
+.swiper-slide-active .item-about-me {
+    background-color: #ED3B44;
+    border: 1px solid #ED3B44;
+}
+
+.about-me .about-btn-arrow {
+    border: none;
+    background-color: transparent;
+}
 
 /* -------------TABLET-------------  */
 
@@ -148,6 +190,7 @@ ul.accordion-info-about-me-list li.ac .ac-trigger.accordion-button-up-down::afte
     #about-me .about-box {
         padding-left: 32px;
         padding-right: 32px;
+        margin-bottom: 96px;
     }
 
     .about-subtitle {
@@ -167,31 +210,31 @@ ul.accordion-info-about-me-list li.ac .ac-trigger.accordion-button-up-down::afte
         letter-spacing: -0.03em;
     }
 
-/* -------------ACCORDION-------------  */
+    /* -------------ACCORDION-------------  */
 
-ul.accordion-info-about-me-list .about-me-item-container.ac {
-    padding-bottom: 32px;
-}
+    ul.accordion-info-about-me-list .about-me-item-container.ac {
+        padding-bottom: 32px;
+    }
 
-.about-me-item-container:first-child div.about-me-text.ac-panel {
-    gap: 16px;
-}
+    .about-me-item-container:first-child div.about-me-text.ac-panel {
+        gap: 16px;
+    }
 
-ul.accordion-info-about-me-list li.ac .ac-trigger.accordion-button-up-down::after {
-    top: 20px;
-    right: 20px;
-    width: 40px;
-    height: 40px;
-}
+    ul.accordion-info-about-me-list li.ac .ac-trigger.accordion-button-up-down::after {
+        top: 20px;
+        right: 20px;
+        width: 40px;
+        height: 40px;
+    }
 
-.about-me-arrow-icon {
-    top: 11px;
-    right: 10px;
-}
+    .about-me-arrow-icon {
+        top: 11px;
+        right: 10px;
+    }
 
-.ac-header.acc-caption .ac-trigger {
-    margin-bottom: 30px;
-}
+    .ac-header.acc-caption .ac-trigger {
+        margin-bottom: 30px;
+    }
 }
 
 /* -------------DESKTOP-------------  */
@@ -201,8 +244,9 @@ ul.accordion-info-about-me-list li.ac .ac-trigger.accordion-button-up-down::afte
     #about-me .about-box {
         padding-left: 32px;
         padding-right: 32px;
+        margin-bottom: 164px;
     }
-   
+
     .about-subtitle {
         display: flex;
         flex-direction: row;
@@ -223,7 +267,7 @@ ul.accordion-info-about-me-list li.ac .ac-trigger.accordion-button-up-down::afte
         letter-spacing: -0.03em;
     }
 
-/* -------------ACCORDION-------------  */
+    /* -------------ACCORDION-------------  */
 
     .accordion-info-about-me {
         width: 1376px;
@@ -246,17 +290,3 @@ ul.accordion-info-about-me-list li.ac .ac-trigger.accordion-button-up-down::afte
         margin-bottom: 24px;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-

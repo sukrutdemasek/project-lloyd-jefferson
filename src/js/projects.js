@@ -1,29 +1,30 @@
 import Swiper from 'swiper';
 import 'swiper/css';
 
-// Ініціалізація Swiper 
-const swiperContainer = document.querySelector('.swiper');
-const swiper = new Swiper(swiperContainer, {
+// Ініціалізація Swiper
+const section = document.querySelector('.projects-section');
+const projectsSlider = section.querySelector('.swiper-projects-container');
+
+//const swiperContainer = document.querySelector('.swiper-projects-container');
+const swiper = new Swiper(projectsSlider, {
   direction: 'horizontal',
   loop: false,
   speed: 600,
   spaceBetween: 50,
 
   pagination: {
-    el: '.swiper-pagination',
+    el: section.querySelector('.swiper-pagination'), 
     clickable: true,
   },
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: section.querySelector('.swiper-button-next'),
+    prevEl: section.querySelector('.swiper-button-prev'),
   },
   keyboard: {
     enabled: true,
-    onlyInViewport: true,
+    onlyInViewport: false,
   },
-  mousewheel: {
-    invert: true,
-  },
+  
   breakpoints: {
     768: {
       speed: 600,
@@ -39,11 +40,11 @@ const swiper = new Swiper(swiperContainer, {
 });
 
 // Отримання інстанції Swiper через HTML елемент
-const swiperInstance = swiperContainer.swiper;
+const swiperInstance = projectsSlider.swiper;     //projectsSlider
 
 // Додавання обробників подій до кнопок навігації
-const nextButton = document.querySelector('.swiper-button-next');
-const prevButton = document.querySelector('.swiper-button-prev');
+const nextButton = section.querySelector('.swiper-button-next');
+const prevButton = section.querySelector('.swiper-button-prev');
 
 function updateNavigationButtons() {
   if (swiperInstance.isEnd) {
