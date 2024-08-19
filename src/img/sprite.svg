@@ -16,6 +16,9 @@
 <symbol id="arrow-up" viewBox="0 0 20 20"><!--Стрілочка вверх-->
 <path d="M15 12.5L10 7.5L5 12.5" stroke="#FAFAFA" stroke-width="2"/>
 </symbol>
+<symbol id="burger" width="28" height="28" viewBox="0 0 28 28" fill="none">
+<path d="M3.5 9.91666H24.5M3.5 18.0833H24.5" stroke="#FAFAFA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</symbol>
 
 
 
