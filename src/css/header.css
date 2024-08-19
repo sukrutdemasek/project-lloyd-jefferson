@@ -44,7 +44,14 @@ gap: 8px;
   border: none;
  
 }
-
+.burger-icon {
+  stroke: #fafafa;
+  transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.burger-icon:hover {
+  stroke: #ed3b44;
+  
+}
 /* Menu Header */
 .menu-header {
   display: none;
@@ -73,12 +80,13 @@ align-items: center;
     
   }
 .container.header-container {
-  gap: 151px;
+  gap: 157px;
   padding: 32px;
  
 }
 .navigation{
   max-width: 384px;
+  
 }
 .header-nav-link {
  font-size: 16px;
@@ -130,7 +138,8 @@ letter-spacing: -0.32px;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translate(-50%, 0);
+    
     text-align: center;
     margin-top: 8px;
   }
@@ -147,9 +156,9 @@ letter-spacing: -0.32px;
 /* Desktop Styles */
 @media screen and (min-width: 1440px) {
   .container.header-container{
-    gap: 480px;
+    gap: 494px;
   }
   .navigation{
-    max-width: 706px;
+    max-width: 720px;
   }
 }

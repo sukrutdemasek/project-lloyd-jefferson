@@ -58,7 +58,6 @@ ul.accordion-container li.ac button.ac-trigger.faq-button:focus {
 /* Pseudo-element ::after for the FAQ button */
 ul.accordion-container li.ac .ac-trigger.faq-button::after {
   content: '';
-  background-image: url('../img/sprite.svg#arrow-down');
   position: absolute;
   top: 20px;
   right: 16px;
