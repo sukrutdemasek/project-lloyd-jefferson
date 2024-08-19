@@ -42,7 +42,7 @@
 .marquee-line {
   flex-shrink: 0;
   margin-left: -10px;
-  margin-right: 20px;
+  margin-right: 40px;
   margin-top: 40px;
   width: 282px;
   height: 162.94px;
@@ -50,6 +50,7 @@
 }
 .project-img img {
   height: 162.94px;
+  object-fit: cover;
 }
 @keyframes marqueeLine {
   from {
