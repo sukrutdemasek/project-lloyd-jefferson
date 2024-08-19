@@ -1,0 +1,232 @@
+.projects-section {
+    margin-bottom: 64px;
+}
+
+
+/*------tools FOR Mobile-----*/
+
+.projects-container {
+    max-width: 343px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.section-headline {
+    color: rgba(250, 250, 250, 0.4);
+    font-family: Inter Tight;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: -0.02em;
+    text-align: left;
+    margin-bottom: 32px;
+    margin-right: 59px;
+}
+
+.projects-technologies {
+    background-color: rgba(250, 250, 250, 1);
+    height: 50%;
+    border-radius: 24px 24px 0px 0px;
+}
+
+.technologies-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 6px;
+    padding-top: 32px;
+    padding-left: 32px;
+    padding-right: 32px;
+    margin-bottom: 96px;
+    align-items: center;
+}
+
+.technologies-item {
+    border: 1px solid rgba(28, 29, 32, 0.2);
+    border-radius: 60px;
+    padding: 13px 18px;
+    background-color: #f5f5f5;
+    margin: 0;
+}
+
+
+.item-content {
+    color: rgba(28, 29, 32, 1);
+    text-decoration: none;
+}
+
+.projects-title {
+    color: #1C1D20;
+    font-family: inherit;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: -0.03em;
+    text-align: left;
+    padding-left: 32px;
+    padding-right: 32px;
+    margin-bottom: 32px;
+}
+
+.projects-button {
+    color: #FAFAFA;
+    background-color: #ED3B44;
+    width: 141px;
+    height: 45px;
+    border-radius: 60px;
+    margin-left: 32px;
+    margin-bottom: 32px;
+    border: none;
+    text-align: center;
+    display: inline-block;
+    line-height: 45px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.projects-button:hover {
+    background-color: #E0373F;
+}
+
+.projects-demo {
+    display: flex;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-bottom: 32px;
+    justify-content: center;
+    background-color: #242527;
+    border-radius: 0px 0px 24px 24px;
+}
+
+.swiper-btn-container {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    border: 1px solid #FAFAFA80;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    cursor: pointer;
+    z-index: 10;
+    transition: background-color 0.3s ease;
+}
+
+/* Стилі для дизейблених кнопок */
+.swiper-button-disabled {
+    border: 1px solid #FAFAFA80;
+    cursor: default;
+    color: #FAFAFA80;
+    opacity: 0.2;
+}
+
+.projects-section .swiper-button-prev {
+    transform: rotate(180deg);
+}
+
+.projects-section .swiper-button-prev:not(.swiper-button-disabled):hover,
+.projects-section .swiper-button-next:not(.swiper-button-disabled):hover,
+.projects-section .swiper-button-prev:not(.swiper-button-disabled):focus,
+.projects-section .swiper-button-next:not(.swiper-button-disabled):focus {
+    background-color: #ed3b44;
+    border-color: #ed3b44;
+}
+
+/*------tools FOR Tablet-----*/
+@media only screen and (min-width: 768px) {
+
+    .container.projects-container {
+            max-width: 704px;
+            padding: 0 32px;
+        }
+
+    .technologies-list {
+        padding-top: 64px;
+        padding-left: 64px;
+        margin-bottom: 164px;
+    }
+
+    .projects-title {
+        font-size: 44px;
+        line-height: 44px;
+        padding-left: 64px;
+        margin-bottom: 32px;
+    }
+
+    .projects-button {
+        color: #FAFAFA;
+        background-color: #ED3B44;
+        width: 177px;
+        height: 55px;
+        border-radius: 60px;
+        margin-left: 64px;
+        margin-bottom: 71px;
+    }
+
+    .projects-demo {
+        padding-top: 120px;
+        padding-bottom: 120px;
+        margin-bottom: 64px;
+    }
+
+        .swiper-btn-container {
+            gap: 20px;
+        }
+    
+        .swiper-button-next,
+        .swiper-button-prev {
+            width: 68px;
+            height: 68px;
+        }
+}
+
+/*.swiper-btn-container {
+    gap: 20px;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    width: 68px;
+    height: 68px;
+}*/
+
+/*------tools FOR Desktop-----*/
+@media screen and (min-width: 1440px) {
+    .container.projects-container {
+            max-width: 1376px;
+        }
+
+    li.swiper-slide-projects {
+        display: inline-flex;
+        margin-bottom: 64px;
+    }
+
+    .projects-technologies {
+        background-color: rgba(250, 250, 250, 1);
+        width: 50%;
+        height: 100%;
+        border-radius: 24px 0px 0px 24px;
+    }
+
+    .technologies-list {
+        margin-bottom: 223px;
+    }
+
+    .projects-demo {
+        width: 50%;
+        padding-top: 120px;
+        padding-bottom: 120px;
+        margin-bottom: 0px;
+        border-radius: 0px 24px 24px 0px;
+    }
+}
