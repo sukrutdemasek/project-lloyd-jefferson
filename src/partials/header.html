@@ -4,39 +4,46 @@
   <div class="container header-container">
     <nav class="navigation">
       <div class="logo-header">
-        <picture class="image">
-          <source
-            srcset="
-              ./img/header/mobile/logo-mob-1x.png 1x,
-              ./img/header/mobile/logo-mob-2x.png 2x
-            "
-            media="(max-width: 767px)"
-          />
-          <source
-            srcset="
-              ./img/header/tablet/logo-tab-1x.png 1x,
-              ./img/header/tablet/logo-tab-2x.png 2x
-            "
-            media="(min-width: 768px)"
-          />
-          <source
-            srcset="
-              ./img/header/desktop/logo-desk-1x.png 1x,
-              ./img/header/desktop/logo-desk-2x.png 2x
-            "
-            media="(min-width: 1440px)"
-          />
-
-          <img
-            src="./img/header/logo.png"
-            alt="Profile Image"
-            width="80"
-            height="80"
-            loading="lazy"
-          />
-        </picture>
-        <a id="home" href="#" class="logo-text">jefferson*</a>
+        <a id="home" href="#" class="logo-link">
+          <picture class="image">
+            <source
+              srcset="
+                ./img/header/mobile/logo-mob-1x.png 1x,
+                ./img/header/mobile/logo-mob-2x.png 2x
+              "
+              media="(max-width: 767px)"
+            />
+            <source
+              srcset="
+                ./img/header/tablet/logo-tab-1x.png 1x,
+                ./img/header/tablet/logo-tab-2x.png 2x
+              "
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="
+                ./img/header/desktop/logo-desk-1x.png 1x,
+                ./img/header/desktop/logo-desk-2x.png 2x
+              "
+              media="(min-width: 1440px)"
+            />
+            <img
+              src="./img/header/logo.png"
+              alt="Logo"
+              width="80"
+              height="80"
+              loading="lazy"
+            />
+          </picture>
+          <span class="logo-text">jefferson*</span>
+        </a>
       </div>
+
+      <button class="burger" type="button" aria-label="Open menu" data-menu-open>
+        <svg class="burger-icon" width="28" height="28">
+          <use href="./img/sprite.svg#burger"></use>
+        </svg>
+      </button>
 
       <div class="menu-header">
         <a href="#" class="header-nav-link menu-link">Menu</a>
@@ -57,13 +64,12 @@
       </div>
     </nav>
 
-    <button class="header-button" type="submit">Order the project</button>
-
-    <button class="burger" type="button" data-menu-open>
-      <svg class="burger-icon" width="28" height="28">
-        <use href="./img/header/menu-burger.svg" />
-      </svg>
+    <button class="header-button">
+      <a href="#work-together" class="header-button-link">Order the project</a>
     </button>
   </div>
-  <script type="module" src="./js/header.js"></script>
 </header>
+
+<!-- JavaScript to handle menu interactions -->
+<script type="module" src="./js/header.js"></script>
+
