@@ -6,7 +6,7 @@ const swiperContainer = document.querySelector('.swiper');
 const swiper = new Swiper(swiperContainer, {
   direction: 'horizontal',
   loop: false,
-  speed: 400,
+  speed: 600,
   spaceBetween: 50,
 
   pagination: {
@@ -26,10 +26,12 @@ const swiper = new Swiper(swiperContainer, {
   },
   breakpoints: {
     768: {
+      speed: 600,
       slidesPerView: 1,
       spaceBetween: 40,
     },
     1440: {
+      speed: 600,
       slidesPerView: 1,
       spaceBetween: 50,
     },
@@ -86,18 +88,7 @@ document.addEventListener('keydown', (event) => {
         swiperInstance.slideNext();
       }
       break;
-    case 'Tab':
-
-      break;
-  }
-});
-
-// Додаткове налаштування для клавіатурної навігації
-document.addEventListener('keydown', function(event) {
-  if (event.code === 'ArrowRight') {
-    swiper.slideNext();
-  } else if (event.code === 'ArrowLeft') {
-    swiper.slidePrev();
+  
   }
 });
 
