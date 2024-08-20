@@ -18,10 +18,11 @@ const section = document.querySelector('.about-me');
 const aboutMeSlider = section.querySelector('.about-me-swiper');
 
     const swiper = new Swiper(aboutMeSlider, {
-        slidesPerView: 'auto',
+        slidesPerView: 'auto',  // This makes the slides fit the container
         loop: true,  // This makes the slider infinite
         navigation: {
-            nextEl: section.querySelector('.swiper-button-next'),  // Button to go to the next slide
+            nextEl: section.querySelector('.swiper-button-next'),
+            loop: true,// Button to go to the next slide
         },
         keyboard: {
             enabled: true,
