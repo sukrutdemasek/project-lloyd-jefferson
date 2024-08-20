@@ -39,6 +39,7 @@ const swiper = new Swiper(projectsSlider, {
   },
 });
 
+
 // Отримання інстанції Swiper через HTML елемент
 const swiperInstance = projectsSlider.swiper;     //projectsSlider
 
