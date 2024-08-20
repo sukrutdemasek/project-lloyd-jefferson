@@ -18,19 +18,10 @@ const section = document.querySelector('.about-me');
 const aboutMeSlider = section.querySelector('.about-me-swiper');
 
     const swiper = new Swiper(aboutMeSlider, {
-        slidesPerView: 2,
-        spaceBetween: 10,
+        slidesPerView: 'auto',
         loop: true,  // This makes the slider infinite
         navigation: {
             nextEl: section.querySelector('.swiper-button-next'),  // Button to go to the next slide
-        },
-        breakpoints: {
-            768: {
-                slidesPerView: 3,
-            },
-            1440: {
-                slidesPerView: 6,
-            },
         },
         keyboard: {
             enabled: true,
@@ -57,7 +48,6 @@ const aboutMeSlider = section.querySelector('.about-me-swiper');
     });
 
 };
-
 
 
 

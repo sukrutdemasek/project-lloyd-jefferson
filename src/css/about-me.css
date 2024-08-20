@@ -157,8 +157,10 @@ ul.accordion-info-about-me-list li.ac.is-active .about-me-arrow-icon {
 
 /*-----------------------Swiper-------------------------*/
 .swiper .about-me-swiper {
-    position: relative; 
-} /*для кнопки*/
+    position: relative;
+}
+
+/*для кнопки*/
 
 .about-btn-arrow {
     position: absolute;
@@ -176,11 +178,12 @@ ul.accordion-info-about-me-list li.ac.is-active .about-me-arrow-icon {
     border: none;
     /* Видаляє будь-які межі */
 }
+
 .item-about-me {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #FAFAFA;
+    color: #fafafa;
     font-family: inherit;
     font-size: 16px;
     font-weight: 500;
@@ -190,12 +193,12 @@ ul.accordion-info-about-me-list li.ac.is-active .about-me-arrow-icon {
     width: 130px;
     height: 130px;
     border-radius: 50%;
-    border: 1px solid #FAFAFA33
+    border: 1px solid #fafafa33;
 }
 
 .swiper-slide-active .item-about-me {
-    background-color: #ED3B44;
-    border: 1px solid #ED3B44;
+    background-color: #ed3b44;
+    border: 1px solid #ed3b44;
 }
 
 .about-me .about-btn-arrow {
@@ -207,19 +210,18 @@ ul.accordion-info-about-me-list li.ac.is-active .about-me-arrow-icon {
 
 @media screen and (min-width: 768px) {
     .item-about-me {
-            width: 200px;
-            height: 200px;
-        }
-
-    .about-btn-arrow {
-     right: 0px;
-            }
+        width: 200px;
+        height: 200px;
     }
 
-        /* -------------DESKTOP Swiper -------------  */
-    
-        @media screen and (min-width: 1440px) {
-        }
+    .about-btn-arrow {
+        right: 0px;
+    }
+}
+
+/* -------------DESKTOP Swiper -------------  */
+
+@media screen and (min-width: 1440px) {}
 
 /* -------------TABLET-------------  */
 
@@ -277,7 +279,6 @@ ul.accordion-info-about-me-list li.ac.is-active .about-me-arrow-icon {
 /* -------------DESKTOP-------------  */
 
 @media screen and (min-width: 1440px) {
-
     #about-me .about-box {
         padding-left: 32px;
         padding-right: 32px;
@@ -325,5 +326,43 @@ ul.accordion-info-about-me-list li.ac.is-active .about-me-arrow-icon {
 
     .ac-header.acc-caption .ac-trigger {
         margin-bottom: 24px;
+    }
+}
+
+/* DANILKO MONKEY */
+/* DANILKO MONKEY */
+/* DANILKO MONKEY */
+/* DANILKO MONKEY */
+
+.swipper-wrapper {
+    position: relative;
+}
+
+.swipper-wrapper .swiper {
+    width: 75%;
+    margin-left: 0;
+}
+
+.swipper-wrapper .swiper-slide {
+    width: 50%;
+}
+
+/* -------------TABLET Swiper-------------  */
+
+@media screen and (min-width: 768px) {
+    .swipper-wrapper .swiper {
+        width: 90%;
+    }
+
+    .swipper-wrapper .swiper-slide {
+        width: calc(95% / 3);
+    }
+}
+
+/* -------------DESKTOP Swiper -------------  */
+
+@media screen and (min-width: 1440px) {
+    .swipper-wrapper .swiper-slide {
+        width: calc(100% / 6);
     }
 }
