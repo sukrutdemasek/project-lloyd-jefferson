@@ -13,6 +13,7 @@
   flex-direction: column;
   align-items: flex-start;
   gap: 32px;
+  margin-bottom: 64px;
 }
 
 /* FAQ title styles */
@@ -101,6 +102,7 @@ ul.accordion-container li.ac .ac-panel p.ac-text.faq-text {
   .container.faq-container {
   
     padding: 0 32px;
+    margin-bottom: 96px;
   }
 
   ul.accordion-container li.ac.faq-item-container {
@@ -133,6 +135,11 @@ ul.accordion-container li.ac .ac-panel p.ac-text.faq-text {
 
 /* Large screen adjustments */
 @media screen and (min-width: 1440px) {
+
+  .container.faq-container {
+
+      margin-bottom: 164px;
+    }
  
   ul.accordion-container {
     display: flex;

@@ -13,12 +13,13 @@
   flex-direction: column;
   gap: 32px;
   padding: 0 16px;
+  margin-bottom: 32px;
 }
 .benefits-list {
   display: flex;
   flex-direction: column;
   gap: 16px;
-  margin-bottom: 32px;
+  margin-bottom: 64px;
 }
 .benefits-list-element {
   display: flex;
@@ -75,7 +76,7 @@
 @media screen and (min-width: 768px) {
   .benefits-container.container {
     padding: 0 32px;
-    margin: 0 auto;
+    margin-bottom: 96px;
   }
 
   .benefits-list {
@@ -99,6 +100,7 @@
     justify-content: space-between;
     flex-direction: row;
     flex-wrap: nowrap;
+    margin-bottom: 164px;
     
   }
   .benefits-div {
