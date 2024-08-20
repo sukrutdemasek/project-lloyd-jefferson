@@ -10,11 +10,18 @@
 <path fill="none" stroke="#fafafa" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2" d="M5.333 16h21.333"></path>
 <path fill="none" stroke="#fafafa" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2" d="M18.667 8l8 8-8 8"></path>
 </symbol>
+<symbol id="arrow-right-swiper" viewBox="0 0 32 32"> <!--Стрілочка вправо-->
+<path fill="none"  stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2" d="M5.333 16h21.333"></path>
+<path fill="none"  stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2" d="M18.667 8l8 8-8 8"></path>
+</symbol>
 <symbol id="arrow-down" viewBox="0 0 20 20"><!--Стрілочка вниз-->
 <path d="M15 7.5L10 12.5L5 7.5" stroke="#FAFAFA" stroke-width="2"/>
 </symbol>
 <symbol id="arrow-up" viewBox="0 0 20 20"><!--Стрілочка вверх-->
 <path d="M15 12.5L10 7.5L5 12.5" stroke="#FAFAFA" stroke-width="2"/>
+</symbol>
+<symbol id="burger" width="28" height="28" viewBox="0 0 28 28" fill="none">
+<path d="M3.5 9.91666H24.5M3.5 18.0833H24.5"  stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </symbol>
 
 

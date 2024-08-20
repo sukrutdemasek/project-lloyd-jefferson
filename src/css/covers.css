@@ -3,6 +3,9 @@
 *::after {
   box-sizing: border-box;
 }
+.container.covers-container {
+  max-width: 375px;
+}
 .covers-section {
   margin-bottom: 64px;
   max-width: 100%;
@@ -39,14 +42,16 @@
 .marquee-line {
   flex-shrink: 0;
   margin-left: -10px;
-  margin-right: 20px;
+  margin-right: 40px;
   margin-top: 40px;
   width: 282px;
   height: 162.94px;
   white-space: nowrap;
 }
+
 .project-img img {
   height: 162.94px;
+  object-fit: cover;
 }
 @keyframes marqueeLine {
   from {
@@ -57,6 +62,9 @@
   }
 }
 @media screen and (min-width: 768px) {
+  .container.covers-container {
+    max-width: 768px;
+  }
   .covers-section {
     margin-bottom: 96px;
   }
@@ -81,6 +89,9 @@
   }
 }
 @media screen and (min-width: 1440px) {
+  .container.covers-container {
+    max-width: 1440px;
+  }
   .covers-section {
     margin-bottom: 225px;
   }

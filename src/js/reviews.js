@@ -49,7 +49,7 @@ export const reviewsSwiper = Swiper => {
 
       const swiper = new Swiper(reviewsSlider, {
         slidesPerView: 1,
-        autoHeight: true,
+        autoHeight: false,
           speed: 600,
          spaceBetween: 16,
         keyboard: {
