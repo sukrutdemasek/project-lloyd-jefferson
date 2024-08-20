@@ -125,7 +125,7 @@ body, html {
     }
 }
 
-@media screen and (min-width: 415) and (max-width: 767px) {
+@media screen and (min-width: 415px) and (max-width: 767px) {
     .hero-email {
         font-size: 14px;
     }

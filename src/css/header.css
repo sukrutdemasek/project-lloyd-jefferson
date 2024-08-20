@@ -66,7 +66,7 @@ gap: 8px;
     display: none;
   }
 
-  .header-button {
+  .header-button-link {
     display: none;
   }
 
@@ -110,11 +110,10 @@ letter-spacing: -0.32px;
 }
 
 /* Order Button */
-.header-button {
+.header-button-link {
   display: flex;
   padding: 18px 24px;
   border-radius: 60px;
-  border: none;
   background: #ed3b44;
   color: #fafafa;
   font-size: 16px;
@@ -131,8 +130,8 @@ line-height: normal;
 letter-spacing: -0.32px;
 }
 
-.header-button:hover,
-.header-button:focus {
+.header-button-link:hover,
+.header-button-link:focus {
   background-color: #e0373f;
 }
 
