@@ -12,37 +12,21 @@
       </div>
       <div class="about-me-photo">
         <picture>
-          <source
-            media="(min-width: 1440px)"
-            srcset="
+          <source media="(min-width: 1440px)" srcset="
               ./img/about-me-img/desk_about-me.webp    1x,
               ./img/about-me-img/desk_about-me@2x.webp 2x
-            "
-            type="image/webp"
-          />
-          <source
-            media="(min-width: 768px)"
-            srcset="
+            " type="image/webp" />
+          <source media="(min-width: 768px)" srcset="
               ./img/about-me-img/tab_about-me.webp    1x,
               ./img/about-me-img/tab_about-me@2x.webp 2x
-            "
-            type="image/webp"
-          />
-          <source
-            media="(max-width: 767px)"
-            srcset="
+            " type="image/webp" />
+          <source media="(max-width: 767px)" srcset="
               ./img/about-me-img/mob_about_me.webp    1x,
               ./img/about-me-img/mob_about_me@2x.webp 2x
-            "
-            type="image/webp"
-          />
-          <img
-            class="about-me-avatar"
-            src="./img/mobile/about-me/mob_about_me.webp"
-            alt="Portrait of man Lloyd Jefferson, a Fullstack Developer"
-            title="Lloyd Jefferson, a Fullstack Developer"
-            loading="lazy"
-          />
+            " type="image/webp" />
+          <img class="about-me-avatar" src="./img/mobile/about-me/mob_about_me.webp"
+            alt="Portrait of man Lloyd Jefferson, a Fullstack Developer" title="Lloyd Jefferson, a Fullstack Developer"
+            loading="lazy" />
         </picture>
       </div>
     </div>
@@ -53,13 +37,8 @@
       <ul class="accordion-info-about-me-list">
         <li class="ac about-me-item-container">
           <h3 class="ac-header acc-caption">
-            <button
-              type="button"
-              id="ac-trigger-1"
-              class="ac-trigger accordion-button-up-down btn-roll"
-              aria-label="click-go-up-go-down"
-              aria-expanded="false"
-            >
+            <button type="button" id="ac-trigger-1" class="ac-trigger accordion-button-up-down btn-roll"
+              aria-label="click-go-up-go-down" aria-expanded="false">
               About me
               <svg class="about-me-arrow-icon" width="20" height="20">
                 <use href="./img/sprite.svg#arrow-down"></use>
@@ -93,35 +72,25 @@
 
         <li class="ac about-me-item-container">
           <h3 class="ac-header acc-caption">
-            <button
-              type="button"
-              id="ac-trigger-2"
-              class="ac-trigger accordion-button-up-down btn-roll"
-              aria-label="click-go-up-go-down"
-              aria-expanded="false"
-            >
+            <button type="button" id="ac-trigger-2" class="ac-trigger accordion-button-up-down btn-roll"
+              aria-label="click-go-up-go-down" aria-expanded="false">
               Role
               <svg class="about-me-arrow-icon" width="20" height="20">
                 <use href="./img/sprite.svg#arrow-down"></use>
               </svg>
             </button>
           </h3>
-          <div class="ac-panel about-me-text">  
-              <p>Frontend development</p>
-              <p>HeadlessCMS, Wordpress</p>
-              <p>Blender (enjoy)</p>
+          <div class="ac-panel about-me-text">
+            <p>Frontend development</p>
+            <p>HeadlessCMS, Wordpress</p>
+            <p class="acor-txt">Blender (enjoy)</p>
           </div>
         </li>
 
         <li class="ac about-me-item-container">
           <h3 class="ac-header acc-caption">
-            <button
-              type="button"
-              id="ac-trigger-3"
-              class="ac-trigger accordion-button-up-down btn-roll"
-              aria-label="click-go-up-go-down"
-              aria-expanded="false"
-            >
+            <button type="button" id="ac-trigger-3" class="ac-trigger accordion-button-up-down btn-roll"
+              aria-label="click-go-up-go-down" aria-expanded="false">
               Education
               <svg class="about-me-arrow-icon" width="20" height="20">
                 <use href="./img/sprite.svg#arrow-down"></use>
@@ -129,14 +98,54 @@
             </button>
           </h3>
           <div class="ac-panel about-me-text">
-                <p>2018 - 2019 / Frontend Development Diploma, GoIT IT School, New York</p>
-                <p>2019 - 2020 / Advanced Web Development Certificate, GoIT IT School, New York</p>
-                <p>2020 - 2022 / Advanced Blender Animation Techniques, Udemy</p>
+            <p class="acor-txt">2018 - 2019 / Frontend Development Diploma, GoIT IT School, New York</p>
+            <p class="acor-txt">2019 - 2020 / Advanced Web Development Certificate, GoIT IT School, New York</p>
+            <p class="acor-txt">2020 - 2022 / Advanced Blender Animation Techniques, Udemy</p>
           </div>
         </li>
       </ul>
     </div>
+
+    <!-----Swiper-->
+    <div class="swipper-wrapper swipper-wrapper-top">
+      <div class="swiper about-me-swiper">
+        <!-- Additional required wrapper -->
+        <ul class="swiper-wrapper swiper-wrapper-about-me">
+          <!-- Slides -->
+          <li class="swiper-slide slide-about-me">
+            <a class="item-about-me">HTML/CSS</a>
+          </li>
+          <li class="swiper-slide slide-about-me">
+            <a class="item-about-me">JavaScript</a>
+          </li>
+          <li class="swiper-slide slide-about-me">
+            <a class="item-about-me">React</a>
+          </li>
+          <li class="swiper-slide slide-about-me">
+            <a class="item-about-me">Node. js</a>
+          </li>
+          <li class="swiper-slide slide-about-me">
+            <a class="item-about-me">React Native</a>
+          </li>
+          <li class="swiper-slide slide-about-me">
+            <a class="item-about-me">Soft skills</a>
+          </li>
+          <li class="swiper-slide slide-about-me">
+            <a class="item-about-me">Type script</a>
+          </li>
+        </ul>
+        <!-- If we need navigation buttons -->
+      </div>
+    
+      <div class="swiper-button-next about-btn-arrow">
+        <svg class="arrow-button-next svg-arrow-about-me" width="28" height="28">
+          <use href="./img/sprite.svg#arrow-right-swiper"></use>
+        </svg>
+      </div>
+    </div>
+    
   </div>
+
 </section>
 
-<script type="module" src="js/about-me.js"></script>
+<script type="module" src="/js/about-me.js"></script>

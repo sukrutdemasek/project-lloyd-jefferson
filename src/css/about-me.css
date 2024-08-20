@@ -1,14 +1,26 @@
-/* @media screen and (max-width: 320px) */
 
 #about-me .about-box {
-    padding: 0 16px; 
+    padding: 0 16px;
+    margin-bottom: 64px;
+}
+
+.about-box .ac {
+    margin-top: 0px;
+}
+
+.about-box .acor-txt {
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.02em;
+    text-align: left;
 }
 
 .about-subtitle {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* margin-bottom: 32px; */
     margin-left: auto;
     margin-right: auto;
 }
@@ -51,20 +63,15 @@
 .about-me-avatar {
     max-width: 100%;
     height: auto;
-    border-radius: 24px; 
+    border-radius: 24px;
 }
 
 /* -------------ACCORDION-------------  */
 
-/* .accordion-info-about-me {
-    margin-left: auto;
-    margin-right: auto;
-} */
-
 .accordion-info-about-me-list {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 32px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 32px;
 }
 
 ul.accordion-info-about-me-list .about-me-item-container.ac {
@@ -73,11 +80,11 @@ ul.accordion-info-about-me-list .about-me-item-container.ac {
     padding-bottom: 20px;
     position: relative;
     background-color: transparent;
-    margin-top: 32px;
+    padding-top: 32px;
 }
 
 .ac-header.acc-caption .ac-trigger {
-    color: #fafafa66; 
+    color: #fafafa66;
     font-weight: 600;
     text-align: left;
     text-transform: uppercase;
@@ -99,7 +106,7 @@ ul.accordion-info-about-me-list .about-me-item-container.ac {
 li.about-me-item-container.ac .ac-panel {
     display: flex;
     flex-direction: column;
-    gap: 10px; 
+    gap: 10px;
 }
 
 .about-me-item-container:first-child div.about-me-text.ac-panel {
@@ -108,7 +115,6 @@ li.about-me-item-container.ac .ac-panel {
 
 ul.accordion-info-about-me-list li.ac .ac-trigger.accordion-button-up-down::after {
     content: '';
-    background-image: url('./img/sprite.svg#arrow-down');
     position: absolute;
     top: 16px;
     right: 18px;
@@ -118,36 +124,97 @@ ul.accordion-info-about-me-list li.ac .ac-trigger.accordion-button-up-down::afte
     border-radius: 100px;
     transform: translate(50%, -50%);
     transition: box-shadow 300ms ease;
-  }
+}
 
-  ul.accordion-info-about-me-list li.ac .ac-trigger.accordion-button-up-down:hover::after,
-  ul.accordion-info-about-me-list li.ac .ac-trigger.accordion-button-up-down:focus::after {
+ul.accordion-info-about-me-list li.ac .ac-trigger.accordion-button-up-down:hover::after
+ {
     border-color: #fafafa;
     box-shadow: 0 0 15px #ed3b44;
-  }
+}
 
-  .about-me-arrow-icon {
+.about-me-arrow-icon {
     position: absolute;
     top: 7px;
     right: 8px;
     transition: transform 0.3s ease-in-out;
-  }
+}
 
-  /* ul.accordion-info-about-me-list li.ac.is-active > .ac-header .ac-trigger.accordion-button-up-down.btn-roll::after {
-    content: '';
-  } */
-  
-  ul.accordion-info-about-me-list li.ac.is-active .about-me-arrow-icon {
+
+ul.accordion-info-about-me-list li.ac.is-active .about-me-arrow-icon {
     transform: rotate(-180deg);
-  }
-  
+}
 
-/* -------------TABLET-------------  */
+/*-----------------------Swiper-------------------------*/
+.swiper .about-me-swiper {
+    position: relative;
+}
+
+/*для кнопки*/
+
+.about-btn-arrow {
+    position: absolute;
+    top: 50%;
+    right: 0px;
+    transform: translateY(-50%);
+    z-index: 10;
+    background-color: transparent;
+    border: none;
+}
+
+.item-about-me {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fafafa;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.02em;
+    text-align: left;
+    height: 100%;
+    border-radius: 50%;
+    border: 1px solid #fafafa33;
+}
+li.slide-about-me {
+      width: calc(((100vw - 32px)* 0.75) / 2);
+    height: calc(((100vw - 32px)* 0.75) / 2);
+
+}
+@media screen and (min-width: 375px) {
+    li.slide-about-me {
+    width: calc(((375px - 32px)*0.75)/2);
+    height: calc(((375px - 32px)*0.75)/2);
+   
+    }
+}
+ 
+.swiper-slide-active .item-about-me {
+    background-color: #ed3b44;
+    border: 1px solid #ed3b44;
+}
+
+.about-me .about-btn-arrow {
+    border: none;
+    background-color: transparent;
+}
+
+/* -------------TABLET Swiper-------------  */
 
 @media screen and (min-width: 768px) {
+    .item-about-me {
+        width: 200px;
+        height: 200px;
+    }
+
+    .about-btn-arrow {
+        right: 0px;
+    }
+
     #about-me .about-box {
         padding-left: 32px;
         padding-right: 32px;
+        margin-bottom: 96px;
     }
 
     .about-subtitle {
@@ -167,42 +234,42 @@ ul.accordion-info-about-me-list li.ac .ac-trigger.accordion-button-up-down::afte
         letter-spacing: -0.03em;
     }
 
-/* -------------ACCORDION-------------  */
+    /* -------------ACCORDION-------------  */
 
-ul.accordion-info-about-me-list .about-me-item-container.ac {
-    padding-bottom: 32px;
-}
+    ul.accordion-info-about-me-list .about-me-item-container.ac {
+        padding-bottom: 32px;
+    }
 
-.about-me-item-container:first-child div.about-me-text.ac-panel {
-    gap: 16px;
-}
+    .about-me-item-container:first-child div.about-me-text.ac-panel {
+        gap: 16px;
+    }
 
-ul.accordion-info-about-me-list li.ac .ac-trigger.accordion-button-up-down::after {
-    top: 20px;
-    right: 20px;
-    width: 40px;
-    height: 40px;
-}
+    ul.accordion-info-about-me-list li.ac .ac-trigger.accordion-button-up-down::after {
+        top: 20px;
+        right: 20px;
+        width: 40px;
+        height: 40px;
+    }
 
-.about-me-arrow-icon {
-    top: 11px;
-    right: 10px;
-}
+    .about-me-arrow-icon {
+        top: 11px;
+        right: 10px;
+    }
 
-.ac-header.acc-caption .ac-trigger {
-    margin-bottom: 30px;
-}
+    .ac-header.acc-caption .ac-trigger {
+        margin-bottom: 30px;
+    }
 }
 
 /* -------------DESKTOP-------------  */
 
 @media screen and (min-width: 1440px) {
-
     #about-me .about-box {
         padding-left: 32px;
         padding-right: 32px;
+        margin-bottom: 164px;
     }
-   
+
     .about-subtitle {
         display: flex;
         flex-direction: row;
@@ -223,7 +290,7 @@ ul.accordion-info-about-me-list li.ac .ac-trigger.accordion-button-up-down::afte
         letter-spacing: -0.03em;
     }
 
-/* -------------ACCORDION-------------  */
+    /* -------------ACCORDION-------------  */
 
     .accordion-info-about-me {
         width: 1376px;
@@ -247,16 +314,81 @@ ul.accordion-info-about-me-list li.ac .ac-trigger.accordion-button-up-down::afte
     }
 }
 
+/* DANILKO MONKEY */
+/* DANILKO MONKEY */
+/* DANILKO MONKEY */
+/* DANILKO MONKEY */
 
+.swipper-wrapper {
+    position: relative;
+}
 
+.swipper-wrapper .swiper {
+    width: 75%;
+    margin-left: 0;
+}
 
+.swipper-wrapper .swiper-slide {
+    width: 50%;
+}
 
+/* -------------TABLET Swiper-------------  */
 
+@media screen and (min-width: 768px) {
+    .swipper-wrapper .swiper {
+        width: 90%;
+    }
+div.about-me-swiper {
+    max-width: 600px;
+    /* overflow: hidden; */
+}
+    .swipper-wrapper .slide-about-me {
+        /* width: calc(((768px - 64px) * 0.9)/3);
+        height: calc(((768px - 64px) * 0.9)/3); */
+        width: 200px;
+        height: 200px;
+    }
+    .item-about-me{
+    font-size: 20px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+letter-spacing: -0.4px;
+}
+.swipper-wrapper-top{
+    margin-top: 64px;
+}
+.svg-arrow-about-me {
+   width: 40px;
+   height: 40px;
+}
 
+}
+.about-btn-arrow{
+    right: -16px;
+}
 
+/* -------------DESKTOP Swiper -------------  */
 
-
-
-
-
-
+@media screen and (min-width: 1440px) {
+    .swipper-wrapper .slide-about-me {
+        width: 200px;
+        height: 200px;
+    }
+    div.about-me-swiper {
+    max-width: 1200px;
+    
+}
+.swipper-wrapper-top{
+    margin-top: 96px;
+}
+}
+.svg-arrow-about-me{
+    stroke:#3B3B3B;
+}
+.svg-arrow-about-me:hover{
+    stroke:#ED3B44;
+}
+.svg-arrow-about-me:focus{
+stroke: #ED3B44;
+}
