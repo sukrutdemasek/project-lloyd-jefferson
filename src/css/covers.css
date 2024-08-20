@@ -3,8 +3,8 @@
 *::after {
   box-sizing: border-box;
 }
-.container.covers-container {
-  max-width: 375px;
+div.container.covers-container {
+  max-width: 100%;
 }
 .covers-section {
   margin-bottom: 64px;
@@ -55,13 +55,21 @@
 }
 @keyframes marqueeLine {
   from {
-    transform: translateX(-20%);
+    transform: translateX(-27%);
   }
   to {
-    transform: translateX(-180%);
+    transform: translateX(-580%);
   }
 }
 @media screen and (min-width: 768px) {
+  @keyframes marqueeLine {
+  from {
+    transform: translateX(-42%);
+  }
+  to {
+    transform: translateX(-580%);
+  }
+}
   .container.covers-container {
     max-width: 768px;
   }
@@ -98,7 +106,7 @@
 }
 .animate {
   animation-name: marqueeLine;
-  animation-duration: 5s;
-  animation-timing-function: ease-in-out;
+  animation-duration: 10s;
+  animation-timing-function: linear;
   animation-iteration-count: infinite;
 }
