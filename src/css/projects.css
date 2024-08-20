@@ -45,13 +45,19 @@
     border: 1px solid rgba(28, 29, 32, 0.2);
     border-radius: 60px;
     padding: 13px 18px;
-    background-color: #f5f5f5;
+    background-color: #fff;
     margin: 0;
 }
 
 
 .item-content {
-    color: rgba(28, 29, 32, 1);
+    color: #1C1D20;
+font-family: "Inter Tight";
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+letter-spacing: -0.32px;
     text-decoration: none;
 }
 
