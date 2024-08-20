@@ -68,7 +68,10 @@ ul.accordion-container li.ac .ac-trigger.faq-button::after {
   border-radius: 100px;
   transform: translate(50%, -50%);
 }
-
+ul.accordion-container li.ac .ac-trigger.faq-button:hover::after {
+    border-color: #fafafa;
+    box-shadow: 0 0 15px #ed3b44;
+}
 .faq-arrow-icon {
   position: absolute;
   top: 10px;

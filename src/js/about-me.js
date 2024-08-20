@@ -4,7 +4,7 @@ import 'accordion-js/dist/accordion.min.css';
 document.addEventListener('DOMContentLoaded', function () {
   
     new Accordion('.accordion-info-about-me-list', {
-      duration: 700,
+      duration: 300,
       showMultiple: true,
 });
 });

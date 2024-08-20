@@ -72,6 +72,11 @@
   letter-spacing: -0.02em;
   color: #fafafa;
 }
+.benefits-order-button:hover {
+   border-color: #fafafa;
+    box-shadow: 0 0 15px #ed3b44;
+}
+
 /*TABLET VERSION*/
 @media screen and (min-width: 768px) {
   .benefits-container.container {
