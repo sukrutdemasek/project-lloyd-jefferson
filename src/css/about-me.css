@@ -156,7 +156,26 @@ ul.accordion-info-about-me-list li.ac.is-active .about-me-arrow-icon {
 }
 
 /*-----------------------Swiper-------------------------*/
+.swiper .about-me-swiper {
+    position: relative; 
+} /*для кнопки*/
 
+.about-btn-arrow {
+    position: absolute;
+    /* Абсолютне позиціонування для переміщення кнопки */
+    top: 50%;
+    /* Відстань від верху контейнера */
+    right: 0px;
+    /* Відстань від правого краю контейнера, можете змінити на ваш розсуд */
+    transform: translateY(-50%);
+    /* Вирівнює кнопку по вертикалі */
+    z-index: 10;
+    /* Забезпечує, що кнопка буде поверх інших елементів */
+    background-color: transparent;
+    /* Залишає фон прозорим */
+    border: none;
+    /* Видаляє будь-які межі */
+}
 .item-about-me {
     display: flex;
     justify-content: center;
@@ -183,6 +202,24 @@ ul.accordion-info-about-me-list li.ac.is-active .about-me-arrow-icon {
     border: none;
     background-color: transparent;
 }
+
+/* -------------TABLET Swiper-------------  */
+
+@media screen and (min-width: 768px) {
+    .item-about-me {
+            width: 200px;
+            height: 200px;
+        }
+
+    .about-btn-arrow {
+     right: 0px;
+            }
+    }
+
+        /* -------------DESKTOP Swiper -------------  */
+    
+        @media screen and (min-width: 1440px) {
+        }
 
 /* -------------TABLET-------------  */
 
