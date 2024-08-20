@@ -1,115 +1,101 @@
-import { PostRequest } from './api';
 import iziToast from 'izitoast';
-import 'izitoast/dist/css/iziToast.min.css';
 
-const INPUT_LENGTH_BEFORE_CUT = 36;
+const workTogetherForm = document.querySelector('.coopForm');
+let emailInput = document.querySelector('#email');
+let commentInput = document.querySelector('#comment');
 
-const wtGlobalRefs = {
-  wtResultMsg: document.querySelector('.coopResultMsg'),
-};
+const savedData = JSON.parse(localStorage.getItem('feedback-form-state'));
+if (savedData) {
+  emailInput.value = savedData.email || '';
+  commentInput.value = savedData.comment || '';
+}
 
-wtGlobalRefs.wtCoopForm.addEventListener('submit', sendWtUserData);
-wtGlobalRefs.wtCoopForm.elements.email.addEventListener(
-  'input',
-  resetValidation
-);
-wtGlobalRefs.wtCoopForm.elements.email.addEventListener('blur', emailValidator);
-wtGlobalRefs.wtCoopForm.elements.email.addEventListener('blur', inputCutString);
-wtGlobalRefs.wtCoopForm.elements.email.addEventListener(
-  'focus',
-  inputFullString
-);
-wtGlobalRefs.wtCoopForm.elements.comment.addEventListener(
-  'focus',
-  inputFullString
-);
-wtGlobalRefs.wtCoopForm.elements.comment.addEventListener(
-  'blur',
-  inputCutString
-);
+function handleFocus(input) {
+  input.value = input.dataset.fullValue || input.value;
+}
 
-// обробка форми, надсилає пошту та комент на сервер
+function handleBlur(input) {
+  if (input.value.length > 36) {
+    input.dataset.fullValue = input.value;
+    input.value = `${input.value.substring(0, 36)}...`;
+  }
+}
 
-async function sendWtUserData(e) {
-  e.preventDefault();
+emailInput.addEventListener('focus', () => handleFocus(emailInput));
+emailInput.addEventListener('blur', () => handleBlur(emailInput));
+commentInput.addEventListener('focus', () => handleFocus(commentInput));
+commentInput.addEventListener('blur', () => handleBlur(commentInput));
+
+workTogetherForm.addEventListener('submit', async function (event) {
+  event.preventDefault();
+
+  handleFocus(emailInput);
+  handleFocus(commentInput);
+
+  const emailValue = emailInput.value;
+  const commentValue = commentInput.value;
+
+  const formData = {
+    email: emailValue,
+    comment: commentValue,
+  };
+
+  localStorage.setItem('feedback-form-state', JSON.stringify(formData));
+
   try {
-    const { email, comment } = wtGlobalRefs.wtCoopForm.elements;
-    const data = await PostRequest(email.value, comment.value);
-    openWtModal(data);
-    wtGlobalRefs.wtCoopForm.reset();
-    email.classList.remove('Invalid');
-    email.classList.remove('Success');
-    wtGlobalRefs.wtResultMsg.textContent = '';
-  } catch (err) {
+    const response = await fetch(
+      'https://portfolio-js.b.goit.study/api/requests',
+      {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      }
+    );
+
+    if (!response.ok) {
+      iziToast.error({
+        title: 'Error!',
+        titleSize: '16',
+        titleColor: '#fafafa',
+        message: `Request was not delivered`,
+        messageSize: '16',
+        messageColor: '#fafafa',
+        backgroundColor: '#1C1D20',
+        theme: 'dark',
+        position: 'bottomCenter',
+        closeOnEscape: true,
+        closeOnClick: true,
+      });
+    } else {
+      alert('Success!');
+      workTogetherForm.reset();
+      localStorage.removeItem('feedback-form-state');
+    }
+  } catch (error) {
     iziToast.error({
-      message: 'Something went wrong! Please, try again.',
+      title: 'Error!',
+      titleSize: '16',
+      titleColor: '#fafafa',
+      message: `Request was not delivered`,
+      messageSize: '16',
+      messageColor: '#fafafa',
+      backgroundColor: '#1C1D20',
+      theme: 'dark',
       position: 'bottomCenter',
+      closeOnEscape: true,
+      closeOnClick: true,
     });
   }
-}
+});
 
-//перевіряє введені дані електронної пошти
-
-function emailValidator(e) {
-  e.target.value = e.target.value.trim();
-  const pattern = /^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/;
-  if (!e.target.value) {
-    resetValidation(e);
-    return;
-  }
-  if (e.target.value.match(pattern)) {
-    showValidationSuccess();
-  } else {
-    showValidationInvalid();
-  }
-}
-
-//відображення стилю успіху та повідомлень для введення електронної пошти
-
-function showValidationSuccess() {
-  const { email } = wtGlobalRefs.wtCoopForm.elements;
-  email.classList.remove('Invalid');
-  email.classList.add('Success');
-  wtGlobalRefs.wtResultMsg.textContent = 'Success!';
-  wtGlobalRefs.wtResultMsg.classList.add('Success');
-}
-
-// відображає недійсний стиль і повідомлення для введення електронної пошти
-
-function showValidationInvalid() {
-  const { email } = wtGlobalRefs.wtCoopForm.elements;
-  email.classList.remove('Success');
-  email.classList.add('Invalid');
-  wtGlobalRefs.wtResultMsg.textContent = 'Invalid email, try again';
-  wtGlobalRefs.wtResultMsg.classList.remove('Success');
-}
-
-// скидає повідомлення перевірки та стилі для введення електронної пошти
-
-function resetValidation(e) {
-  if (e.target.name === 'email') {
-    wtGlobalRefs.wtResultMsg.textContent = '';
-    wtGlobalRefs.wtResultMsg.classList.remove('Success');
-  }
-  const { email } = wtGlobalRefs.wtCoopForm.elements;
-  email.classList.remove('Invalid');
-  email.classList.remove('Success');
-}
-
-// скорочує вхідне значення, якщо воно перевищує вказану довжину
-
-function inputCutString(e) {
-  console.log(e.target.value.length);
-  e.target.setAttribute('data-value', e.target.value.trim());
-  if (e.target.value.length > INPUT_LENGTH_BEFORE_CUT) {
-    e.target.value = e.target.value
-      .slice(0, INPUT_LENGTH_BEFORE_CUT - 3)
-      .concat('...');
-  }
-}
-
-// відновлює повне введене значення, коли користувач повертається до поля введення
-
-function inputFullString(e) {
-  if (e.target.value) e.target.value = e.target.getAttribute('data-value');
+function saveLocalData() {
+  localStorage.setItem(
+    'feedback-form-state',
+    JSON.stringify({
+      email: emailInput.value,
+      comment: commentInput.value,
+    })
+  );
 }

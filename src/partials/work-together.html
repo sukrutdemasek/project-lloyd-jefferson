@@ -1,22 +1,25 @@
 <footer id="WorkTogether" class="workTogetherSection">
-  <div class="container">
-    <picture class="workTogetherPhoto">
-      <source
-        srcset="
-          ./img/work-together/photo.png    1x,
-          ./img/work-together/photo@2x.png 2x
-        "
+  <div class="container footer-container">
+    <div class="work-together-title">
+      <img
+        src="./img/work-together/photo.png"
+        alt="photo of the person"
+        class="footer-photo"
       />
-      <img src="./img/work-together/photo.png" alt="photo of the person" />
-    </picture>
-    <h2 class="workTogetherTitle">
-      Let’s <span class="workWord">work </span
-      ><span class="newLine">together</span>
-    </h2>
-    <form id="WtForm" class="coopForm" autocomplete="off">
+
+      <h2 class="workTogetherTitle">
+        <span class="work-together-header">
+          Let’s <span class="workWord">work </span>
+        </span>
+        <br />
+        <span class="newline">together</span>
+      </h2>
+    </div>
+    <form id="WtForm" class="coopForm" autocomplete="off" novalidate>
       <ul class="coopInputGroup">
         <li class="coopInputItem">
           <input
+            id="email"
             class="coopInput"
             type="email"
             name="email"
@@ -28,6 +31,7 @@
         </li>
         <li class="coopInputItem">
           <input
+            id="comment"
             class="coopInput"
             type="text"
             name="comment"
@@ -52,3 +56,4 @@
     </ul>
   </div>
 </footer>
+<script type="module" src="js/work-together.js"></script>
