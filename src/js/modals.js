@@ -21,12 +21,12 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   }
 
-  // 3. Переход к футеру при нажатии на кнопку Order the project
+  //Переход к футеру при нажатии на кнопку Order the project
   orderButton.addEventListener('click', function () {
     document.querySelector('footer').scrollIntoView({ behavior: 'smooth' });
   });
 
-  // 4. Закрытие модального окна Header
+  // Закрытие модального окна Header
 
   headerCloseButton.addEventListener('click', toggleHeaderModal);
 
@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', function () {
   // Открытие модального окна при клике на иконку меню (бургер)
   menuButton.addEventListener('click', toggleHeaderModal);
 
-  // 5. Управление модальным окном Work Together
+  //Управление модальным окном Work Together
 
   const workTogetherForm = document.getElementById('workTogetherForm');
   const workTogetherModal = document.getElementById('workTogetherModal');
