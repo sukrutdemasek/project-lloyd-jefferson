@@ -105,6 +105,13 @@ coopInput::placeholder {
 .coopSubmitBtn:focus {
   background-color: #e0373f;
 }
+.coopResultMsg {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.28571;
+  letter-spacing: -0.02em;
+  position: absolute;
+}
 .contactsList {
   display: flex;
   flex-direction: column;
@@ -131,10 +138,11 @@ coopInput::placeholder {
   font-weight: 500;
   line-height: normal;
   letter-spacing: -0.28px;
+  color: #fafafa;
 }
-.contactItem:hover{
+.contactItem:hover {
   border-color: #fafafa;
-    box-shadow: 0 0 15px #ed3b44;
+  box-shadow: 0 0 15px #ed3b44;
 }
 @media screen and (min-width: 333px) {
   .contactsList {
@@ -184,6 +192,9 @@ coopInput::placeholder {
     align-items: flex-start;
     width: 245px;
   }
+  .coopResultMsg {
+    margin-top: 42px;
+  }
   .coopSubmitBtn {
     width: 150px;
     height: 150px;
@@ -198,6 +209,11 @@ coopInput::placeholder {
     justify-content: center;
     align-items: center;
     gap: 10px;
+  }
+  .contactLink {
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: -0.02em;
   }
 }
 @media screen and (min-width: 1440px) {
