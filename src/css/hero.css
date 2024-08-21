@@ -3,12 +3,17 @@
 body, html {
     overflow-x: hidden; 
 }
-
+@media screen and (max-width: 375px) {
+   .hero-section{
+    background-size:contain;
+   }
+    
+}
 .hero-section {
     background-image: url('../img/hero/png tablet-mobile/hero_red_mobile_1x.png');
     background-repeat: no-repeat;
     background-position: left;
-    background-size: contain;
+    background-size: cover;
     margin-bottom: 64px;
     /* text-align: center; */
 }

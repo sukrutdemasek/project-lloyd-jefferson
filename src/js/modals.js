@@ -5,6 +5,7 @@
   const closeMenuBtn = document.querySelector('.js-close-burger');
   const menuLinks = document.querySelectorAll('.burger-menu-nav-link'); // Всі посилання в меню
   const orderProjectBtn = document.querySelector('.burger-button-link'); // Кнопка "Order the project"
+  const body = document.body;
 
   // Функція для перемикання меню
   const toggleMenu = () => {
@@ -14,10 +15,10 @@
       openMenuBtn.setAttribute('aria-expanded', !isMenuOpen);
 
       // Блокування або розблокування прокручування тіла в залежності від стану меню
-      if (isMenuOpen) {
-        bodyScrollLock.enableBodyScroll(document.body);
+      if (!isMenuOpen) {
+        body.classList.add('no-scroll');
       } else {
-        bodyScrollLock.disableBodyScroll(document.body);
+        body.classList.remove('no-scroll');
       }
     }
   };
@@ -29,7 +30,7 @@
       if (openMenuBtn) {
         openMenuBtn.setAttribute('aria-expanded', false);
       }
-      bodyScrollLock.enableBodyScroll(document.body);
+      body.classList.remove('no-scroll');
     }
   };
 
@@ -58,7 +59,7 @@
       if (openMenuBtn) {
         openMenuBtn.setAttribute('aria-expanded', false);
       }
-      bodyScrollLock.enableBodyScroll(document.body);
+      body.classList.remove('no-scroll');
     }
   });
 })();

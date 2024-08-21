@@ -1,7 +1,28 @@
 /*--------BURGER---------*/
-@media (min-device-pixel-ratio: 2),
-(min-resolution: 192dpi),
-(min-resolution: 2dppx) {
+@media screen and (max-width: 375px) {
+   .menu-burger{
+   background-size: 420px 900px;
+    
+   }
+    
+}
+@media screen and (min-width: 375px) {
+    .menu-burger{
+        background-size: cover;
+    }
+    
+}
+.menu-burger {
+    background-image: url('../img/hero/png tablet-mobile/hero_red_mobile_1x.png');
+    background-repeat: no-repeat;
+    background-position: left;
+    overflow-x: hidden;
+
+
+    /* text-align: center; */
+}
+
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     .menu-burger {
         background-image: url('../img/hero/png tablet-mobile/hero_red_mobile_2x.png');
     }
@@ -14,111 +35,76 @@
     top: 0;
     right: 0;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 1000;
     overflow: auto;
+    position: fixed;
 }
 
-.menu-burger-container .menu-toggle {
-    position: absolute;
-    top: 16px;
-    right: 16px;
-    color: #fff;
+.menu-burger.is-open{
+    display: block;
 }
-
 .menu-burger-container {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 289px;
-    justify-content: center;
-    padding-top: 302px;
-    padding-bottom: 64px;
-    padding-left: 152px;
-    padding-right: 152px;
+    height: 100vh;
+    max-width: 375px;
+    margin: 0 auto;
+    justify-content: space-between;
 }
-/* Показати меню, коли воно має клас 'is-open' */
-.menu-burger.is-open {
-    display: block;
-}
-
-.menu-burger-nav-list {
-    text-align: center;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.menu-burger-nav-item {
-    margin-bottom: 10px;
-}
-
-.burger-menu-nav-link {
-    color: #FAFAFA;
-    font-family: inherit;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 19.36px;
-    letter-spacing: -0.02em;
-    text-align: left;
-    position: relative;
-    /*для позиціонування псевдоелемента */
-}
-
-.burger-menu-nav-link::after {
-    content: '';
-    /* Псевдоелемент */
-    display: block;
-    position: absolute;
-    left: 0;
-    bottom: -2px;
-    width: 100%;
-    height: 1px;
-    background-color: #FAFAFA;
-    /* Колір підкреслення, можна змінити на потрібний */
-}
-
-.burger-menu-nav-link:hover {
-    color:#E0373F;;
-    /* Change color on hover */
-}
-
-.menu-toggle {
-    background: none;
+.menu-toggle{
+    background-color: transparent;
     border: none;
-    cursor: pointer;
+    width: 32px;
+    align-self: flex-end;
+    margin-top: 32px;
+    margin-right: 16px;
+    padding: 0;
 }
-
 .menu-burger-icon {
-    fill: #3B3B3B;
-    /* Example color for the close icon */
+    stroke: #fafafa;
 }
-
-
-/* Order Button */
-.burger-button-link {
+.menu-burger-icon:hover {
+    stroke: #ed3b44;
+}
+.menu-burger-nav-list {
     display: flex;
-    padding: 18px 24px;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+.burger-menu-nav-link{
+    color: #FAFAFA;
+font-family: "Inter Tight";
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+letter-spacing: -0.32px;
+text-decoration-line: underline;
+}
+.burger-menu-nav-link:hover{
+    color: #ED3B44;
+}
+.burger-button-link{
+    align-self: center;
+    width: 164px;
+padding: 14px 31px;
+margin-bottom: 64px;
     border-radius: 60px;
-    background: #ed3b44;
-    color: #fafafa;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    max-height: 55px;
+background: #ED3B44;
+    color: #FAFAFA;
+font-family: "Inter Tight";
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+letter-spacing: -0.28px;
 }
-
-.burger-button-link {
-    font-family: "Inter Tight";
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    letter-spacing: -0.32px;
+.burger-button-link:hover{
+    background: #E0373F;
 }
-
-.burger-button-link:hover,
-.burger-button-link:focus {
-    background-color: #e0373f;
+.no-scroll {
+  overflow: hidden;
 }
