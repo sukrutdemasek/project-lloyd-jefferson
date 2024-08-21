@@ -101,6 +101,10 @@ coopInput::placeholder {
   justify-content: center;
   align-items: center;
 }
+.coopSubmitBtn:hover,
+.coopSubmitBtn:focus {
+  background-color: #e0373f;
+}
 .contactsList {
   display: flex;
   flex-direction: column;
@@ -127,6 +131,10 @@ coopInput::placeholder {
   font-weight: 500;
   line-height: normal;
   letter-spacing: -0.28px;
+}
+.contactItem:hover{
+  border-color: #fafafa;
+    box-shadow: 0 0 15px #ed3b44;
 }
 @media screen and (min-width: 333px) {
   .contactsList {

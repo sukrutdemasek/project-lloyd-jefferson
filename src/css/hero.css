@@ -148,10 +148,23 @@ body, html {
         align-items: center;
         gap: 8px;
     }
+   
 }
 
 /* ----------------TABLET---------------- */
+@media screen and (min-width: 768px) {
+    .hero-section {
+        background-image: url('../img/hero/png tablet-mobile/hero_red_tablet_1x.png');
+        background-size: cover;
+        height: 1024px;
+    }
+    #hero .hero-box {
+        gap: 187px;
+       
+    }
 
+    
+}
 @media screen and (min-width: 768px) and (max-width: 1439px) {
     .hero-section {
         background-image: url('../img/hero/png tablet-mobile/hero_red_tablet_1x.png');
