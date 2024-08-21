@@ -8,6 +8,7 @@
     width: 100%;
     opacity: 70%;
     transition: transform 0.5s;
+    max-width: 90%;
 }
 div.color-div.collapsed{
     transform: translateX(-95%);
@@ -21,7 +22,7 @@ div.color-div.collapsed{
     align-items: center;
     padding: 16px;
     width: 100%;
-    max-width: 375px;
+    
 }
 .color-item {
     display: flex;
@@ -78,10 +79,10 @@ div.color-div.collapsed{
    }
 .color-div {
     top: 160px;
+     max-width: 75%;
 }
-.color-list{
-    max-width: 768px;
-}
+
+
 }
 @media screen and (min-width: 1440px){
    .color-button{
@@ -91,10 +92,9 @@ div.color-div.collapsed{
    }
 .color-div {
     top: 180px;
+max-width: 50%;
 }
-.color-list{
-    max-width: 1440px;
-}
+
 }
 
 /* color:red; */
