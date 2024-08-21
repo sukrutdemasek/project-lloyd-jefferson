@@ -4,21 +4,15 @@
 .reviews-container {
   padding: 0 16px;
 }
-
+.container.reviews-container {
+  margin-bottom: 64px;
+}
 @media (min-width: 768px) {
-  .reviews-section {
-    padding-top: 96px;
-  }
   .reviews-container {
     padding: 0 32px;
   }
 }
-@media (min-width: 1440px) {
-  .reviews-section {
-    padding-top: 164px;
-  }
 
-}
 
 .section-headline {
   margin-bottom: 32px;
@@ -80,6 +74,9 @@
   .reviews__nav {
     gap: 20px;
   }
+  .container.reviews-container {
+  margin-bottom: 96px;
+}
 }
 
 .reviews-section .swiper-button-prev,
