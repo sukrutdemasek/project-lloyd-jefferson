@@ -1,0 +1,1011 @@
+.color-div {
+    position: fixed;
+    
+    z-index: 2;
+    background-color: black;
+    top: 20%;
+    display: flex;
+    width: 100%;
+    opacity: 70%;
+    transition: transform 0.5s;
+    max-width: 90%;
+}
+div.color-div.collapsed{
+    transform: translateX(-95%);
+}
+.color-div.collapsed:hover{
+    transform: translateX(0%);
+}
+.color-list{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 16px;
+    width: 100%;
+    
+}
+.color-item {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.color-button{
+    width: 30px;
+    height: 30px;
+    border: 1px solid #FAFAFA;
+}
+.color-button-1{
+    background-color: #ED3B44; /* #e0373f */
+}
+.color-button-1:hover{
+    background-color: #E0373F; /* lime */
+}
+.color-button-2{
+    background-color: #C6E327; /*#A3B830 */
+}
+.color-button-2:hover{
+    background-color: #A3B830; /* lime */
+}
+.color-button-3{
+    background-color:#0041E8; /* #365AB9 */
+}
+.color-button-3:hover{
+    background-color: #365AB9; /* lime */
+}
+.color-button-4{
+    background-color: #E6533C; /* #BA6659 */
+}
+.color-button-4:hover{
+    background-color: #BA6659; /* lime */
+}
+.color-button-5{
+    background-color: #2B4441;/* #306A64 */
+}
+.color-button-5:hover{
+    background-color: #306A64; /* lime */
+}
+.color-button-6{
+    background-color: #FF7F08; /* #FF450A */
+}
+.color-button-6:hover{
+    background-color: #FF450A; /* lime */
+}
+
+@media screen and (min-width: 768px){
+   .color-button{
+    width: 50px;
+    height: 50px;
+   }
+.color-div {
+    top: 160px;
+     max-width: 75%;
+}
+
+
+}
+@media screen and (min-width: 1440px){
+   .color-button{
+    width: 60px;
+    height: 60px;
+    
+   }
+.color-div {
+    top: 180px;
+max-width: 50%;
+}
+
+}
+
+/* color:red; */
+body.red .color-button-1{
+    box-shadow: 0 0 15px #FAFAFA;
+    color: #FAFAFA;
+    cursor:auto;
+}
+ body.red .color-button-1:hover{
+    background-color: #ed3b44;
+    cursor:auto;
+     /* lime */
+}
+/* -------------------HEADER ------------------ */
+ body.red .burger-icon:hover {
+  stroke: #ed3b44;
+}
+body.red .burger-icon:focus {
+  stroke: #ed3b44;
+}
+body.red .header-nav-link:hover,
+body.red .header-nav-link:focus {
+  color: #ed3b44;
+}
+body.red .header-button-link {
+  background: #ed3b44;
+}
+
+body.red .header-button-link:hover,
+body.red .header-button-link:focus {
+  background-color: #e0373f;/* lime  */
+}
+/* -----------HERO------------ */
+body.red .hero-social-link:hover,
+body.red .hero-social-link:focus,
+body.red .hero-email:hover, 
+body.red .hero-email:focus {
+    border-color: #fafafa;
+    box-shadow: 0 0 15px #ed3b44;
+}
+/* -----------ABOUT ME------------ */
+body.red .subtitle-func {
+    color: #ed3b44;
+}
+body.red ul.accordion-info-about-me-list li.ac .ac-trigger.accordion-button-up-down:hover::after
+ {
+    border-color: #fafafa;
+    box-shadow: 0 0 15px #ed3b44;
+}
+body.red .swiper-slide-active .item-about-me {
+    background-color: #ed3b44;
+    border: 1px solid #ed3b44;
+}
+body.red  .item-about-me:hover {
+border-color: #fafafa;
+
+}
+body.red .swiper-slide-active .item-about-me:hover {
+    background-color: #E0373F; /* lime */
+
+}
+body.red .svg-arrow-about-me:hover{
+    stroke:#ED3B44;
+}
+body.red .svg-arrow-about-me:focus{
+stroke: #ED3B44;
+}
+/* -----------BENEFITS------------ */
+body.red .benefits-span {
+  background: #ed3b44;
+}
+body.red .benefits-order-button:hover {
+   border-color: #fafafa;
+    box-shadow: 0 0 15px #ED3B44;
+}
+/* -----------PROJECTS------------ */
+body.red .projects-button {
+    color: #FAFAFA;
+    background-color: #ED3B44;
+}
+body.red .projects-button:hover {
+    background-color: #E0373F; /* lime */
+    
+}
+body.red .projects-section .swiper-button-prev:not(.swiper-button-disabled):hover,
+body.red .projects-section .swiper-button-next:not(.swiper-button-disabled):hover,
+body.red .projects-section .swiper-button-prev:not(.swiper-button-disabled):focus,
+body.red .projects-section .swiper-button-next:not(.swiper-button-disabled):focus {
+    background-color: #ed3b44;
+    border-color: #ed3b44;
+}
+body.red .technologies-item:hover{
+ 
+    box-shadow: 0 0 15px #ed3b44;
+}
+
+   body.red .projects-button {
+        background-color: #ED3B44;
+    }
+/* -------------------FAQ------------------ */
+body.red ul.accordion-container li.ac .ac-trigger.faq-button:hover::after {
+    border-color: #fafafa;
+    box-shadow: 0 0 15px #ed3b44;
+}
+/* ------------------REVIEWS----------------- */
+body.red .reviews-section .swiper-button-prev:not(.swiper-button-disabled):hover,
+body.red .reviews-section .swiper-button-next:not(.swiper-button-disabled):hover,
+body.red .reviews-section .swiper-button-prev:not(.swiper-button-disabled):focus,
+body.red .reviews-section .swiper-button-next:not(.swiper-button-disabled):focus {
+  background-color: #ed3b44;
+  border-color: #ed3b44;
+}
+/* -------------------WORK TOGETHER------------------ */
+body.red .workWord {
+  color: #ed3b44;
+}
+body.red .coopSubmitBtn {
+  color: #fafafa;
+  background-color: #ed3b44;
+}
+body.red .coopSubmitBtn:hover,
+body.red .coopSubmitBtn:focus {
+  background-color: #e0373f; /* lime */
+}
+body.red .contactItem:hover{
+  border-color: #fafafa;
+    box-shadow: 0 0 15px #ed3b44;
+}
+/* ---------------HEADER MODAL--------------- */
+
+body.red .burger-menu-nav-link:hover{
+    color: #ED3B44;
+}
+body.red .burger-button-link{
+background: #ED3B44;
+    color: #FAFAFA;
+}
+body.red .burger-button-link:hover{
+    background: #E0373F; /* lime */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* color:green; */
+body.green .color-button-2{
+    box-shadow: 0 0 15px #FAFAFA;
+    color: #FAFAFA;
+    cursor:auto;
+}
+ body.green .color-button-2:hover{
+    background-color: #C6E327;
+    cursor:auto;
+     /* lime */
+}
+/* -------------------HEADER ------------------ */
+ body.green .burger-icon:hover {
+  stroke: #C6E327;
+}
+body.green .burger-icon:focus {
+  stroke: #C6E327;
+}
+body.green .header-nav-link:hover,
+body.green .header-nav-link:focus {
+  color: #C6E327;
+}
+body.green .header-button-link {
+  background: #C6E327;
+}
+
+body.green .header-button-link:hover,
+body.green .header-button-link:focus {
+  background-color: #A3B830;/* lime  */
+}
+/* -----------HERO------------ */
+body.green .hero-social-link:hover,
+body.green .hero-social-link:focus,
+body.green .hero-email:hover, 
+body.green .hero-email:focus {
+    border-color: #fafafa;
+    box-shadow: 0 0 15px #C6E327;
+}
+/* -----------ABOUT ME------------ */
+body.green .subtitle-func {
+    color: #C6E327;
+}
+body.green ul.accordion-info-about-me-list li.ac .ac-trigger.accordion-button-up-down:hover::after
+ {
+    border-color: #fafafa;
+    box-shadow: 0 0 15px #C6E327;
+}
+body.green .swiper-slide-active .item-about-me {
+    background-color: #C6E327;
+    border: 1px solid #C6E327;
+}
+body.green .svg-arrow-about-me:hover{
+    stroke:#C6E327;
+}
+body.green .svg-arrow-about-me:focus{
+stroke: #C6E327;
+}
+body.green  .item-about-me:hover {
+border-color: #fafafa;
+
+}
+body.green .swiper-slide-active .item-about-me:hover {
+    background-color: #A3B830; /* lime */
+
+}
+/* -----------BENEFITS------------ */
+body.green .benefits-span {
+  background: #C6E327;
+}
+body.green .benefits-order-button:hover {
+   border-color: #fafafa;
+    box-shadow: 0 0 15px #C6E327;
+}
+/* -----------PROJECTS------------ */
+body.green .projects-button {
+    color: #FAFAFA;
+    background-color: #C6E327;
+}
+body.green .projects-button:hover {
+    background-color: #A3B830; /* lime */
+    
+}
+body.green .projects-section .swiper-button-prev:not(.swiper-button-disabled):hover,
+body.green .projects-section .swiper-button-next:not(.swiper-button-disabled):hover,
+body.green .projects-section .swiper-button-prev:not(.swiper-button-disabled):focus,
+body.green .projects-section .swiper-button-next:not(.swiper-button-disabled):focus {
+    background-color: #C6E327;
+    border-color: #C6E327;
+}
+body.green .technologies-item:hover{
+ 
+    box-shadow: 0 0 15px #C6E327;
+}
+
+   .projects-button {
+        background-color: #C6E327;
+    }
+/* -------------------FAQ------------------ */
+body.green ul.accordion-container li.ac .ac-trigger.faq-button:hover::after {
+    border-color: #fafafa;
+    box-shadow: 0 0 15px #C6E327;
+}
+/* ------------------REVIEWS----------------- */
+body.green .reviews-section .swiper-button-prev:not(.swiper-button-disabled):hover,
+body.green .reviews-section .swiper-button-next:not(.swiper-button-disabled):hover,
+body.green .reviews-section .swiper-button-prev:not(.swiper-button-disabled):focus,
+body.green .reviews-section .swiper-button-next:not(.swiper-button-disabled):focus {
+  background-color: #C6E327;
+  border-color: #C6E327;
+}
+/* -------------------WORK TOGETHER------------------ */
+body.green .workWord {
+  color: #C6E327;
+}
+body.green .coopSubmitBtn {
+  color: #fafafa;
+  background-color: #C6E327;
+}
+body.green .coopSubmitBtn:hover,
+body.green .coopSubmitBtn:focus {
+  background-color: #A3B830;/* lime */
+}
+body.green .contactItem:hover{
+  border-color: #fafafa;
+    box-shadow: 0 0 15px #C6E327;
+}
+/* ---------------HEADER MODAL--------------- */
+
+body.green .burger-menu-nav-link:hover{
+    color: #C6E327;
+}
+body.green .burger-button-link{
+background: #C6E327;
+    color: #FAFAFA;
+}
+body.green .burger-button-link:hover{
+    background: #A3B830; /* lime */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* color:blue; */
+ body.blue .color-button-3{
+    box-shadow: 0 0 15px #FAFAFA;
+    color: #FAFAFA;
+    cursor:auto;
+}
+ body.blue .color-button-3:hover{
+    background-color: #0041E8;
+    cursor:auto;
+     /* lime */
+}
+/* -------------------HEADER ------------------ */
+ body.blue .burger-icon:hover {
+  stroke: #0041E8;
+}
+body.blue .burger-icon:focus {
+  stroke: #0041E8;
+}
+body.blue .header-nav-link:hover,
+body.blue .header-nav-link:focus {
+  color: #0041E8;
+}
+body.blue .header-button-link {
+  background: #0041E8;
+}
+
+body.blue .header-button-link:hover,
+body.blue .header-button-link:focus {
+  background-color: #365AB9;/* lime  */
+}
+/* -----------HERO------------ */
+body.blue .hero-social-link:hover,
+body.blue .hero-social-link:focus,
+body.blue .hero-email:hover, 
+body.blue .hero-email:focus {
+    border-color: #fafafa;
+    box-shadow: 0 0 15px #0041E8;
+}
+/* -----------ABOUT ME------------ */
+body.blue .subtitle-func {
+    color: #0041E8;
+}
+body.blue ul.accordion-info-about-me-list li.ac .ac-trigger.accordion-button-up-down:hover::after
+ {
+    border-color: #fafafa;
+    box-shadow: 0 0 15px #0041E8;
+}
+body.blue .swiper-slide-active .item-about-me {
+    background-color: #0041E8;
+    border: 1px solid #0041E8;
+}
+body.blue .svg-arrow-about-me:hover{
+    stroke:#0041E8;
+}
+body.blue .svg-arrow-about-me:focus{
+stroke: #0041E8;
+}
+body.blue  .item-about-me:hover {
+border-color: #fafafa;
+
+}
+body.blue .swiper-slide-active .item-about-me:hover {
+    background-color: #365AB9; /* lime */
+
+}
+/* -----------BENEFITS------------ */
+body.blue .benefits-span {
+  background: #0041E8;
+}
+body.blue .benefits-order-button:hover {
+   border-color: #fafafa;
+    box-shadow: 0 0 15px #0041E8;
+}
+/* -----------PROJECTS------------ */
+body.blue .projects-button {
+    color: #FAFAFA;
+    background-color: #0041E8;
+}
+body.blue .projects-button:hover {
+    background-color: #365AB9; /* lime */
+    
+}
+body.blue .projects-section .swiper-button-prev:not(.swiper-button-disabled):hover,
+body.blue .projects-section .swiper-button-next:not(.swiper-button-disabled):hover,
+body.blue .projects-section .swiper-button-prev:not(.swiper-button-disabled):focus,
+body.blue .projects-section .swiper-button-next:not(.swiper-button-disabled):focus {
+    background-color: #0041E8;
+    border-color: #0041E8;
+}
+body.blue .technologies-item:hover{
+ 
+    box-shadow: 0 0 15px #0041E8;
+}
+
+   body.blue .projects-button {
+        background-color: #0041E8;
+    }
+/* -------------------FAQ------------------ */
+ body.blue ul.accordion-container li.ac .ac-trigger.faq-button:hover::after {
+    border-color: #fafafa;
+    box-shadow: 0 0 15px #0041E8;
+}
+/* ------------------REVIEWS----------------- */
+body.blue .reviews-section .swiper-button-prev:not(.swiper-button-disabled):hover,
+body.blue .reviews-section .swiper-button-next:not(.swiper-button-disabled):hover,
+body.blue .reviews-section .swiper-button-prev:not(.swiper-button-disabled):focus,
+body.blue .reviews-section .swiper-button-next:not(.swiper-button-disabled):focus {
+  background-color: #0041E8;
+  border-color: #0041E8;
+}
+/* -------------------WORK TOGETHER------------------ */
+body.blue .workWord {
+  color: #0041E8;
+}
+body.blue .coopSubmitBtn {
+  color: #fafafa;
+  background-color: #0041E8;
+}
+body.blue .coopSubmitBtn:hover,
+body.blue .coopSubmitBtn:focus {
+  background-color: #365AB9; /* lime */
+}
+ body.blue .contactItem:hover{
+  border-color: #fafafa;
+    box-shadow: 0 0 15px #0041E8;
+}
+/* ---------------HEADER MODAL--------------- */
+
+body.blue .burger-menu-nav-link:hover{
+    color: #0041E8;
+}
+body.blue .burger-button-link{
+background: #0041E8;
+    color: #FAFAFA;
+}
+body.blue .burger-button-link:hover{
+    background: #365AB9;/* lime */
+}
+
+
+
+/* color:#E6533C; */
+body.brick .color-button-4{
+    box-shadow: 0 0 15px #FAFAFA;
+    color: #FAFAFA;
+    cursor:auto;
+}
+body.brick .color-button-4:hover{
+    background-color: #E6533C;
+    cursor:auto;
+     /* lime */
+}
+/* -------------------HEADER ------------------ */
+ body.brick .burger-icon:hover {
+  stroke: #E6533C;
+}
+body.brick .burger-icon:focus {
+  stroke: #E6533C;
+}
+body.brick .header-nav-link:hover,
+body.brick .header-nav-link:focus {
+  color: #E6533C;
+}
+body.brick .header-button-link {
+  background: #E6533C;
+}
+
+body.brick .header-button-link:hover,
+body.brick .header-button-link:focus {
+  background-color: #BA6659; /* lime  */
+}
+/* -----------HERO------------ */
+body.brick .hero-social-link:hover,
+body.brick .hero-social-link:focus,
+body.brick .hero-email:hover, 
+body.brick .hero-email:focus {
+    border-color: #fafafa;
+    box-shadow: 0 0 15px #E6533C;
+}
+/* -----------ABOUT ME------------ */
+body.brick .subtitle-func {
+    color: #E6533C;
+}
+body.brick ul.accordion-info-about-me-list li.ac .ac-trigger.accordion-button-up-down:hover::after
+ {
+    border-color: #fafafa;
+    box-shadow: 0 0 15px #E6533C;
+}
+body.brick .swiper-slide-active .item-about-me {
+    background-color: #E6533C;
+    border: 1px solid #E6533C;
+}
+body.brick .svg-arrow-about-me:hover{
+    stroke: #E6533C;
+}
+body.brick .svg-arrow-about-me:focus{
+stroke: #E6533C;
+}
+body.brick  .item-about-me:hover {
+border-color: #fafafa;
+
+}
+body.brick .swiper-slide-active .item-about-me:hover {
+    background-color:  #BA6659; /* lime */
+
+}
+/* -----------BENEFITS------------ */
+body.brick .benefits-span {
+  background: #E6533C;
+}
+body.brick .benefits-order-button:hover {
+   border-color: #fafafa;
+    box-shadow: 0 0 15px #E6533C;
+}
+/* -----------PROJECTS------------ */
+body.brick .projects-button {
+    color: #FAFAFA;
+    background-color: #E6533C;
+}
+body.brick .projects-button:hover {
+    background-color: #BA6659; /* lime */
+    
+}
+body.brick .projects-section .swiper-button-prev:not(.swiper-button-disabled):hover,
+body.brick .projects-section .swiper-button-next:not(.swiper-button-disabled):hover,
+body.brick .projects-section .swiper-button-prev:not(.swiper-button-disabled):focus,
+body.brick .projects-section .swiper-button-next:not(.swiper-button-disabled):focus {
+    background-color: #E6533C;
+    border-color: #E6533C;
+}
+body.brick .technologies-item:hover{
+ 
+    box-shadow: 0 0 15px #E6533C;
+}
+
+   body.brick .projects-button {
+        background-color: #E6533C;
+    }
+/* -------------------FAQ------------------ */
+body.brick ul.accordion-container li.ac .ac-trigger.faq-button:hover::after {
+    border-color: #fafafa;
+    box-shadow: 0 0 15px #E6533C;
+}
+/* ------------------REVIEWS----------------- */
+body.brick .reviews-section .swiper-button-prev:not(.swiper-button-disabled):hover,
+body.brick .reviews-section .swiper-button-next:not(.swiper-button-disabled):hover,
+body.brick .reviews-section .swiper-button-prev:not(.swiper-button-disabled):focus,
+body.brick .reviews-section .swiper-button-next:not(.swiper-button-disabled):focus {
+  background-color: #E6533C;
+  border-color: #E6533C;
+}
+/* -------------------WORK TOGETHER------------------ */
+body.brick .workWord {
+  color: #E6533C;
+}
+body.brick .coopSubmitBtn {
+  color: #fafafa;
+  background-color: #E6533C;
+}
+body.brick .coopSubmitBtn:hover,
+body.brick .coopSubmitBtn:focus {
+  background-color: #BA6659; /* lime */
+}
+body.brick .contactItem:hover{
+  border-color: #fafafa;
+    box-shadow: 0 0 15px #E6533C;
+}
+/* ---------------HEADER MODAL--------------- */
+
+body.brick .burger-menu-nav-link:hover{
+    color: #E6533C;
+}
+body.brick .burger-button-link{
+background: #E6533C;
+    color: #FAFAFA;
+}
+body.brick .burger-button-link:hover{
+    background: #BA6659; /* lime */
+}
+
+
+
+
+
+
+
+
+
+
+
+/* color:#2B4441; */
+body.rain .color-button-5{
+    box-shadow: 0 0 15px #FAFAFA;
+    color: #FAFAFA;
+    cursor:auto;
+}
+body.rain .color-button-5:hover{
+    background-color: #2B4441;
+    cursor:auto;
+     /* lime */
+}
+/* -------------------HEADER ------------------ */
+ body.rain .burger-icon:hover {
+  stroke: #2B4441;
+}
+body.rain .burger-icon:focus {
+  stroke: #2B4441;
+}
+body.rain .header-nav-link:hover,
+body.rain .header-nav-link:focus {
+  color: #2B4441;
+}
+body.rain .header-button-link {
+  background: #2B4441;
+}
+
+body.rain .header-button-link:hover,
+body.rain .header-button-link:focus {
+  background-color: #306A64;/* lime  */
+}
+/* -----------HERO------------ */
+body.rain .hero-social-link:hover,
+body.rain .hero-social-link:focus,
+body.rain .hero-email:hover, 
+body.rain .hero-email:focus {
+    border-color: #fafafa;
+    box-shadow: 0 0 15px #2B4441;
+}
+/* -----------ABOUT ME------------ */
+body.rain .subtitle-func {
+    color: #2B4441;
+}
+body.rain ul.accordion-info-about-me-list li.ac .ac-trigger.accordion-button-up-down:hover::after
+ {
+    border-color: #fafafa;
+    box-shadow: 0 0 15px #2B4441;
+}
+body.rain .swiper-slide-active .item-about-me {
+    background-color: #2B4441;
+    border: 1px solid #2B4441;
+}
+body.rain .svg-arrow-about-me:hover{
+    stroke:#2B4441;
+}
+body.rain .svg-arrow-about-me:focus{
+stroke: #2B4441;
+}
+body.rain  .item-about-me:hover {
+border-color: #fafafa;
+
+}
+body.rain .swiper-slide-active .item-about-me:hover {
+    background-color:  #306A64; /* lime */
+
+}
+/* -----------BENEFITS------------ */
+body.rain .benefits-span {
+  background: #2B4441;
+}
+body.rain .benefits-order-button:hover {
+   border-color: #fafafa;
+    box-shadow: 0 0 15px #2B4441;
+}
+/* -----------PROJECTS------------ */
+body.rain .projects-button {
+    color: #FAFAFA;
+    background-color: #2B4441;
+}
+body.rain .projects-button:hover {
+    background-color: #306A64; /* lime */
+    
+}
+body.rain .projects-section .swiper-button-prev:not(.swiper-button-disabled):hover,
+body.rain .projects-section .swiper-button-next:not(.swiper-button-disabled):hover,
+body.rain .projects-section .swiper-button-prev:not(.swiper-button-disabled):focus,
+body.rain .projects-section .swiper-button-next:not(.swiper-button-disabled):focus {
+    background-color: #2B4441;
+    border-color: #2B4441;
+}
+body.rain .technologies-item:hover{
+ 
+    box-shadow: 0 0 15px #2B4441;
+}
+
+   body.rain .projects-button {
+        background-color: #2B4441;
+    }
+/* -------------------FAQ------------------ */
+body.rain ul.accordion-container li.ac .ac-trigger.faq-button:hover::after {
+    border-color: #fafafa;
+    box-shadow: 0 0 15px #2B4441;
+}
+/* ------------------REVIEWS----------------- */
+body.rain .reviews-section .swiper-button-prev:not(.swiper-button-disabled):hover,
+body.rain .reviews-section .swiper-button-next:not(.swiper-button-disabled):hover,
+body.rain .reviews-section .swiper-button-prev:not(.swiper-button-disabled):focus,
+body.rain .reviews-section .swiper-button-next:not(.swiper-button-disabled):focus {
+  background-color: #2B4441;
+  border-color: #2B4441;
+}
+/* -------------------WORK TOGETHER------------------ */
+body.rain .workWord {
+  color: #2B4441;
+}
+body.rain .coopSubmitBtn {
+  color: #fafafa;
+  background-color: #2B4441;
+}
+body.rain .coopSubmitBtn:hover,
+body.rain .coopSubmitBtn:focus {
+  background-color: #306A64; /* lime */
+}
+body.rain .contactItem:hover{
+  border-color: #fafafa;
+    box-shadow: 0 0 15px #2B4441;
+}
+/* ---------------HEADER MODAL--------------- */
+
+body.rain .burger-menu-nav-link:hover{
+    color: #2B4441;
+}
+body.rain .burger-button-link{
+background: #2B4441;
+    color: #FAFAFA;
+}
+body.rain .burger-button-link:hover{
+    background: #306A64; /* lime */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* color:#FF7F08; */
+body.orange .color-button-6{
+    box-shadow: 0 0 15px #FAFAFA;
+    color: #FAFAFA;
+    cursor:auto;
+}
+body.orange .color-button-6:hover{
+    background-color: #FF7F08;
+    cursor:auto;
+     /* lime */
+}
+/* -------------------HEADER ------------------ */
+ body.orange .burger-icon:hover {
+  stroke: #FF7F08;
+}
+body.orange .burger-icon:focus {
+  stroke: #FF7F08;
+}
+body.orange .header-nav-link:hover,
+body.orange .header-nav-link:focus {
+  color: #FF7F08;
+}
+body.orange .header-button-link {
+  background: #FF7F08;
+}
+
+body.orange .header-button-link:hover,
+body.orange .header-button-link:focus {
+  background-color: #FF450A;/* lime  */
+}
+/* -----------HERO------------ */
+body.orange .hero-social-link:hover,
+body.orange .hero-social-link:focus,
+body.orange .hero-email:hover, 
+body.orange .hero-email:focus {
+    border-color: #fafafa;
+    box-shadow: 0 0 15px #FF7F08;
+}
+/* -----------ABOUT ME------------ */
+body.orange .subtitle-func {
+    color: #FF7F08;
+}
+body.orange ul.accordion-info-about-me-list li.ac .ac-trigger.accordion-button-up-down:hover::after
+ {
+    border-color: #fafafa;
+    box-shadow: 0 0 15px #FF7F08;
+}
+body.orange .swiper-slide-active .item-about-me {
+    background-color: #FF7F08;
+    border: 1px solid #FF7F08;
+}
+body.orange .svg-arrow-about-me:hover{
+    stroke:#FF7F08;
+}
+body.orange .svg-arrow-about-me:focus{
+stroke: #FF7F08;
+}
+body.orange  .item-about-me:hover {
+border-color: #fafafa;
+
+}
+body.orange .swiper-slide-active .item-about-me:hover {
+    background-color: #FF450A; /* lime */
+
+}
+/* -----------BENEFITS------------ */
+body.orange .benefits-span {
+  background: #FF7F08;
+}
+body.orange .benefits-order-button:hover {
+   border-color: #fafafa;
+    box-shadow: 0 0 15px #FF7F08;
+}
+/* -----------PROJECTS------------ */
+body.orange .projects-button {
+    color: #FAFAFA;
+    background-color: #FF7F08;
+}
+body.orange .projects-button:hover {
+    background-color: #FF450A; /* lime */
+    
+}
+body.orange .projects-section .swiper-button-prev:not(.swiper-button-disabled):hover,
+body.orange .projects-section .swiper-button-next:not(.swiper-button-disabled):hover,
+body.orange .projects-section .swiper-button-prev:not(.swiper-button-disabled):focus,
+body.orange .projects-section .swiper-button-next:not(.swiper-button-disabled):focus {
+    background-color: #FF7F08;
+    border-color: #FF7F08;
+}
+body.orange .technologies-item:hover{
+ 
+    box-shadow: 0 0 15px #FF7F08;
+}
+
+   body.orange .projects-button {
+        background-color: #FF7F08;
+    }
+/* -------------------FAQ------------------ */
+body.orange ul.accordion-container li.ac .ac-trigger.faq-button:hover::after {
+    border-color: #fafafa;
+    box-shadow: 0 0 15px #FF7F08;
+}
+/* ------------------REVIEWS----------------- */
+body.orange .reviews-section .swiper-button-prev:not(.swiper-button-disabled):hover,
+body.orange .reviews-section .swiper-button-next:not(.swiper-button-disabled):hover,
+body.orange .reviews-section .swiper-button-prev:not(.swiper-button-disabled):focus,
+body.orange .reviews-section .swiper-button-next:not(.swiper-button-disabled):focus {
+  background-color: #FF7F08;
+  border-color: #FF7F08;
+}
+/* -------------------WORK TOGETHER------------------ */
+body.orange .workWord {
+  color: #FF7F08;
+}
+body.orange .coopSubmitBtn {
+  color: #fafafa;
+  background-color: #FF7F08;
+}
+body.orange .coopSubmitBtn:hover,
+body.orange .coopSubmitBtn:focus {
+  background-color: #FF450A; /* lime */
+}
+body.orange .contactItem:hover{
+  border-color: #fafafa;
+    box-shadow: 0 0 15px #FF7F08;
+}
+/* ---------------HEADER MODAL--------------- */
+
+body.orange .burger-menu-nav-link:hover{
+    color: #FF7F08;
+}
+body.orange .burger-button-link{
+background: #FF7F08;
+    color: #FAFAFA;
+}
+body.orange .burger-button-link:hover{
+    background: #FF450A; /* lime */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

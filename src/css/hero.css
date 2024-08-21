@@ -15,8 +15,11 @@ body, html {
     background-position: left;
     background-size: cover;
     margin-bottom: 64px;
+    height: 100vh;
     /* text-align: center; */
 }
+/* red */
+
 
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     .hero-section {
@@ -28,7 +31,7 @@ body, html {
     padding: 281px 16px 32px 16px;
     display: flex;
     flex-direction: column;
-    gap: 212px;
+    height: 100vh;
 }
 
 .main-headline {
@@ -51,6 +54,8 @@ body, html {
 }
 
 .hero-contact-info {
+    margin-bottom: 32px;
+    margin-top: auto;
     display: flex;
     flex-direction: column;
     align-items: end;
@@ -143,14 +148,28 @@ body, html {
         align-items: center;
         gap: 8px;
     }
+   
 }
 
 /* ----------------TABLET---------------- */
+@media screen and (min-width: 768px) {
+    .hero-section {
+        background-image: url('../img/hero/png tablet-mobile/hero_red_tablet_1x.png');
+        background-size: cover;
+        height: 1024px;
+    }
+    #hero .hero-box {
+        gap: 187px;
+       
+    }
 
+    
+}
 @media screen and (min-width: 768px) and (max-width: 1439px) {
     .hero-section {
         background-image: url('../img/hero/png tablet-mobile/hero_red_tablet_1x.png');
         background-size: cover;
+        height: 1024px;
     }
 
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
@@ -212,6 +231,7 @@ body, html {
         background-image: url('../img/hero/desktop/png/hero_red_desktop_1x.png');
         background-size: cover;
         margin-bottom: 96px;
+        height: 900px;
     }
 
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
