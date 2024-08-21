@@ -132,9 +132,9 @@ coopInput::placeholder {
   line-height: normal;
   letter-spacing: -0.28px;
 }
-.contactItem:hover{
+.contactItem:hover {
   border-color: #fafafa;
-    box-shadow: 0 0 15px #ed3b44;
+  box-shadow: 0 0 15px #ed3b44;
 }
 @media screen and (min-width: 333px) {
   .contactsList {

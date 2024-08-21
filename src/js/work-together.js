@@ -3,6 +3,7 @@ import iziToast from 'izitoast';
 const workTogetherForm = document.querySelector('.coopForm');
 let emailInput = document.querySelector('#email');
 let commentInput = document.querySelector('#comment');
+let validityMessage = document.querySelector('.coopResultMsg');
 
 const savedData = JSON.parse(localStorage.getItem('feedback-form-state'));
 if (savedData) {
@@ -26,6 +27,20 @@ emailInput.addEventListener('blur', () => handleBlur(emailInput));
 commentInput.addEventListener('focus', () => handleFocus(commentInput));
 commentInput.addEventListener('blur', () => handleBlur(commentInput));
 
+emailInput.addEventListener('input', function () {
+  if (emailInput.value === '') {
+    validityMessage.textContent = '';
+    emailInput.style.removeProperty('border-color');
+  } else if (emailInput.validity.patternMismatch) {
+    validityMessage.textContent = 'Enter your Email correctly.';
+    validityMessage.style.color = '#e74a3b';
+    emailInput.style.borderColor = '#e74a3b';
+  } else {
+    validityMessage.textContent = 'Success!';
+    validityMessage.style.color = '#3cbc81';
+    emailInput.style.borderColor = '#3cbc81';
+  }
+});
 workTogetherForm.addEventListener('submit', async function (event) {
   event.preventDefault();
 
@@ -70,6 +85,8 @@ workTogetherForm.addEventListener('submit', async function (event) {
       });
     } else {
       alert('Success!');
+      validityMessage.textContent = '';
+      emailInput.style.removeProperty('border-color');
       workTogetherForm.reset();
       localStorage.removeItem('feedback-form-state');
     }
