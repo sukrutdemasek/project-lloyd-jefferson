@@ -1,3 +1,4 @@
+/* Denis */
 
 #about-me .about-box {
     padding: 0 16px;
@@ -6,16 +7,6 @@
 
 .about-box .ac {
     margin-top: 0px;
-}
-
-.about-box .acor-txt {
-    font-family: inherit;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 24px;
-    letter-spacing: -0.02em;
-    text-align: left;
-    color:#fafafa;
 }
 
 .about-subtitle {
@@ -67,7 +58,7 @@
     border-radius: 24px;
 }
 
-/* -------------ACCORDION-------------  */
+/* -------------ACCORDION Denis-------------  */
 
 .accordion-info-about-me-list {
     display: flex;
@@ -81,7 +72,15 @@ ul.accordion-info-about-me-list .about-me-item-container.ac {
     padding-bottom: 20px;
     position: relative;
     background-color: transparent;
-    padding-top: 32px;
+    /* padding-top: 32px; */
+}
+
+ul.accordion-info-about-me-list .about-me-item-container:first-child {
+    margin-top: 32px;
+}
+
+ul.accordion-info-about-me-list .about-me-item-container:not(:first-child) {
+    margin-top: 20px;
 }
 
 .ac-header.acc-caption .ac-trigger {
@@ -98,8 +97,8 @@ ul.accordion-info-about-me-list .about-me-item-container.ac {
     text-transform: uppercase;
 }
 
-.ac-text p {
-    font-family: 'Inter Tight', sans-serif;
+li.about-me-item-container.ac  div.about-me-text p {
+    font-family: inherit;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: -0.02em;
@@ -107,12 +106,14 @@ ul.accordion-info-about-me-list .about-me-item-container.ac {
     color: #fafafa;
     padding: 0;
 }
+
 .acor-txt-one {
     max-width: 360px;
 }
 .acor-txt-two {
     max-width: 450px;
 }
+
 li.about-me-item-container.ac .ac-panel {
     display: flex;
     flex-direction: column;
@@ -137,7 +138,7 @@ ul.accordion-info-about-me-list li.ac .ac-trigger.accordion-button-up-down::afte
 }
 
 ul.accordion-info-about-me-list li.ac .ac-trigger.accordion-button-up-down:hover::after
- {
+{
     border-color: #fafafa;
     box-shadow: 0 0 15px #ed3b44;
 }
@@ -149,18 +150,17 @@ ul.accordion-info-about-me-list li.ac .ac-trigger.accordion-button-up-down:hover
     transition: transform 0.3s ease-in-out;
 }
 
-
 ul.accordion-info-about-me-list li.ac.is-active .about-me-arrow-icon {
     transform: rotate(-180deg);
 }
 
-/*-----------------------Swiper-------------------------*/
+/* Danilko */
+/*-----------------------Swiper Danil-------------------------*/
 .swiper .about-me-swiper {
     position: relative;
 }
 
-/*для кнопки*/
-
+/*for button*/
 .about-btn-arrow {
     position: absolute;
     top: 50%;
@@ -195,7 +195,6 @@ li.slide-about-me {
     li.slide-about-me {
     width: calc(((375px - 32px)*0.75)/2);
     height: calc(((375px - 32px)*0.75)/2);
-   
     }
 }
  
@@ -221,6 +220,7 @@ li.slide-about-me {
         right: 0px;
     }
 
+    /* Denis */
     #about-me .about-box {
         padding-left: 32px;
         padding-right: 32px;
@@ -244,7 +244,15 @@ li.slide-about-me {
         letter-spacing: -0.03em;
     }
 
-    /* -------------ACCORDION-------------  */
+    /* -------------ACCORDION Denis-------------  */
+
+    .accordion-info-about-me-list {
+        margin-bottom: 0px;
+    }
+
+    ul.accordion-info-about-me-list .about-me-item-container.ac {
+        padding-bottom: 64px;
+    }
 
     ul.accordion-info-about-me-list .about-me-item-container.ac {
         padding-bottom: 32px;
@@ -267,13 +275,22 @@ li.slide-about-me {
     }
 
     .ac-header.acc-caption .ac-trigger {
-        margin-bottom: 30px;
+        margin-bottom: 24px;
+    }
+
+    ul.accordion-info-about-me-list .about-me-item-container:first-child {
+        margin-top: 0px;
+    }
+
+    ul.accordion-info-about-me-list .about-me-item-container:not(:first-child) {
+        margin-top: 32px;
     }
 }
 
 /* -------------DESKTOP-------------  */
 
 @media screen and (min-width: 1440px) {
+    /* Denis */
     #about-me .about-box {
         padding-left: 32px;
         padding-right: 32px;
@@ -300,7 +317,7 @@ li.slide-about-me {
         letter-spacing: -0.03em;
     }
 
-    /* -------------ACCORDION-------------  */
+    /* -------------ACCORDION Denis-------------  */
 
     .accordion-info-about-me {
         width: 1376px;
@@ -330,10 +347,7 @@ li.slide-about-me {
 }
 }
 
-/* DANILKO MONKEY */
-/* DANILKO MONKEY */
-/* DANILKO MONKEY */
-/* DANILKO MONKEY */
+/* DANILKO */
 
 .swipper-wrapper {
     position: relative;
@@ -366,17 +380,17 @@ div.about-me-swiper {
     }
     .item-about-me{
     font-size: 20px;
-font-style: normal;
-font-weight: 500;
-line-height: normal;
-letter-spacing: -0.4px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.4px;
 }
 .swipper-wrapper-top{
     margin-top: 64px;
 }
 .svg-arrow-about-me {
-   width: 40px;
-   height: 40px;
+    width: 40px;
+    height: 40px;
 }
 
 }
@@ -406,5 +420,5 @@ letter-spacing: -0.4px;
     stroke:#ED3B44;
 }
 .svg-arrow-about-me:focus{
-stroke: #ED3B44;
+    stroke: #ED3B44;
 }
