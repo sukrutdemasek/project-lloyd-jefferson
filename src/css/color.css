@@ -148,6 +148,14 @@ body.red .swiper-slide-active .item-about-me {
     background-color: #ed3b44;
     border: 1px solid #ed3b44;
 }
+body.red  .item-about-me:hover {
+border-color: #fafafa;
+
+}
+body.red .swiper-slide-active .item-about-me:hover {
+    background-color: #E0373F; /* lime */
+
+}
 body.red .svg-arrow-about-me:hover{
     stroke:#ED3B44;
 }
@@ -308,6 +316,14 @@ body.green .svg-arrow-about-me:hover{
 body.green .svg-arrow-about-me:focus{
 stroke: #C6E327;
 }
+body.green  .item-about-me:hover {
+border-color: #fafafa;
+
+}
+body.green .swiper-slide-active .item-about-me:hover {
+    background-color: #A3B830; /* lime */
+
+}
 /* -----------BENEFITS------------ */
 body.green .benefits-span {
   background: #C6E327;
@@ -454,6 +470,14 @@ body.blue .svg-arrow-about-me:hover{
 body.blue .svg-arrow-about-me:focus{
 stroke: #0041E8;
 }
+body.blue  .item-about-me:hover {
+border-color: #fafafa;
+
+}
+body.blue .swiper-slide-active .item-about-me:hover {
+    background-color: #365AB9; /* lime */
+
+}
 /* -----------BENEFITS------------ */
 body.blue .benefits-span {
   background: #0041E8;
@@ -586,6 +610,14 @@ body.brick .svg-arrow-about-me:hover{
 }
 body.brick .svg-arrow-about-me:focus{
 stroke: #E6533C;
+}
+body.brick  .item-about-me:hover {
+border-color: #fafafa;
+
+}
+body.brick .swiper-slide-active .item-about-me:hover {
+    background-color:  #BA6659; /* lime */
+
 }
 /* -----------BENEFITS------------ */
 body.brick .benefits-span {
@@ -727,6 +759,14 @@ body.rain .svg-arrow-about-me:hover{
 }
 body.rain .svg-arrow-about-me:focus{
 stroke: #2B4441;
+}
+body.rain  .item-about-me:hover {
+border-color: #fafafa;
+
+}
+body.rain .swiper-slide-active .item-about-me:hover {
+    background-color:  #306A64; /* lime */
+
 }
 /* -----------BENEFITS------------ */
 body.rain .benefits-span {
@@ -873,6 +913,14 @@ body.orange .svg-arrow-about-me:hover{
 }
 body.orange .svg-arrow-about-me:focus{
 stroke: #FF7F08;
+}
+body.orange  .item-about-me:hover {
+border-color: #fafafa;
+
+}
+body.orange .swiper-slide-active .item-about-me:hover {
+    background-color: #FF450A; /* lime */
+
 }
 /* -----------BENEFITS------------ */
 body.orange .benefits-span {
