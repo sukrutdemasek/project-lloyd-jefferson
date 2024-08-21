@@ -30,7 +30,7 @@
 
 /* Mobile menu styling */
 .menu-burger {
-    display: none;
+    
     position: fixed;
     top: 0;
     right: 0;
@@ -40,10 +40,15 @@
     z-index: 1000;
     overflow: auto;
     position: fixed;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
 }
 
 .menu-burger.is-open{
     display: block;
+    transform: translateX(0%);
+    right: 0%;
+    
 }
 .menu-burger-container {
     display: flex;
@@ -105,6 +110,7 @@ letter-spacing: -0.28px;
 .burger-button-link:hover{
     background: #E0373F;
 }
-.no-scroll {
-  overflow: hidden;
+body.no-scroll {
+  overflow-y: hidden;
+  height: 100vh;
 }
