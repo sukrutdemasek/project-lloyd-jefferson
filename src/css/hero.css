@@ -15,6 +15,7 @@ body, html {
     background-position: left;
     background-size: cover;
     margin-bottom: 64px;
+    height: 100vh;
     /* text-align: center; */
 }
 /* red */
@@ -30,7 +31,7 @@ body, html {
     padding: 281px 16px 32px 16px;
     display: flex;
     flex-direction: column;
-    gap: 212px;
+    height: 100vh;
 }
 
 .main-headline {
@@ -53,6 +54,8 @@ body, html {
 }
 
 .hero-contact-info {
+    margin-bottom: 32px;
+    margin-top: auto;
     display: flex;
     flex-direction: column;
     align-items: end;
@@ -153,6 +156,7 @@ body, html {
     .hero-section {
         background-image: url('../img/hero/png tablet-mobile/hero_red_tablet_1x.png');
         background-size: cover;
+        height: 1024px;
     }
 
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
@@ -214,6 +218,7 @@ body, html {
         background-image: url('../img/hero/desktop/png/hero_red_desktop_1x.png');
         background-size: cover;
         margin-bottom: 96px;
+        height: 900px;
     }
 
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
