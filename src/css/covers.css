@@ -13,7 +13,7 @@ div.container.covers-container {
 .content {
   height: 508px;
   position: relative;
-  background: url(../img/covers/bgc-min.png);
+  background: url(../img/covers/background-colors/red-1x.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -21,7 +21,115 @@ div.container.covers-container {
 }
 @media screen and (min-resolution: 2dppx), (min-resolution: 192dpi) {
   .content {
-    background: url(../img/covers/bgc-2x-min.png);
+    background: url(../img/covers/background-colors/red-2x.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+}
+body.red .content {
+  height: 508px;
+  position: relative;
+  background: url(../img/covers/background-colors/red-1x.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+@media screen and (min-resolution: 2dppx), (min-resolution: 192dpi) {
+  body.red .content {
+    background: url(../img/covers/background-colors/red-2x.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+body.green .content {
+  height: 508px;
+  position: relative;
+  background: url(../img/covers/background-colors/green-1x.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+@media screen and (min-resolution: 2dppx), (min-resolution: 192dpi) {
+  body.green .content {
+    background: url(../img/covers/background-colors/green-2x.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+}
+body.blue .content {
+  height: 508px;
+  position: relative;
+  background: url(../img/covers/background-colors/blue-1x.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+@media screen and (min-resolution: 2dppx), (min-resolution: 192dpi) {
+  body.blue .content {
+    background: url(../img/covers/background-colors/blue-2x.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+body.brick .content {
+  height: 508px;
+  position: relative;
+  background: url(../img/covers/background-colors/brick-1x.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+@media screen and (min-resolution: 2dppx), (min-resolution: 192dpi) {
+  body.brick .content {
+    background: url(../img/covers/background-colors/brick-2x.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+
+body.rain .content {
+  height: 508px;
+  position: relative;
+  background: url(../img/covers/background-colors/rain-1x.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+@media screen and (min-resolution: 2dppx), (min-resolution: 192dpi) {
+  body.rain .content {
+    background: url(../img/covers/background-colors/rain-2x.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+
+body.orange .content {
+  height: 508px;
+  position: relative;
+  background: url(../img/covers/background-colors/orange-1x.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+@media screen and (min-resolution: 2dppx), (min-resolution: 192dpi) {
+  body.orange .content {
+    background: url(../img/covers/background-colors/orange-2x.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -76,7 +184,7 @@ div.container.covers-container {
   .covers-section {
     margin-bottom: 96px;
   }
-  .content {
+  body .content.covers-content.cc {
     height: 960px;
   }
   .marquee {

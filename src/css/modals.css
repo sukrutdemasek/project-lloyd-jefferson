@@ -1,11 +1,57 @@
 /*--------BURGER---------*/
-@media screen and (max-width: 375px) {
-   .menu-burger{
-   background-size: 420px 900px;
-    
-   }
-    
+
+.menu-burger {
+    position: relative; 
+    background: linear-gradient(270deg, #1c1d20 49.68%, #69292d 67.73%, #ed3b44 95%);
+    height: 100vh;
 }
+ .menu-burger::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: cover;
+    z-index: 2;
+  }
+
+.modal.blur-strip-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+  }
+  .modal.blur-strip {
+    width: 16.67%;
+    height: 100%;
+    background: linear-gradient(
+      270deg,
+      rgba(255, 255, 255, 0.0) -3%,
+      rgba(59, 59, 59, 0.5) 16.67%,
+      rgba(255, 255, 255, 0.0) 100%
+    );
+    background-blend-mode: overlay;
+    backdrop-filter: blur(50px);
+  }
+  .modal.blur-strip-container .blur-strip:first-child,
+.modal.blur-strip-container .blur-strip:last-child {
+ opacity: 0.5;
+}
+ .menu-burger-container {
+    position: relative;
+    z-index: 3;
+  
+   
+    
+  }
+
 @media screen and (min-width: 375px) {
     .menu-burger{
         background-size: cover;
@@ -13,7 +59,6 @@
     
 }
 .menu-burger {
-    background-image: url('../img/hero/png tablet-mobile/hero_red_mobile_1x.png');
     background-repeat: no-repeat;
     background-position: left;
     overflow-x: hidden;
@@ -22,11 +67,6 @@
     /* text-align: center; */
 }
 
-@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-    .menu-burger {
-        background-image: url('../img/hero/png tablet-mobile/hero_red_mobile_2x.png');
-    }
-}
 
 /* Mobile menu styling */
 .menu-burger {
