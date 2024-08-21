@@ -105,6 +105,13 @@ coopInput::placeholder {
 .coopSubmitBtn:focus {
   background-color: #e0373f;
 }
+.coopResultMsg {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.28571;
+  letter-spacing: -0.02em;
+  position: absolute;
+}
 .contactsList {
   display: flex;
   flex-direction: column;
@@ -183,6 +190,9 @@ coopInput::placeholder {
     flex-direction: column;
     align-items: flex-start;
     width: 245px;
+  }
+  .coopResultMsg {
+    margin-top: 42px;
   }
   .coopSubmitBtn {
     width: 150px;
