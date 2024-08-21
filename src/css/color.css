@@ -1,14 +1,13 @@
 .color-div {
     position: fixed;
-    
-    z-index: 2;
+    z-index: 10;
     background-color: black;
     top: 20%;
     display: flex;
     width: 100%;
     opacity: 70%;
     transition: transform 0.5s;
-    max-width: 90%;
+    max-width: 85%;
 }
 div.color-div.collapsed{
     transform: translateX(-95%);
@@ -20,7 +19,7 @@ div.color-div.collapsed{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 16px;
+    padding: 8px;
     width: 100%;
     
 }
@@ -39,37 +38,37 @@ div.color-div.collapsed{
     background-color: #ED3B44; /* #e0373f */
 }
 .color-button-1:hover{
-    background-color: #E0373F; /* lime */
+    background-color: #E0373F; 
 }
 .color-button-2{
     background-color: #C6E327; /*#A3B830 */
 }
 .color-button-2:hover{
-    background-color: #A3B830; /* lime */
+    background-color: #A3B830; 
 }
 .color-button-3{
     background-color:#0041E8; /* #365AB9 */
 }
 .color-button-3:hover{
-    background-color: #365AB9; /* lime */
+    background-color: #365AB9; 
 }
 .color-button-4{
     background-color: #E6533C; /* #BA6659 */
 }
 .color-button-4:hover{
-    background-color: #BA6659; /* lime */
+    background-color: #BA6659; 
 }
 .color-button-5{
     background-color: #2B4441;/* #306A64 */
 }
 .color-button-5:hover{
-    background-color: #306A64; /* lime */
+    background-color: #306A64; 
 }
 .color-button-6{
     background-color: #FF7F08; /* #FF450A */
 }
 .color-button-6:hover{
-    background-color: #FF450A; /* lime */
+    background-color: #FF450A; 
 }
 
 @media screen and (min-width: 768px){
@@ -94,9 +93,78 @@ div.color-div.collapsed{
     top: 180px;
 max-width: 50%;
 }
-
 }
 
+
+
+
+
+
+
+
+
+/* ----------------------------BACKGROUND-------------------------------------------------- */
+
+body.red .menu-burger,
+body.red .hero-section {
+    background: linear-gradient(270deg, #1c1d20 49.68%, #69292d 67.73%, #ed3b44 95%);
+}
+
+body.green .menu-burger,
+body.green .hero-section {
+    background: linear-gradient(270deg, #1C1D20 49.69%, #596808 67.71%, rgba(198, 227, 39, 0.76) 99.91%);
+}
+
+body.blue .menu-burger,
+body.blue .hero-section {
+    background: linear-gradient(270deg, #1C1D20 49.69%, #001958 67.71%, #0041E8 99.91%);
+}
+
+
+body.brick .menu-burger,
+body.brick .hero-section {
+    background: linear-gradient(270deg, #1C1D20 49.69%, #9F3626 67.71%, #E6533C 99.91%);
+}
+
+body.rain .menu-burger,
+body.rain .hero-section {
+    background: linear-gradient(270deg, #1C1D20 49.69%, #1E3633 67.71%, #2B4441 99.91%);
+}
+
+body.orange .menu-burger,
+body.orange .hero-section {
+    background: linear-gradient(270deg, #1C1D20 49.69%, #AC5300 67.71%, #FF7F08 99.91%, #FF7F08 99.91%);
+}
+
+
+
+
+
+
+
+body.green .content {
+  background: url(../img/covers/background-colors/green_1x.png);
+ 
+}
+@media screen and (min-resolution: 2dppx), (min-resolution: 192dpi) {
+  body.green .content {
+    background: url(../img/covers/background-colors/green_2x.png);
+ 
+  }
+}
+
+
+
+body.blue .content {
+  background: url(../img/covers/background-colors/blue_1x.png);
+ 
+}
+@media screen and (min-resolution: 2dppx), (min-resolution: 192dpi) {
+  body.blue .content {
+    background: url(../img/covers/background-colors/blue_2x.png);
+ 
+  }
+}
 /* color:red; */
 body.red .color-button-1{
     box-shadow: 0 0 15px #FAFAFA;
