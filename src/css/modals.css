@@ -1,0 +1,110 @@
+/*--------BURGER---------*/
+@media screen and (max-width: 375px) {
+   .menu-burger{
+   background-size: 420px 900px;
+    
+   }
+    
+}
+@media screen and (min-width: 375px) {
+    .menu-burger{
+        background-size: cover;
+    }
+    
+}
+.menu-burger {
+    background-image: url('../img/hero/png tablet-mobile/hero_red_mobile_1x.png');
+    background-repeat: no-repeat;
+    background-position: left;
+    overflow-x: hidden;
+
+
+    /* text-align: center; */
+}
+
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    .menu-burger {
+        background-image: url('../img/hero/png tablet-mobile/hero_red_mobile_2x.png');
+    }
+}
+
+/* Mobile menu styling */
+.menu-burger {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    overflow: auto;
+    position: fixed;
+}
+
+.menu-burger.is-open{
+    display: block;
+}
+.menu-burger-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    max-width: 375px;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+.menu-toggle{
+    background-color: transparent;
+    border: none;
+    width: 32px;
+    align-self: flex-end;
+    margin-top: 32px;
+    margin-right: 16px;
+    padding: 0;
+}
+.menu-burger-icon {
+    stroke: #fafafa;
+}
+.menu-burger-icon:hover {
+    stroke: #ed3b44;
+}
+.menu-burger-nav-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+.burger-menu-nav-link{
+    color: #FAFAFA;
+font-family: "Inter Tight";
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+letter-spacing: -0.32px;
+text-decoration-line: underline;
+}
+.burger-menu-nav-link:hover{
+    color: #ED3B44;
+}
+.burger-button-link{
+    align-self: center;
+    width: 164px;
+padding: 14px 31px;
+margin-bottom: 64px;
+    border-radius: 60px;
+background: #ED3B44;
+    color: #FAFAFA;
+font-family: "Inter Tight";
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+letter-spacing: -0.28px;
+}
+.burger-button-link:hover{
+    background: #E0373F;
+}
+.no-scroll {
+  overflow: hidden;
+}
