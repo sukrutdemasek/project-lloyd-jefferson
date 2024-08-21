@@ -4,23 +4,27 @@
     background-color: black;
     top: 20%;
     display: flex;
-    width: 100%;
+    width: 90%;
     opacity: 70%;
     transition: transform 0.5s;
-    max-width: 85%;
+    max-width: 100%;
 }
 div.color-div.collapsed{
-    transform: translateX(-95%);
+    transform: translateX(-92%);
 }
 .color-div.collapsed:hover{
     transform: translateX(0%);
+}
+
+.color-div.collapsed:hover .icon-paint-brush{
+    stroke: white;
 }
 .color-list{
     display: flex;
     justify-content: space-around;
     align-items: center;
     padding: 8px;
-    width: 100%;
+    width: 90%;
     
 }
 .color-item {
@@ -33,6 +37,17 @@ div.color-div.collapsed{
     width: 30px;
     height: 30px;
     border: 1px solid #FAFAFA;
+}
+.icon-droplet{
+ 
+  fill: #FAFAFA;
+}
+.icon-paint-brush{
+  position: absolute;
+  stroke: #FAFAFA;
+right: 5px;
+top: 50%;
+transform: translateY(-50%);
 }
 .color-button-1{
     background-color: #ED3B44; /* #e0373f */
@@ -80,7 +95,16 @@ div.color-div.collapsed{
     top: 160px;
      max-width: 75%;
 }
+.icon-droplet{
+ width: 30px;
+ height: 30px;
 
+}
+.icon-paint-brush{
+ width: 36px;
+ height: 36px;
+ right: 6px;
+}
 
 }
 @media screen and (min-width: 1440px){
