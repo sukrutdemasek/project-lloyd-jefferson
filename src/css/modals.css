@@ -154,3 +154,6 @@ body.no-scroll {
   overflow-y: hidden;
   height: 100vh;
 }
+body.no-scroll .hero-section{
+    margin-bottom: 0;
+}

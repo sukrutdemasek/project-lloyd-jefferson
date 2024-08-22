@@ -8,47 +8,49 @@
     opacity: 70%;
     transition: transform 0.5s;
     max-width: 100%;
-}
-div.color-div.collapsed{
     transform: translateX(-92%);
 }
-.color-div.collapsed:hover{
+
+.color-div.open,
+.color-div:hover {
     transform: translateX(0%);
 }
 
-.color-div.collapsed:hover .icon-paint-brush{
-    stroke: white;
-}
-.color-list{
+.color-list {
     display: flex;
     justify-content: space-around;
     align-items: center;
     padding: 8px;
     width: 90%;
-    
 }
+
 .color-item {
     display: flex;
     width: 100%;
     align-items: center;
     justify-content: center;
 }
-.color-button{
+
+.color-button {
     width: 30px;
     height: 30px;
     border: 1px solid #FAFAFA;
+    padding: 0;
+    padding-top: 2px;
 }
-.icon-droplet{
- 
-  fill: #FAFAFA;
+
+.icon-droplet {
+    fill: #FAFAFA;
 }
-.icon-paint-brush{
-  position: absolute;
-  stroke: #FAFAFA;
-right: 5px;
-top: 50%;
-transform: translateY(-50%);
+
+.icon-paint-brush {
+    position: absolute;
+    stroke: #FAFAFA;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
 }
+
 .color-button-1{
     background-color: #ED3B44; /* #e0373f */
 }
@@ -94,6 +96,7 @@ transform: translateY(-50%);
 .color-div {
     top: 160px;
      max-width: 75%;
+     padding: 10px;
 }
 .icon-droplet{
  width: 30px;
@@ -194,6 +197,7 @@ body.red .color-button-1{
     box-shadow: 0 0 15px #FAFAFA;
     color: #FAFAFA;
     cursor:auto;
+    transform: scale(1.2);
 }
  body.red .color-button-1:hover{
     background-color: #ed3b44;
@@ -356,6 +360,7 @@ body.green .color-button-2{
     box-shadow: 0 0 15px #FAFAFA;
     color: #FAFAFA;
     cursor:auto;
+    transform: scale(1.2);
 }
  body.green .color-button-2:hover{
     background-color: #C6E327;
@@ -510,6 +515,7 @@ body.green .burger-button-link:hover{
     box-shadow: 0 0 15px #FAFAFA;
     color: #FAFAFA;
     cursor:auto;
+    transform: scale(1.2);
 }
  body.blue .color-button-3:hover{
     background-color: #0041E8;
@@ -651,6 +657,7 @@ body.brick .color-button-4{
     box-shadow: 0 0 15px #FAFAFA;
     color: #FAFAFA;
     cursor:auto;
+    transform: scale(1.2);
 }
 body.brick .color-button-4:hover{
     background-color: #E6533C;
@@ -800,6 +807,7 @@ body.rain .color-button-5{
     box-shadow: 0 0 15px #FAFAFA;
     color: #FAFAFA;
     cursor:auto;
+    transform: scale(1.2);
 }
 body.rain .color-button-5:hover{
     background-color: #2B4441;
@@ -954,6 +962,7 @@ body.orange .color-button-6{
     box-shadow: 0 0 15px #FAFAFA;
     color: #FAFAFA;
     cursor:auto;
+    transform: scale(1.2);
 }
 body.orange .color-button-6:hover{
     background-color: #FF7F08;
