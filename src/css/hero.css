@@ -234,9 +234,13 @@ body, html {
         gap: 187px;
        
     }
-
+body.no-scroll  .hero-section {
+    height: 100vh;
+}
     
 }
+    
+
 @media screen and (min-width: 768px) and (max-width: 1439px) {
     .hero-section {
 
