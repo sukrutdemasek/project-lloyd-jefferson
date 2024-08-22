@@ -81,7 +81,7 @@
     overflow: auto;
     position: fixed;
     transform: translateX(100%);
-    transition: transform 0.3s ease-in-out;
+    transition: transform 0.5s ease-in-out;
 }
 
 .menu-burger.is-open{
