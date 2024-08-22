@@ -226,11 +226,15 @@ coopInput::placeholder {
   }
   .coopInputGroup {
     gap: 32px;
+    margin-bottom: 78px;
   }
   .coopInputItem {
     width: 340px;
   }
   .coopSubmitBtn {
     margin-left: 86px;
+  }
+  .contactsList {
+    margin-bottom: 169px;
   }
 }

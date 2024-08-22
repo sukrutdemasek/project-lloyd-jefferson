@@ -54,6 +54,23 @@ workTogetherForm.addEventListener('submit', async function (event) {
   const emailValue = emailInput.value;
   const commentValue = commentInput.value;
 
+  if (!emailValue || !commentValue) {
+    iziToast.error({
+      title: 'Error!',
+      titleSize: '16',
+      titleColor: '#fafafa',
+      message: 'Both fields are required.',
+      messageSize: '16',
+      messageColor: '#fafafa',
+      backgroundColor: '#1C1D20',
+      theme: 'dark',
+      position: 'bottomCenter',
+      closeOnEscape: true,
+      closeOnClick: true,
+    });
+    return;
+  }
+
   const formData = {
     email: emailValue,
     comment: commentValue,
@@ -112,10 +129,24 @@ workTogetherForm.addEventListener('submit', async function (event) {
   }
 });
 
-modalCloseButton.addEventListener('click', () => {
+modalCloseButton.addEventListener('click', closeModal);
+
+document.addEventListener('keydown', function (event) {
+  if (event.key === 'Escape') {
+    closeModal();
+  }
+});
+
+modalWindow.addEventListener('click', function (event) {
+  if (event.target === modalWindow) {
+    closeModal();
+  }
+});
+
+function closeModal() {
   modalWindow.classList.add('hidden');
   body1.classList.remove('no-scroll');
-});
+}
 
 function saveLocalData() {
   localStorage.setItem(
