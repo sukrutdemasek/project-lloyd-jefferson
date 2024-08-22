@@ -1,7 +1,5 @@
 
-body, html {
-    overflow-x: hidden; 
-}
+
 .hero-section {
     position: relative; 
     background: linear-gradient(270deg, #1c1d20 49.68%, #69292d 67.73%, #ed3b44 95%);
@@ -234,9 +232,7 @@ body, html {
         gap: 187px;
        
     }
-body.no-scroll  .hero-section {
-    height: 100vh;
-}
+
     
 }
     
@@ -260,6 +256,8 @@ body.no-scroll  .hero-section {
         text-align: left;
         margin: 0;
     }
+    
+
 }
 
 @media screen and (min-width: 768px) {

@@ -8,7 +8,8 @@ div.container.covers-container {
 }
 .covers-section {
   margin-bottom: 64px;
-  max-width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 .content {
   height: 508px;
