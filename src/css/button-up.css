@@ -1,0 +1,56 @@
+.btn-up-scroll-to-top.visible {
+    display: flex;
+}
+
+.page-box-up {
+    padding: 0 16px;
+}
+
+    
+.btn-up-scroll-to-top {
+    position: fixed;
+    z-index: 100;
+    right: 16px;
+    bottom: 32px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background-color: #242527;
+    border: none;
+    outline: none;
+    padding: 0;
+    flex-shrink: 0;
+    width: 40px;
+    height: 40px;
+    /* background-color: transparent; */
+    color: rgb(245, 4, 4);
+    border-radius: 100px;
+    border: 3px solid #eb2630;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .btn-up-scroll-to-top:hover {
+    border-color: #fafafa;
+    color: #fafafa;
+  }
+
+@media screen and (min-width: 768px) {
+
+    .page-box-up {
+        padding: 0 32px;
+    }
+        
+    .btn-up-scroll-to-top {
+        right: 32px;
+        bottom: 60px;
+        width: 50px;
+        height: 50px;
+    }
+}
+  
+  @media screen and (min-width: 1440px) {
+    .btn-up-scroll-to-top > svg {
+      width: 23px;
+      height: 23px;
+    }
+  }
