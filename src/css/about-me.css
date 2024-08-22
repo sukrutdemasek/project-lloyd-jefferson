@@ -203,7 +203,14 @@ li.slide-about-me {
     background-color: #ed3b44;
     border: 1px solid #ed3b44;
 }
+ .item-about-me:hover {
+border-color: #fafafa;
 
+}
+.swiper-slide-active .item-about-me:hover {
+    background-color: #E0373F; /* lime */
+
+}
 .about-me .about-btn-arrow {
     border: none;
     background-color: transparent;

@@ -67,6 +67,7 @@ ul.accordion-container li.ac .ac-trigger.faq-button::after {
   border: 1px solid rgba(250, 250, 250, 0.2);
   border-radius: 100px;
   transform: translate(50%, -50%);
+  transition: box-shadow 300ms ease;
 }
 ul.accordion-container li.ac .ac-trigger.faq-button:hover::after {
     border-color: #fafafa;
