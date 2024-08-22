@@ -4,7 +4,9 @@ const workTogetherForm = document.querySelector('.coopForm');
 let emailInput = document.querySelector('#email');
 let commentInput = document.querySelector('#comment');
 let validityMessage = document.querySelector('.coopResultMsg');
-
+let modalWindow = document.querySelector('.modal-footer-overlay');
+let modalCloseButton = document.querySelector('.modal-footer-close-button');
+let body1 = document.body;
 const savedData = JSON.parse(localStorage.getItem('feedback-form-state'));
 if (savedData) {
   emailInput.value = savedData.email || '';
@@ -84,7 +86,8 @@ workTogetherForm.addEventListener('submit', async function (event) {
         closeOnClick: true,
       });
     } else {
-      alert('Success!');
+      body1.classList.add('no-scroll');
+      modalWindow.classList.remove('hidden');
       validityMessage.textContent = '';
       emailInput.style.removeProperty('border-color');
       workTogetherForm.reset();
@@ -105,6 +108,12 @@ workTogetherForm.addEventListener('submit', async function (event) {
       closeOnClick: true,
     });
   }
+});
+
+modalCloseButton.addEventListener('click', event => {
+  console.log('close');
+  modalWindow.classList.add('hidden');
+  body1.classList.remove('no-scroll');
 });
 
 function saveLocalData() {
