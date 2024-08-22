@@ -8,6 +8,7 @@ let modalWindow = document.querySelector('.modal-footer-overlay');
 let modalCloseButton = document.querySelector('.modal-footer-close-button');
 let body1 = document.body;
 const savedData = JSON.parse(localStorage.getItem('feedback-form-state'));
+
 if (savedData) {
   emailInput.value = savedData.email || '';
   commentInput.value = savedData.comment || '';
@@ -43,6 +44,7 @@ emailInput.addEventListener('input', function () {
     emailInput.style.borderColor = '#3cbc81';
   }
 });
+
 workTogetherForm.addEventListener('submit', async function (event) {
   event.preventDefault();
 
@@ -110,8 +112,7 @@ workTogetherForm.addEventListener('submit', async function (event) {
   }
 });
 
-modalCloseButton.addEventListener('click', event => {
-  console.log('close');
+modalCloseButton.addEventListener('click', () => {
   modalWindow.classList.add('hidden');
   body1.classList.remove('no-scroll');
 });
@@ -125,4 +126,3 @@ function saveLocalData() {
     })
   );
 }
-//refresh commit

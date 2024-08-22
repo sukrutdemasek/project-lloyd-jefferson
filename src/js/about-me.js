@@ -5,10 +5,12 @@ document.addEventListener('DOMContentLoaded', function () {
   
     new Accordion('.accordion-info-about-me-list', {
       duration: 300,
-      showMultiple: true,
+        showMultiple: true,
+      openOnInit: [0],
+    });
+    
 });
-});
-
+ const firstelement = document.querySelector('.first-element-about');
 /*---------Swiper-----------------*/
 import Swiper from 'swiper';
 import 'swiper/css';

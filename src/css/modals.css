@@ -154,6 +154,8 @@ body.no-scroll {
   overflow-y: hidden;
   height: 100vh;
 }
-body.no-scroll .hero-section{
+@media screen and (max-width: 767px) {
+   body.no-scroll .hero-section{
     margin-bottom: 0;
+}
 }
