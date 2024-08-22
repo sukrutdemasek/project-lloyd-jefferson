@@ -7,6 +7,24 @@
       name="description"
       content="Explore the captivating portfolio of Lloyd Jefferson, showcasing innovative design projects, creative concepts, and artistic accomplishments. Dive into a world of unique visual experiences and discover the talent behind each project."
     />
+
+    <style>
+        body {
+            opacity: 0;
+            transition: opacity 0.2s ease-in-out;
+        }
+    </style>
+    <script>
+        (function() {
+            document.addEventListener('DOMContentLoaded', () => {
+                const savedColor = localStorage.getItem('selectedColor');
+                if (savedColor) {
+                    document.body.classList.add(savedColor);
+                }
+                document.body.style.opacity = '1'; 
+            });
+        })();
+    </script>
     <link rel="icon" type="image/svg+xml" href="/Favicon.svg" />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap&subset=latin"
@@ -16,7 +34,7 @@
     <title>Lloyd Jefferson</title>
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
-  <body class="red">
+  <body>
     <!--Adding partials-->
 
     <load src="partials/header.html" />
