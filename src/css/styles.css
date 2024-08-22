@@ -36,7 +36,9 @@ body {
   color: #fff;
   margin: 0;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 .container {
   margin: 0 auto;
 }
