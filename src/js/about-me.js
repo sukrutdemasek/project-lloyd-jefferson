@@ -19,7 +19,8 @@ const aboutMeSlider = section.querySelector('.about-me-swiper');
 
     const swiper = new Swiper(aboutMeSlider, {
         slidesPerView: 'auto',  // This makes the slides fit the container
-        loop: true,  // This makes the slider infinite
+        loop: true,
+        speed: 600,// This makes the slider infinite
         navigation: {
             nextEl: section.querySelector('.swiper-button-next'),
             loop: true,// Button to go to the next slide
